@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>TestCabana</title>
   
-  <subtitle>目光所至皆为曙光</subtitle>
+  <subtitle>用文字记录过往,用代码描绘未来</subtitle>
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
