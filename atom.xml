@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>TestCabana</title>
   
-  <subtitle>用文字记录过往,用代码描绘未来</subtitle>
+  <subtitle>目光所致皆为曙光</subtitle>
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
@@ -82,6 +82,27 @@
     <category term="Typora" scheme="https://testcabana.github.io/tags/Typora/"/>
     
     <category term="Markdown" scheme="https://testcabana.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://testcabana.github.io/2021/11/23/99acc59ed0cb.html"/>
+    <id>https://testcabana.github.io/2021/11/23/99acc59ed0cb.html</id>
+    <published>2021-11-23T02:36:08.505Z</published>
+    <updated>2021-11-23T02:36:08.542Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;学习了一下接口框架DDT数据的传递过程&quot;&gt;&lt;a href=&quot;#学习了一下接口框架DDT数据的传递过程&quot; class=&quot;headerlink&quot; title=&quot;学习了一下接口框架DDT数据的传递过程&quot;&gt;&lt;/a&gt;学习了一下接口框架DDT数据的传递过程&lt;/h4&gt;&lt;h5</summary>
+        
+      
+    
+    
+    
     
   </entry>
   
