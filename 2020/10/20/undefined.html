@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="分布式版本控制系统, TestCabana">
-    <meta name="description" content="有志者事竟成|软件测试工程师">
+    <meta name="description" content="本科 | 计算机科学与技术 | 软件测试工程师">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="TestCabana" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -187,7 +188,7 @@
         <div class="logo-name">TestCabana</div>
         <div class="logo-desc">
             
-            有志者事竟成|软件测试工程师
+            本科 | 计算机科学与技术 | 软件测试工程师
             
         </div>
     </div>
@@ -632,7 +633,7 @@ git init 和 git init --bare 的区别:
 </code></pre>
 <p><strong>git仓库测试</strong></p>
 <p>git-client上的操作：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# ssh-keygen
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# ssh-keygen
 [root@qfedu.com ~]# ssh-copy-id git@192.168.1.178
 
 [root@qfedu.com shell]# git config --global user.email "you@example.com"
@@ -655,7 +656,7 @@ Writing objects: 100% (3/3), 230 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@192.168.1.178:/git-root/shell.git
  * [new branch]      master -> master
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="四、Git工作流程"><a href="#四、Git工作流程" class="headerlink" title="四、Git工作流程"></a>四、Git工作流程</h2><p>一般工作流程如下：</p>
 <ul>
 <li><p>克隆 Git 资源作为工作目录。</p>
@@ -707,11 +708,11 @@ To git@192.168.1.178:/git-root/shell.git
 <ul>
 <li>　　当执行 “git checkout HEAD .” 或者 “git checkout HEAD <file>“ 命令时，会用 HEAD 指向的 master 分支中的全部或者部分文件替换暂存区和以及工作区中的文件。这个命令也是极具危险性的，因为不但会清除工作区中未提交的改动，也会清除暂存区中未提交的改动。</li>
 </ul>
-<h2 id="六、Git-客户端安装使用"><a href="#六、Git-客户端安装使用" class="headerlink" title="六、Git 客户端安装使用"></a>六、Git 客户端安装使用</h2><h3 id="1、-Git-安装配置"><a href="#1、-Git-安装配置" class="headerlink" title="1、 Git 安装配置"></a>1、 Git 安装配置</h3><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+<h2 id="六、Git-客户端安装使用"><a href="#六、Git-客户端安装使用" class="headerlink" title="六、Git 客户端安装使用"></a>六、Git 客户端安装使用</h2><h3 id="1、-Git-安装配置"><a href="#1、-Git-安装配置" class="headerlink" title="1、 Git 安装配置"></a>1、 Git 安装配置</h3><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
 [root@qfedu.com ~]# yum -y install git git-all git-core
 [root@qfedu.com ~]# git --version
 git version 2.18.4
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <hr>
 <h3 id="2、Git-配置"><a href="#2、Git-配置" class="headerlink" title="2、Git 配置"></a>2、Git 配置</h3><p>Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。</p>
 <p>这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的地方：</p>
@@ -721,42 +722,42 @@ git version 2.18.4
 <li>当前项目的 Git 目录中的配置文件（也就是工作目录中的 <code>.git/config</code> 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的相同配置，所以 <code>.git/config</code> 里的配置会覆盖 <code>/etc/gitconfig</code> 中的同名变量。</li>
 </ul>
 <h4 id="1、Git-用户信息"><a href="#1、Git-用户信息" class="headerlink" title="1、Git 用户信息"></a>1、Git 用户信息</h4><p>配置个人的用户名称和电子邮件地址：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global user.name "qfedu"
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global user.name "qfedu"
 [root@qfedu.com ~]# git config --global user.email test@qq.com
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果用了 <strong>–global</strong> 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。</p>
 <p>如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 –global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。</p>
 <h4 id="2、文本编辑器"><a href="#2、文本编辑器" class="headerlink" title="2、文本编辑器"></a>2、文本编辑器</h4><p>设置Git默认使用的文本编辑器, 一般可能会是 Vi 或者 Vim。如果你有其他偏好，比如 Emacs 的话，可以重新设置</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global core.editor emacs
-</code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global core.editor emacs
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h4 id="3、差异分析工具"><a href="#3、差异分析工具" class="headerlink" title="3、差异分析工具"></a>3、差异分析工具</h4><p>还有一个比较常用的是，在解决合并冲突时使用哪种差异分析工具。比如要改用 vimdiff 的话：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global merge.tool vimdiff
-</code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global merge.tool vimdiff
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>Git 可以理解 kdiff3，tkdiff，meld，xxdiff，emerge，vimdiff，gvimdiff，ecmerge，和 opendiff 等合并工具的输出信息。</p>
 <p>当然，你也可以指定使用自己开发的工具</p>
 <h4 id="4、查看配置信息"><a href="#4、查看配置信息" class="headerlink" title="4、查看配置信息"></a>4、查看配置信息</h4><p>要检查已有的配置信息，可以使用 git config –list 命令：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --list
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --list
 http.postbuffer=2M
 user.name=runoob
 user.email=test@runoob.com
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>有时候会看到重复的变量名，那就说明它们来自不同的配置文件（比如 /etc/gitconfig 和 ~/.gitconfig），不过最终 Git 实际采用的是最后一个。</p>
 <p>这些配置我们也可以在 <strong>~/.gitconfig</strong> 或 <strong>/etc/gitconfig</strong> 看到，如下所示：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# vim ~/.gitconfig 
-</code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# vim ~/.gitconfig 
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>显示内容如下所示：</p>
-<pre class=" language-shell"><code class="language-shell">[http]
+<pre class="line-numbers language-shell"><code class="language-shell">[http]
     postBuffer = 2M
 [user]
     name = git
     email = test@qfedu.com.com
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>也可以直接查阅某个环境变量的设定，只要把特定的名字跟在后面即可，像这样：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git config user.name
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git config user.name
 git
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="3、Git-使用"><a href="#3、Git-使用" class="headerlink" title="3、Git 使用"></a>3、Git 使用</h3><h4 id="1、ssh-链接"><a href="#1、ssh-链接" class="headerlink" title="1、ssh 链接"></a>1、ssh 链接</h4><p>客户机上产生公钥上传到gitlab的SSH-Keys里，git clone下载和git push上传都没问题，这种方式很安全</p>
-<h4 id="2、http-链接（两种方式实现）"><a href="#2、http-链接（两种方式实现）" class="headerlink" title="2、http 链接（两种方式实现）"></a>2、http 链接（两种方式实现）</h4><h5 id="1、修改代码里的-git-config-文件添加登录用户名密码"><a href="#1、修改代码里的-git-config-文件添加登录用户名密码" class="headerlink" title="1、修改代码里的 .git/config 文件添加登录用户名密码"></a>1、修改代码里的 .git/config 文件添加登录用户名密码</h5><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# cd .git
+<h4 id="2、http-链接（两种方式实现）"><a href="#2、http-链接（两种方式实现）" class="headerlink" title="2、http 链接（两种方式实现）"></a>2、http 链接（两种方式实现）</h4><h5 id="1、修改代码里的-git-config-文件添加登录用户名密码"><a href="#1、修改代码里的-git-config-文件添加登录用户名密码" class="headerlink" title="1、修改代码里的 .git/config 文件添加登录用户名密码"></a>1、修改代码里的 .git/config 文件添加登录用户名密码</h5><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# cd .git
 [root@qfedu.com ~]# cat config
 [core]
 repositoryformatversion = 0
@@ -769,8 +770,8 @@ url = http://username:password@qfedu.com@172.17.0.39:sauser/ansible.git
 [branch "master"]
 remote = origin
 merge = refs/heads/master
-</code></pre>
-<h5 id="2、-执行命令设置登录用户和密码"><a href="#2、-执行命令设置登录用户和密码" class="headerlink" title="2、 执行命令设置登录用户和密码"></a>2、 执行命令设置登录用户和密码</h5><pre class=" language-shell"><code class="language-shell"># cd到根目录，执行
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="2、-执行命令设置登录用户和密码"><a href="#2、-执行命令设置登录用户和密码" class="headerlink" title="2、 执行命令设置登录用户和密码"></a>2、 执行命令设置登录用户和密码</h5><pre class="line-numbers language-shell"><code class="language-shell"># cd到根目录，执行
 [root@qfedu.com ~]# git config --global credential.helper store  # 执行之后会在.gitconfig文件中多添加以下选项
   [credential]         
           helper = store
@@ -781,27 +782,27 @@ merge = refs/heads/master
 [root@qfedu.com ~]# cat .git-credentials
   https://Username:Password@qfedu.com.oschina.net
 # 之后pull/push代码都不再需要输入账号密码了
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="3、设置身份验证"><a href="#3、设置身份验证" class="headerlink" title="3、设置身份验证"></a>3、设置身份验证</h4><p><strong>注意：</strong>设定本机用户名，绑定邮箱，让远程服务器知道机器的身份</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global user.name "user_name" 
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git config --global user.name "user_name" 
 [root@qfedu.com ~]# git config --global user.email "XXXXX@XX.com"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h4 id="4、本地项目与远程服务器项目之间的交互"><a href="#4、本地项目与远程服务器项目之间的交互" class="headerlink" title="4、本地项目与远程服务器项目之间的交互"></a>4、本地项目与远程服务器项目之间的交互</h4><p>1、如果你没有最新的代码，希望从头开始</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git clone git@XXX.git      # 这里是项目的地址（可从项目主页复制），将远程服务器的内容完全复制过来 
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git clone git@XXX.git      # 这里是项目的地址（可从项目主页复制），将远程服务器的内容完全复制过来 
 [root@qfedu.com ~]# cd BGBInspector_V01        # clone 之后进入该项目的文件夹 
 [root@qfedu.com ~]# touch　README.md           # 新建readme文件 
 [root@qfedu.com ~]# git add README.md          # 将新的文件添加到git的暂存区 
 [root@qfedu.com ~]# git commit -m ‘Its note：add a readme file’ # 将暂存区的文件提交到某一个版本保存下来，并加上注释 
 [root@qfedu.com ~]# git push -u origin master  # 将本地的更改提交到远程服务器
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>2、如果你已经有一个新版代码，希望直接把本地的代码替换到远程服务器</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# cd existing_folder          #进入代码存在的文件夹，或者直接在该文件夹打开
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# cd existing_folder          #进入代码存在的文件夹，或者直接在该文件夹打开
 [root@qfedu.com ~]# git init           # 初始化 
 [root@qfedu.com ~]# git remote add origin git@master:/git-test/shell.git  #添加远程项目"shell"库的地址（可从项目主页复制） ,前提是事先需要先在git远程服务器上创建相应的裸库"shell"
 [root@qfedu.com ~]# git add .                   #添加该文件夹中所有的文件到git的暂存区 
 [root@qfedu.com ~]# git commit -m ‘note’        #提交所有代码到本机的版本库 
 [root@qfedu.com ~]# git push -u origin master   #将本地的更改提交到远程服务器
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li><p>git 中 clone过来的时候，git 不会对比本地和服务器的文件，也就不会有冲突，</p>
 </li>
@@ -870,7 +871,7 @@ echo ha ha
 </li>
 </ul>
 <h4 id="5、常用的git-命令"><a href="#5、常用的git-命令" class="headerlink" title="5、常用的git 命令"></a>5、常用的git 命令</h4><p><img src="assets/011500266295799.jpg" alt="img"></p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git init                      # 初始化 
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git init                      # 初始化 
 [root@qfedu.com ~]# git add main.cpp              # 将某一个文件添加到暂存区 
 [root@qfedu.com ~]# git add .                     # 将文件夹下的所有的文件添加到暂存区 
 [root@qfedu.com ~]# git commit -m ‘note‘          # 将暂存区中的文件保存成为某一个版本 
@@ -883,40 +884,40 @@ echo ha ha
 [root@qfedu.com ~]# git push -u origin master     # 从本地push到主分支 
 [root@qfedu.com ~]# git pull                      # pull默认主分支 
 [root@qfedu.com ~]# git push                      # push默认主分支 ...
-</code></pre>
-<h4 id="6、版本穿梭"><a href="#6、版本穿梭" class="headerlink" title="6、版本穿梭"></a>6、版本穿梭</h4><h5 id="1、版本回退"><a href="#1、版本回退" class="headerlink" title="1、版本回退"></a>1、版本回退</h5><pre class=" language-shell"><code class="language-shell"># 用 git log 命令查看：
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="6、版本穿梭"><a href="#6、版本穿梭" class="headerlink" title="6、版本穿梭"></a>6、版本穿梭</h4><h5 id="1、版本回退"><a href="#1、版本回退" class="headerlink" title="1、版本回退"></a>1、版本回退</h5><pre class="line-numbers language-shell"><code class="language-shell"># 用 git log 命令查看：
 # 每一个提交的版本都唯一对应一个 commit 版本号，
 # 使用 git reset 命令退到上一个版本：
 [root@qfedu.com ~]# git reset --hard HEAD^
-</code></pre>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git reflog                    # 查看命令历史，以便确定要回到哪个版本
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git reflog                    # 查看命令历史，以便确定要回到哪个版本
 [root@qfedu.com ~]# git reset --hard commit_id    # 比如git reset --hard 3628164（不用全部输入，输入前几位即可）
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h5 id="2、分支管理"><a href="#2、分支管理" class="headerlink" title="2、分支管理"></a>2、分支管理</h5><p>1、创建分支    </p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git checkout -b dev     #创建dev分支，然后切换到dev分支
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git checkout -b dev     #创建dev分支，然后切换到dev分支
 [root@qfedu.com ~]# git checkout            #命令加上-b参数表示创建并切换，相当于以下两条命令：
 [root@qfedu.com ~]# git branch dev git checkout dev
 [root@qfedu.com ~]# git branch              #命令查看当前分支,
 [root@qfedu.com ~]# git branch              #命令会列出所有分支，当前分支前面会标一个*号
 [root@qfedu.com ~]# git branch * dev   master
 [root@qfedu.com ~]# git add readme.txt git commit -m "branch test"  # 在dev分支上正常提交.
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>2、分支切换</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git checkout master     #切换回master分支
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git checkout master     #切换回master分支
 # 查看一个readme.txt文件，刚才添加的内容不见了，因为那个提交是在dev分支上，而master分支此刻的提交点并没有变  
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>3、合并分支</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git merge dev           #把dev分支的工作成果合并到master分支上
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git merge dev           #把dev分支的工作成果合并到master分支上
 [root@qfedu.com ~]# git merge               #命令用于合并指定分支到当前分支。
 # 合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
-</code></pre>
-<pre class=" language-shell"><code class="language-shell">注意到上面的Fast-forward信息，Git告诉我们，这次合并是“快进模式”，也就是直接把master指向dev的当前提交，所以合并速度非常快。
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">注意到上面的Fast-forward信息，Git告诉我们，这次合并是“快进模式”，也就是直接把master指向dev的当前提交，所以合并速度非常快。
 当然，也不是每次合并都能Fast-forward，我们后面会讲其他方式的合并。
-</code></pre>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git branch -d dev       #删除dev分支了：
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git branch -d dev       #删除dev分支了：
 删除后，查看branch，就只剩下master分支了.
-</code></pre>
-<h5 id="3、解决冲突"><a href="#3、解决冲突" class="headerlink" title="3、解决冲突"></a>3、解决冲突</h5><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# git checkout -b feature1        # 创建新的feature1分支
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h5 id="3、解决冲突"><a href="#3、解决冲突" class="headerlink" title="3、解决冲突"></a>3、解决冲突</h5><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# git checkout -b feature1        # 创建新的feature1分支
 # 修改readme.txt最后一行，改为：
 Creating a new branch is quick AND simple.
 
@@ -936,8 +937,8 @@ Creating a new branch is quick & simple.
 git merge feature1 Auto-merging readme.txt CONFLICT (content): 
 Merge conflict in readme.txt Automatic merge failed; 
 fix conflicts and then commit the result.
-</code></pre>
-<pre class=" language-shell"><code class="language-shell">readme.txt文件存在冲突，必须手动解决冲突后再提交。
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">readme.txt文件存在冲突，必须手动解决冲突后再提交。
 [root@qfedu.com ~]# git status 可以显示冲突的文件;
 直接查看readme.txt的内容：
 Git is a distributed version control system.
@@ -952,18 +953,18 @@ Git用<<<<<<<，=======，>>>>>>>标记出不同分支的内容，我们修改�
 最后，删除feature1分支：
 [root@qfedu.com ~]# git branch -d feature1 
 Deleted branch feature1 (was 75a857c).
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="七、Github-远程仓库"><a href="#七、Github-远程仓库" class="headerlink" title="七、Github 远程仓库"></a>七、Github 远程仓库</h2><p>1、github.com 注册账户</p>
 <p>2、github 上创建仓库</p>
 <p>3、本地服务器生成 ssh 公钥</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# ssh-keygen -t rsa -C 'meteor@163.com'  # 邮箱要与github上注册的相同
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# ssh-keygen -t rsa -C 'meteor@163.com'  # 邮箱要与github上注册的相同
 [root@qfedu.com ~]# cat .ssh/id_rsa.pub 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVThfq4brrlsPGtAknVB0TLPx+7Dd3qlxTbSIrUOsGC5Y8JuNqVTlIntZB4oNj8cSQrWvec9CKm0a8o7WwaJIiqpxurz+YpQHP2KbapftKIxsX4hPf/z+p0El1U6arQa35/xmNsq+cJLH/bDdRG+EMDhuCBmjVZOlLj/hEdeIT6s56AnnCkaWoF+sq58KCF7Tk54jRbs/YiyE4SN7FuA70r+07sA/uj0+lmuk4E190KtQUELhjX/E9stivlqiRhxnKvVUqXDywsjfM8Rtvbi4Fg9R8Wt9fpd4QwnWksYUoR5qZJFYXO4hSZrUnSMruPK14xXjDJcFDcP2eHIzKgLD1 meteor@163.com
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>4、 github 添加 ssh 公钥 </p>
 <p>复制以上的公钥，在 github 中添加ssh key</p>
 <p>5、测试连接</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# yum install git
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# yum install git
 ........
 [root@qfedu.com ~]# ssh -T git@qfedu.comhub.com
 The authenticity of host 'github.com (13.250.177.223)' can't be established.
@@ -973,10 +974,10 @@ Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of known hosts.
 Hi meteor! You've successfully authenticated, but GitHub does not provide shell access.
 [root@qfedu.com ~]#
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>6、连接远程仓库（创建一个测试存储库）</p>
 <p><img src="./assets/git_remote_method.png" alt="it_remote_metho"></p>
-<pre class=" language-shell"><code class="language-shell"># 在 github 网站新建一个仓库，命名为linux
+<pre class="line-numbers language-shell"><code class="language-shell"># 在 github 网站新建一个仓库，命名为linux
 ~~~
 [root@qfedu.com ~]# cd /opt
 [root@qfedu.com ~]# mkdir linux
@@ -1007,36 +1008,36 @@ To git@qfedu.comhub.com:fakehydra/linux-.git
 [root@qfedu.com ~]# git remote set-url origin git@qfedu.comhub.com:userhub/linux.git
 # 如果 push 失败，合并分支到 master 再 push
 [root@qfedu.com ~]# git pull --rebase origin master
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="八、Gitlab-Server-部署"><a href="#八、Gitlab-Server-部署" class="headerlink" title="八、Gitlab Server 部署"></a>八、Gitlab Server 部署</h2><h3 id="1、环境配置"><a href="#1、环境配置" class="headerlink" title="1、环境配置"></a>1、环境配置</h3><p>关闭防火墙、SELinux</p>
 <p>开启邮件服务</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# systemctl start  postfix
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# systemctl start  postfix
 [root@qfedu.com ~]# systemctl enable postfix
-</code></pre>
-<h3 id="2、部署-Gitlab"><a href="#2、部署-Gitlab" class="headerlink" title="2、部署 Gitlab"></a>2、部署 Gitlab</h3><h4 id="1、安装-gitlab-依赖包"><a href="#1、安装-gitlab-依赖包" class="headerlink" title="1、安装 gitlab 依赖包"></a>1、安装 gitlab 依赖包</h4><pre class=" language-shell"><code class="language-shell">centos7:
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2、部署-Gitlab"><a href="#2、部署-Gitlab" class="headerlink" title="2、部署 Gitlab"></a>2、部署 Gitlab</h3><h4 id="1、安装-gitlab-依赖包"><a href="#1、安装-gitlab-依赖包" class="headerlink" title="1、安装 gitlab 依赖包"></a>1、安装 gitlab 依赖包</h4><pre class="line-numbers language-shell"><code class="language-shell">centos7:
 [root@qfedu.com ~]# yum install -y curl openssh-server openssh-clients postfix cronie policycoreutils-python
 # gitlab-ce 10.x.x以后的版本需要依赖policycoreutils-python
 
 centos8:
 [root@qfedu.com ~]# yum install -y curl openssh-server openssh-clients postfix cronie  policycoreutils-python-utils
-</code></pre>
-<h4 id="2、添加官方源"><a href="#2、添加官方源" class="headerlink" title="2、添加官方源"></a>2、添加官方源</h4><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2、添加官方源"><a href="#2、添加官方源" class="headerlink" title="2、添加官方源"></a>2、添加官方源</h4><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>因为官方源太慢，可以使用国内清华yum源，配置如下</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>root@qfedu.com ~<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># vim /etc/yum.repos.d/gitlab-ce.repo</span>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token punctuation">[</span>root@qfedu.com ~<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># vim /etc/yum.repos.d/gitlab-ce.repo</span>
 <span class="token punctuation">[</span>gitlab-ce<span class="token punctuation">]</span>
 name<span class="token operator">=</span>Gitlab CE Repository
 baseurl<span class="token operator">=</span>https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el<span class="token variable">$releasever</span>/
 gpgcheck<span class="token operator">=</span>0
 enabled<span class="token operator">=</span>1
-</code></pre>
-<h4 id="3、安装-Gitlab"><a href="#3、安装-Gitlab" class="headerlink" title="3、安装 Gitlab"></a>3、安装 Gitlab</h4><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# yum -y install gitlab-ce                    # 自动安装最新版
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="3、安装-Gitlab"><a href="#3、安装-Gitlab" class="headerlink" title="3、安装 Gitlab"></a>3、安装 Gitlab</h4><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# yum -y install gitlab-ce                    # 自动安装最新版
 [root@qfedu.com ~]# yum -y install gitlab-ce-x.x.x                # 安装指定版本Gitlab
-</code></pre>
-<h4 id="4、配置-Gitlab"><a href="#4、配置-Gitlab" class="headerlink" title="4、配置 Gitlab"></a>4、配置 Gitlab</h4><h5 id="1、查看Gitlab版本"><a href="#1、查看Gitlab版本" class="headerlink" title="1、查看Gitlab版本"></a>1、查看Gitlab版本</h5><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# head -1 /opt/gitlab/version-manifest.txt
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="4、配置-Gitlab"><a href="#4、配置-Gitlab" class="headerlink" title="4、配置 Gitlab"></a>4、配置 Gitlab</h4><h5 id="1、查看Gitlab版本"><a href="#1、查看Gitlab版本" class="headerlink" title="1、查看Gitlab版本"></a>1、查看Gitlab版本</h5><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# head -1 /opt/gitlab/version-manifest.txt
 gitlab-ce 10.1.1
-</code></pre>
-<h5 id="2、Gitlab-配置登录链接"><a href="#2、Gitlab-配置登录链接" class="headerlink" title="2、Gitlab 配置登录链接"></a>2、Gitlab 配置登录链接</h5><pre class=" language-shell"><code class="language-shell">#设置登录链接
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h5 id="2、Gitlab-配置登录链接"><a href="#2、Gitlab-配置登录链接" class="headerlink" title="2、Gitlab 配置登录链接"></a>2、Gitlab 配置登录链接</h5><pre class="line-numbers language-shell"><code class="language-shell">#设置登录链接
 [root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
 ***
 ## GitLab URL
@@ -1048,7 +1049,7 @@ external_url 'http://172.17.0.61'
 ***
 [root@qfedu.com ~]# grep "^external_url" /etc/gitlab/gitlab.rb
 external_url 'http://172.17.0.61'     #绑定监听的域名或IP
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="3、初始化-Gitlab"><a href="#3、初始化-Gitlab" class="headerlink" title="3、初始化 Gitlab"></a>3、初始化 Gitlab</h5><p><strong>配置语言环境</strong></p>
 <p>gitlab要求语言环境为英文环境，必须切换，切换方法如下：</p>
 <pre><code>注意：可以先尝试以下方案
@@ -1068,10 +1069,10 @@ external_url 'http://172.17.0.61'     #绑定监听的域名或IP
 退出终端重新登陆
 </code></pre>
 <p>第一次使用配置时间较长</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl reconfigure   
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl reconfigure   
 .....
-</code></pre>
-<h5 id="4、启动-Gitlab-服务"><a href="#4、启动-Gitlab-服务" class="headerlink" title="4、启动 Gitlab 服务"></a>4、启动 Gitlab 服务</h5><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl start
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h5 id="4、启动-Gitlab-服务"><a href="#4、启动-Gitlab-服务" class="headerlink" title="4、启动 Gitlab 服务"></a>4、启动 Gitlab 服务</h5><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl start
 ok: run: gitaly: (pid 22896) 2922s
 ok: run: gitlab-monitor: (pid 22914) 2921s
 ok: run: gitlab-workhorse: (pid 22882) 2922s
@@ -1090,15 +1091,15 @@ ok: run: unicorn: (pid 22433) 3011s
 COMMAND   PID       USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
 nginx   22500       root    7u  IPv4  50923      0t0  TCP *:http (LISTEN)
 nginx   22501 gitlab-www    7u  IPv4  50923      0t0  TCP *:http (LISTEN)
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="5、Gitlab-设置-HTTPS-方式-（缺少配置）"><a href="#5、Gitlab-设置-HTTPS-方式-（缺少配置）" class="headerlink" title="5、Gitlab 设置 HTTPS 方式 （缺少配置）"></a>5、Gitlab 设置 HTTPS 方式 （缺少配置）</h5><ul>
 <li>如果想要以上的 https 方式正常生效使用，则需要把 letsencrypt 自动生成证书的配置打开，这样在执行重新让配置生效命令 (gitlab-ctl reconfigure) 的时候会自动给域名生成免费的证书并自动在 gitlab 自带的 nginx 中加上相关的跳转配置，都是全自动的，非常方便。</li>
 </ul>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
 letsencrypt['enable'] = true //如果因为这行报错，改成false即可
 letsencrypt['contact_emails'] = ['276267003@qq.com']     # 添加联系人的电子邮件地址
-</code></pre>
-<h5 id="6、Gitlab-添加smtp邮件功能"><a href="#6、Gitlab-添加smtp邮件功能" class="headerlink" title="6、Gitlab 添加smtp邮件功能"></a>6、Gitlab 添加smtp邮件功能</h5><pre class=" language-shell"><code class="language-shell">[git@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h5 id="6、Gitlab-添加smtp邮件功能"><a href="#6、Gitlab-添加smtp邮件功能" class="headerlink" title="6、Gitlab 添加smtp邮件功能"></a>6、Gitlab 添加smtp邮件功能</h5><pre class="line-numbers language-shell"><code class="language-shell">[git@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
 postfix 并非必须的；根据具体情况配置，以 SMTP 的为例配置邮件服务器来实现通知；参考配置如下： 
 ### Email Settings
 gitlab_rails['gitlab_email_enabled'] = true
@@ -1149,8 +1150,8 @@ ok: run: redis: (pid 37668) 0s
 ok: run: redis-exporter: (pid 37746) 0s
 ok: run: sidekiq: (pid 37750) 1s
 ok: run: unicorn: (pid 37757) 0s
-</code></pre>
-<h5 id="7、Gitlab-发送邮件测试"><a href="#7、Gitlab-发送邮件测试" class="headerlink" title="7、Gitlab 发送邮件测试"></a>7、Gitlab 发送邮件测试</h5><pre class=" language-shell"><code class="language-shell">[git@qfedu.com ~]# gitlab-rails console 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="7、Gitlab-发送邮件测试"><a href="#7、Gitlab-发送邮件测试" class="headerlink" title="7、Gitlab 发送邮件测试"></a>7、Gitlab 发送邮件测试</h5><pre class="line-numbers language-shell"><code class="language-shell">[git@qfedu.com ~]# gitlab-rails console 
 [root@wing ~]# gitlab-rails console
 ---------------------------------------------------------------------
  GitLab:       12.10.1 (e658772bd63) FOSS
@@ -1181,24 +1182,24 @@ X-Auto-Response-Suppress: All
 
 => #<Mail::Message:70056859616080, Multipart: false, Headers: <Date: Mon, 04 May 2020 16:13:30 +0800>, <From: gitlab <276267003@qq.com>>, <Reply-To: gitlab <276267003@qq.com>>, <To: 276267003@qq.com>, <Message-ID: <5eafceaa250a_1d063fb777add9a08601a@wing.mail>>, <Subject: Message Subject>, <Mime-Version: 1.0>, <Content-Type: text/html; charset=UTF-8>, <Content-Transfer-Encoding: 7bit>, <Auto-Submitted: auto-generated>, <X-Auto-Response-Suppress: All>>
 irb(main):005:0> 
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>去qq邮箱web界面查看是否收到邮件</p>
 <p><img src="assets/image-20200504161843613.png" alt="image-20200504161843613"></p>
 <h3 id="3、Gitlab-的使用"><a href="#3、Gitlab-的使用" class="headerlink" title="3、Gitlab 的使用"></a>3、Gitlab 的使用</h3><p><strong>在浏览器中输入 <a target="_blank" rel="noopener" href="http://192.168.1.178/">http://192.168.1.178/</a> ，然后 change password:  ，并使用root用户登录 即可 (后续动作根据提示操作)</strong></p>
-<h4 id="1、Gitlab-命令行修改密码"><a href="#1、Gitlab-命令行修改密码" class="headerlink" title="1、Gitlab 命令行修改密码"></a>1、Gitlab 命令行修改密码</h4><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-rails console production
+<h4 id="1、Gitlab-命令行修改密码"><a href="#1、Gitlab-命令行修改密码" class="headerlink" title="1、Gitlab 命令行修改密码"></a>1、Gitlab 命令行修改密码</h4><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-rails console production
 irb(main):001:0>user = User.where(id: 1).first      # id为1的是超级管理员
 irb(main):002:0>user.password = 'yourpassword'      # 密码必须至少8个字符
 irb(main):003:0>user.save!                          # 如没有问题 返回true
 exit                                                 # 退出
-</code></pre>
-<h4 id="2、Gitlab服务管理"><a href="#2、Gitlab服务管理" class="headerlink" title="2、Gitlab服务管理"></a>2、Gitlab服务管理</h4><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl start                        # 启动所有 gitlab 组件；
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2、Gitlab服务管理"><a href="#2、Gitlab服务管理" class="headerlink" title="2、Gitlab服务管理"></a>2、Gitlab服务管理</h4><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl start                        # 启动所有 gitlab 组件；
 [root@qfedu.com ~]# gitlab-ctl stop                         # 停止所有 gitlab 组件；
 [root@qfedu.com ~]# gitlab-ctl restart                      # 重启所有 gitlab 组件；
 [root@qfedu.com ~]# gitlab-ctl status                       # 查看服务状态；
 [root@qfedu.com ~]# gitlab-ctl reconfigure                  # 初始化服务；
 [root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb               # 修改默认的配置文件；
 [root@qfedu.com ~]# gitlab-ctl tail                         # 查看日志；
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="3、登陆-Gitlab"><a href="#3、登陆-Gitlab" class="headerlink" title="3、登陆 Gitlab"></a>3、登陆 Gitlab</h4><p><img src="./assets/1.png" alt="1"></p>
 <p><strong>如果需要手工修改nginx的port ，可以在gitlab.rb中设置 nginx[‘listen_port’] = 8000 ，然后再次 gitlab-ctl reconfigure即可</strong></p>
 <p><strong>登录 gitlab 如下所示(首次登陆设置 root 密码)：</strong><br><img src="./assets/2.1.png" alt="1"></p>
@@ -1231,7 +1232,7 @@ exit                                                 # 退出
 <h3 id="7、为项目创建-Dev分支"><a href="#7、为项目创建-Dev分支" class="headerlink" title="7、为项目创建 Dev分支"></a>7、为项目创建 Dev分支</h3><p>注意：因为版本的原因，需要先在项目里面添加一个文件，才能显示下图中创建分支的操作</p>
 <p><img src="./assets/13.png" alt="1"></p>
 <p><img src="./assets/14.png" alt="1"></p>
-<h3 id="8、在-client-上添加-Tompson-的用户"><a href="#8、在-client-上添加-Tompson-的用户" class="headerlink" title="8、在 client 上添加 Tompson 的用户"></a>8、在 client 上添加 Tompson 的用户</h3><pre class=" language-shell"><code class="language-shell">[git@qfedu.com ~]# useradd Tompson
+<h3 id="8、在-client-上添加-Tompson-的用户"><a href="#8、在-client-上添加-Tompson-的用户" class="headerlink" title="8、在 client 上添加 Tompson 的用户"></a>8、在 client 上添加 Tompson 的用户</h3><pre class="line-numbers language-shell"><code class="language-shell">[git@qfedu.com ~]# useradd Tompson
 [git@qfedu.com ~]# useradd Hellen
 [git@qfedu.com ~]# useradd Eric
 [git@qfedu.com ~]# useradd test
@@ -1260,10 +1261,10 @@ The key's randomart image is:
 +----[SHA256]-----+
 [Tompson@qfedu.com ~]$ cat .ssh/id_rsa.pub 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZ8cRGHej+sZzlmK36W5MUXMLOGdTwFI9Jj44mGuabZCrlYW4GDpL6ppezN+Sur0wHtnKonYJzm8ntqS0S0UHyaPPQPl9Mrs/6Z4VrXZ/4RlqHdWeSrmOwCBQld0l8HvrmP4TyGHrOreO8uZqimd/Z+OiMqnYRZzENX11Pti/Px5g1MtJcoCi9uLtF42QYrt1X/fzAyPU9C5/5ZUq4Jln3EF20bzcA52oAzZIl0jrhI0TeTeW6zYq+KxdHGshL+qG7+Ne+akPOe4Ma5BQjcMZ2dQ2kbGuozXmLT8RDcj9YRKceQsUdTI71lJpwrWKGn8Vhra0EaK3hgoTuvMYaGfOF Tompson@domain.cn
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="9、将-Tompson-的公钥复制到-gitlab-中"><a href="#9、将-Tompson-的公钥复制到-gitlab-中" class="headerlink" title="9、将 Tompson 的公钥复制到 gitlab 中"></a>9、将 Tompson 的公钥复制到 gitlab 中</h3><p>使用 Tompson 用户的身份与密码登录到 gitlab界面中，然后在 ssh-key 中添加相关的key<br><img src="./assets/8.png" alt="1"></p>
 <p><img src="./assets/9.png" alt="1"></p>
-<h3 id="10、为-Tompson-用户配置-git"><a href="#10、为-Tompson-用户配置-git" class="headerlink" title="10、为 Tompson 用户配置 git"></a>10、为 Tompson 用户配置 git</h3><pre class=" language-shell"><code class="language-shell">[Tompson@qfedu.com ~]$ git config --global user.email "222@qq.com"
+<h3 id="10、为-Tompson-用户配置-git"><a href="#10、为-Tompson-用户配置-git" class="headerlink" title="10、为 Tompson 用户配置 git"></a>10、为 Tompson 用户配置 git</h3><pre class="line-numbers language-shell"><code class="language-shell">[Tompson@qfedu.com ~]$ git config --global user.email "222@qq.com"
 [Tompson@qfedu.com ~]$ git config --global user.name "tom"
 
 [Tompson@qfedu.com ~]$ git clone git@192.168.60.119:plat-sp/chathall.git
@@ -1281,8 +1282,8 @@ Receiving objects: 100% (3/3), done.
 [Tompson@qfedu.com chathall]$ ls
 Readme.txt
 [Tompson@qfedu.com chathall]$
-</code></pre>
-<h3 id="11、创建新文件，添加内容，并提交到-master-分支"><a href="#11、创建新文件，添加内容，并提交到-master-分支" class="headerlink" title="11、创建新文件，添加内容，并提交到 master 分支"></a>11、创建新文件，添加内容，并提交到 master 分支</h3><pre class=" language-shell"><code class="language-shell">[Tompson@qfedu.com chathall]$ vim test.sh
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="11、创建新文件，添加内容，并提交到-master-分支"><a href="#11、创建新文件，添加内容，并提交到-master-分支" class="headerlink" title="11、创建新文件，添加内容，并提交到 master 分支"></a>11、创建新文件，添加内容，并提交到 master 分支</h3><pre class="line-numbers language-shell"><code class="language-shell">[Tompson@qfedu.com chathall]$ vim test.sh
 [Tompson@qfedu.com chathall]$ cat test.sh 
 #!/bin/bash
 echo "gitlab test"
@@ -1301,8 +1302,8 @@ To git@192.168.60.119:plat-sp/chathall.git
    4611654..80edf6b  master -> master
 Branch master set up to track remote branch master from origin.
 [Tompson@qfedu.com chathall]$ 
-</code></pre>
-<h3 id="12、使用-Eric-用户登录，并-clone-项目"><a href="#12、使用-Eric-用户登录，并-clone-项目" class="headerlink" title="12、使用 Eric 用户登录，并 clone 项目"></a>12、使用 Eric 用户登录，并 clone 项目</h3><pre class=" language-shell"><code class="language-shell">[git@qfedu.com ~]# su - Eric
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="12、使用-Eric-用户登录，并-clone-项目"><a href="#12、使用-Eric-用户登录，并-clone-项目" class="headerlink" title="12、使用 Eric 用户登录，并 clone 项目"></a>12、使用 Eric 用户登录，并 clone 项目</h3><pre class="line-numbers language-shell"><code class="language-shell">[git@qfedu.com ~]# su - Eric
 [Eric@qfedu.com ~]$ ssh-keygen -C Eric@domain.cn
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/Eric/.ssh/id_rsa): 
@@ -1329,8 +1330,8 @@ The key's randomart image is:
 [Eric@qfedu.com ~]$ cat .ssh/id_rsa.pub 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxQcn4UjRW/5PT5witeV9+S2w8WK5ouawHxEF7s9wuWsT4pqhcu5BN74NG3CPaq1jJZnkV+aQsTw+60BAd1gOK0FBbKWxmohmE61n9vfpUT5igJ72t2jpXjfKwLIHw+Iq5yM4yUhkwSsoBuZkxYSEltnj8OvXaOlCDYnXuGBa9+xO8f5yVIcOtiwRvv+Y1PRRzSIcazPVZax9FLK26t1R4NPiY4xWkIJyK2OrKMeiaBBzyMfWzHdmsCWa51oSrYSmz3PDBXpzIBs3OdKxcaJs9Lc5u87YCV5RMUjLrPcA7nPK6crOabLXhz3d5GSYggMTOByQkyKOo7WlYpARCHOt/ Eric@domain.cn
 [Eric@qfedu.com ~]$ 
-</code></pre>
-<h3 id="13、同样需要使用Eric用户登录gitlab-web-界面，并添加相应的ssh-key。然后设置git-，并clone项目"><a href="#13、同样需要使用Eric用户登录gitlab-web-界面，并添加相应的ssh-key。然后设置git-，并clone项目" class="headerlink" title="13、同样需要使用Eric用户登录gitlab web 界面，并添加相应的ssh-key。然后设置git ，并clone项目"></a>13、同样需要使用Eric用户登录gitlab web 界面，并添加相应的ssh-key。然后设置git ，并clone项目</h3><pre class=" language-shell"><code class="language-shell">[Eric@qfedu.com ~]$ git config --global user.email "Eric@domain.cn"
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="13、同样需要使用Eric用户登录gitlab-web-界面，并添加相应的ssh-key。然后设置git-，并clone项目"><a href="#13、同样需要使用Eric用户登录gitlab-web-界面，并添加相应的ssh-key。然后设置git-，并clone项目" class="headerlink" title="13、同样需要使用Eric用户登录gitlab web 界面，并添加相应的ssh-key。然后设置git ，并clone项目"></a>13、同样需要使用Eric用户登录gitlab web 界面，并添加相应的ssh-key。然后设置git ，并clone项目</h3><pre class="line-numbers language-shell"><code class="language-shell">[Eric@qfedu.com ~]$ git config --global user.email "Eric@domain.cn"
 [Eric@qfedu.com ~]$ git config --global user.name "Eric"
 [Eric@qfedu.com ~]$ git clone git@192.168.60.119:plat-sp/chathall.git
 Cloning into 'chathall'...
@@ -1343,8 +1344,8 @@ remote: Compressing objects: 100% (3/3), done.
 remote: Total 6 (delta 0), reused 0 (delta 0)
 Receiving objects: 100% (6/6), done.
 [Eric@qfedu.com ~]$ 
-</code></pre>
-<h3 id="14、切换到dev分支，修改文件内容，并将新-code-提交到-dev分支-Developer角色默认并没有提交master的权限"><a href="#14、切换到dev分支，修改文件内容，并将新-code-提交到-dev分支-Developer角色默认并没有提交master的权限" class="headerlink" title="14、切换到dev分支，修改文件内容，并将新 code 提交到 dev分支 (Developer角色默认并没有提交master的权限)"></a>14、切换到dev分支，修改文件内容，并将新 code 提交到 dev分支 (Developer角色默认并没有提交master的权限)</h3><pre class=" language-shell"><code class="language-shell">[Eric@qfedu.com chathall]$ git checkout dev 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="14、切换到dev分支，修改文件内容，并将新-code-提交到-dev分支-Developer角色默认并没有提交master的权限"><a href="#14、切换到dev分支，修改文件内容，并将新-code-提交到-dev分支-Developer角色默认并没有提交master的权限" class="headerlink" title="14、切换到dev分支，修改文件内容，并将新 code 提交到 dev分支 (Developer角色默认并没有提交master的权限)"></a>14、切换到dev分支，修改文件内容，并将新 code 提交到 dev分支 (Developer角色默认并没有提交master的权限)</h3><pre class="line-numbers language-shell"><code class="language-shell">[Eric@qfedu.com chathall]$ git checkout dev 
 Branch dev set up to track remote branch dev from origin.
 Switched to a new branch 'dev'
 [Eric@qfedu.com chathall]$ ls
@@ -1376,73 +1377,73 @@ Switched to branch 'master'
   dev
 * master
 [Eric@qfedu.com chathall]$
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="15、使用Eric-用户登录gitlab-web，在界面中-创建一个合并请求"><a href="#15、使用Eric-用户登录gitlab-web，在界面中-创建一个合并请求" class="headerlink" title="15、使用Eric 用户登录gitlab web，在界面中 创建一个合并请求"></a>15、使用Eric 用户登录gitlab web，在界面中 创建一个合并请求</h3><p><img src="./assets/15.png" alt="1"></p>
 <p><strong>提交合并请求：</strong><br><img src="./assets/16.png" alt="1"></p>
 <h3 id="16、使用Tompson用户登录-gitlab-web-，找到“合并请求”-，然后将dev分支合并到master分支"><a href="#16、使用Tompson用户登录-gitlab-web-，找到“合并请求”-，然后将dev分支合并到master分支" class="headerlink" title="16、使用Tompson用户登录 gitlab web ，找到“合并请求” ，然后将dev分支合并到master分支"></a>16、使用Tompson用户登录 gitlab web ，找到“合并请求” ，然后将dev分支合并到master分支</h3><p><img src="./assets/17.png" alt="1"></p>
 <p><img src="./assets/18.png" alt="1"></p>
-<h2 id="十、Gitlab-备份与恢复"><a href="#十、Gitlab-备份与恢复" class="headerlink" title="十、Gitlab 备份与恢复"></a>十、Gitlab 备份与恢复</h2><h3 id="1、查看系统版本和软件版本"><a href="#1、查看系统版本和软件版本" class="headerlink" title="1、查看系统版本和软件版本"></a>1、查看系统版本和软件版本</h3><pre class=" language-shell"><code class="language-shell">[root@qfedu.com gitlab]# cat /etc/redhat-release 
+<h2 id="十、Gitlab-备份与恢复"><a href="#十、Gitlab-备份与恢复" class="headerlink" title="十、Gitlab 备份与恢复"></a>十、Gitlab 备份与恢复</h2><h3 id="1、查看系统版本和软件版本"><a href="#1、查看系统版本和软件版本" class="headerlink" title="1、查看系统版本和软件版本"></a>1、查看系统版本和软件版本</h3><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com gitlab]# cat /etc/redhat-release 
 CentOS Linux release 7.3.1611 (Core) 
 
 [root@qfedu.com gitlab]# cat /opt/gitlab/embedded/service/gitlab-rails/VERSION
 8.15.4
-</code></pre>
-<h3 id="2、数据备份"><a href="#2、数据备份" class="headerlink" title="2、数据备份"></a>2、数据备份</h3><h4 id="1、查看备份相关的配置项"><a href="#1、查看备份相关的配置项" class="headerlink" title="1、查看备份相关的配置项"></a>1、查看备份相关的配置项</h4><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、数据备份"><a href="#2、数据备份" class="headerlink" title="2、数据备份"></a>2、数据备份</h3><h4 id="1、查看备份相关的配置项"><a href="#1、查看备份相关的配置项" class="headerlink" title="1、查看备份相关的配置项"></a>1、查看备份相关的配置项</h4><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
 gitlab_rails['manage_backup_path'] = true
 gitlab_rails['backup_path'] = "/data/gitlab/backups"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>该项定义了默认备份出文件的路径，可以通过修改该配置，并执行 <strong>gitlab-ctl reconfigure 或者 gitlab-ctl  restart</strong> 重启服务生效。</p>
-<h4 id="2、执行备份命令进行备份"><a href="#2、执行备份命令进行备份" class="headerlink" title="2、执行备份命令进行备份"></a>2、执行备份命令进行备份</h4><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# /opt/gitlab/bin/gitlab-rake gitlab:backup:create 
-</code></pre>
-<h4 id="3、添加到-crontab-中定时执行"><a href="#3、添加到-crontab-中定时执行" class="headerlink" title="3、添加到 crontab 中定时执行"></a>3、添加到 crontab 中定时执行</h4><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# crontab -e
+<h4 id="2、执行备份命令进行备份"><a href="#2、执行备份命令进行备份" class="headerlink" title="2、执行备份命令进行备份"></a>2、执行备份命令进行备份</h4><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# /opt/gitlab/bin/gitlab-rake gitlab:backup:create 
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="3、添加到-crontab-中定时执行"><a href="#3、添加到-crontab-中定时执行" class="headerlink" title="3、添加到 crontab 中定时执行"></a>3、添加到 crontab 中定时执行</h4><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# crontab -e
 0 2 * * * bash /opt/gitlab/bin/gitlab-rake gitlab:backup:create
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>可以到/data/gitlab/backups找到备份包，解压查看，会发现备份的还是比较全面的，数据库、repositories、build、upload等分类还是比较清晰的。</p>
 <h4 id="4、设置备份保留时长"><a href="#4、设置备份保留时长" class="headerlink" title="4、设置备份保留时长"></a>4、设置备份保留时长</h4><p>防止每天执行备份，有目录被爆满的风险，打开/etc/gitlab/gitlab.rb配置文件，找到如下配置：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
 gitlab_rails['backup_keep_time'] = 604800
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>设置备份保留7天（7<em>3600</em>24=604800），秒为单位，如果想增大或减小，可以直接在该处配置，并通过gitlab-ctl restart 重启服务生效。</p>
 <p>备份完成，会在备份目录中生成一个当天日期的tar包。</p>
 <h3 id="3、数据恢复"><a href="#3、数据恢复" class="headerlink" title="3、数据恢复"></a>3、数据恢复</h3><h4 id="1、安装部署-gitlab-server"><a href="#1、安装部署-gitlab-server" class="headerlink" title="1、安装部署 gitlab server"></a>1、安装部署 gitlab server</h4><p> 具体步骤参见上面：gitlab server 搭建过程</p>
-<h4 id="2、恢复-gitlab"><a href="#2、恢复-gitlab" class="headerlink" title="2、恢复 gitlab"></a>2、恢复 gitlab</h4><h5 id="1、查看备份相关的配置项-1"><a href="#1、查看备份相关的配置项-1" class="headerlink" title="1、查看备份相关的配置项"></a>1、查看备份相关的配置项</h5><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
+<h4 id="2、恢复-gitlab"><a href="#2、恢复-gitlab" class="headerlink" title="2、恢复 gitlab"></a>2、恢复 gitlab</h4><h5 id="1、查看备份相关的配置项-1"><a href="#1、查看备份相关的配置项-1" class="headerlink" title="1、查看备份相关的配置项"></a>1、查看备份相关的配置项</h5><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# vim /etc/gitlab/gitlab.rb
 gitlab_rails['backup_path'] = "/data/gitlab/backups"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>修改该配置，定义了默认备份出文件的路径，并执行 <strong>gitlab-ctl reconfigure 或者 gitlab-ctl  restart</strong> 重启服务生效。</p>
-<h5 id="2、恢复前需要先停掉数据连接服务"><a href="#2、恢复前需要先停掉数据连接服务" class="headerlink" title="2、恢复前需要先停掉数据连接服务"></a>2、恢复前需要先停掉数据连接服务</h5><pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl stop unicorn
+<h5 id="2、恢复前需要先停掉数据连接服务"><a href="#2、恢复前需要先停掉数据连接服务" class="headerlink" title="2、恢复前需要先停掉数据连接服务"></a>2、恢复前需要先停掉数据连接服务</h5><pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl stop unicorn
 [root@qfedu.com ~]# gitlab-ctl stop sidekiq
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>如果是台新搭建的主机，不需要操作，理论上不停这两个服务也可以。停这两个服务是为了保证数据一致性。</li>
 </ul>
 <h5 id="3、同步备份文件到新服务器"><a href="#3、同步备份文件到新服务器" class="headerlink" title="3、同步备份文件到新服务器"></a>3、同步备份文件到新服务器</h5><p>将老服务器/data/gitlab/backups目录下的备份文件拷贝到新服务器上的/data/gitlab/backups</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com gitlab]# rsync -avz 1530773117_2019_03_05_gitlab_backup.tar 192.168.95.135:/data/gitlab/backups/ 
-</code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com gitlab]# rsync -avz 1530773117_2019_03_05_gitlab_backup.tar 192.168.95.135:/data/gitlab/backups/ 
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ul>
 <li>注意权限：600权限是无权恢复的。 实验环境可改成了777，生产环境建议修改属主属组</li>
 </ul>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com backups]# pwd
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com backups]# pwd
 /data/gitlab/backups
 [root@qfedu.com backups]# chown -R git.git 1530773117_2019_03_05_gitlab_backup.tar 
 [root@qfedu.com backups]# ll
 total 17328900
 -rwxrwxrwx 1 git git 17744793600 Jul  5 14:47 1530773117_2018_07_05_gitlab_backup.tar
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="4、执行命令进行恢复"><a href="#4、执行命令进行恢复" class="headerlink" title="4、执行命令进行恢复"></a>4、执行命令进行恢复</h5><p>后面再输入两次 yes 就完成恢复了。</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-rake gitlab:backup:restore BACKUP=1530773117_2018_07_05_gitlab_backup.tar
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-rake gitlab:backup:restore BACKUP=1530773117_2018_07_05_gitlab_backup.tar
 注意：backups 目录下保留一个备份文件可直接执行
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h5 id="5、恢复完成启动服务"><a href="#5、恢复完成启动服务" class="headerlink" title="5、恢复完成启动服务"></a>5、恢复完成启动服务</h5><p>恢复完成后，启动刚刚的两个服务，或者重启所有服务，再打开浏览器进行访问，发现数据和之前的一致：</p>
-<pre class=" language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl start unicorn
+<pre class="line-numbers language-shell"><code class="language-shell">[root@qfedu.com ~]# gitlab-ctl start unicorn
 [root@qfedu.com ~]# gitlab-ctl start sidekiq
 或
 [root@qfedu.com ~]# gitlab-ctl restart
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>注意：通过备份文件恢复gitlab必须保证两台主机的gitlab版本一致，否则会提示版本不匹配</strong></p>
 <h2 id="十一、利用Gitlab管理k8s集群"><a href="#十一、利用Gitlab管理k8s集群" class="headerlink" title="十一、利用Gitlab管理k8s集群"></a>十一、利用Gitlab管理k8s集群</h2><h3 id="1、权限设置"><a href="#1、权限设置" class="headerlink" title="1、权限设置"></a>1、权限设置</h3><p><img src="assets/image-20200821174547237.png" alt="image-20200821174547237"></p>
-<h3 id="2、获取k8s集群API地址"><a href="#2、获取k8s集群API地址" class="headerlink" title="2、获取k8s集群API地址"></a>2、获取k8s集群API地址</h3><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">[</span>root@master ~<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ &amp;#123;print $NF&amp;#125;'</span>
+<h3 id="2、获取k8s集群API地址"><a href="#2、获取k8s集群API地址" class="headerlink" title="2、获取k8s集群API地址"></a>2、获取k8s集群API地址</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">[</span>root@master ~<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ &amp;#123;print $NF&amp;#125;'</span>
 https<span class="token punctuation">:</span>//192.168.19.200<span class="token punctuation">:</span><span class="token number">6443</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="3、获取k8s集群默认CA证书"><a href="#3、获取k8s集群默认CA证书" class="headerlink" title="3、获取k8s集群默认CA证书"></a>3、获取k8s集群默认CA证书</h3><pre><code>[root@master ~]# kubectl get secrets
 NAME                  TYPE                                  DATA   AGE
 default-token-cvfqx   kubernetes.io/service-account-token   3      3d21h
@@ -1491,7 +1492,7 @@ subjects:
 serviceaccount/gitlab-admin created
 clusterrolebinding.rbac.authorization.k8s.io/gitlab-admin created
 </code></pre>
-<h3 id="5、获取gitlab-admin的token"><a href="#5、获取gitlab-admin的token" class="headerlink" title="5、获取gitlab-admin的token"></a>5、获取gitlab-admin的token</h3><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">[</span>root@master ~<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep gitlab-admin | awk '&amp;#123;print $1&amp;#125;')</span>
+<h3 id="5、获取gitlab-admin的token"><a href="#5、获取gitlab-admin的token" class="headerlink" title="5、获取gitlab-admin的token"></a>5、获取gitlab-admin的token</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">[</span>root@master ~<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep gitlab-admin | awk '&amp;#123;print $1&amp;#125;')</span>
 <span class="token key atrule">Name</span><span class="token punctuation">:</span>         gitlab<span class="token punctuation">-</span>admin<span class="token punctuation">-</span>token<span class="token punctuation">-</span>pmb2h
 <span class="token key atrule">Namespace</span><span class="token punctuation">:</span>    kube<span class="token punctuation">-</span>system
 <span class="token key atrule">Labels</span><span class="token punctuation">:</span>       &lt;none<span class="token punctuation">></span>
@@ -1505,7 +1506,7 @@ Data
 <span class="token key atrule">ca.crt</span><span class="token punctuation">:</span>     1025 bytes
 <span class="token key atrule">namespace</span><span class="token punctuation">:</span>  11 bytes
 <span class="token key atrule">token</span><span class="token punctuation">:</span>      eyJhbGciOiJSUzI1NiIsImtpZCI6InluNWZyY3V5T1BjNmFFQlpmRVBmOGFOenRmVkx1U0dCRDFhT0s5dEtGeXMifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJnaXRsYWItYWRtaW4tdG9rZW4tcG1iMmgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZ2l0bGFiLWFkbWluIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYmM5ZTFmOTQtMDg4ZC00MWY0LThlMTgtZjMxZjFlOWE5MzY5Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmdpdGxhYi1hZG1pbiJ9.HGNf2_q_NS7ASk2ID6Y658PMpDIruFLr70VGk9I_dAP<span class="token punctuation">-</span>rYt81FarjQhIQPn554SrtmiTp<span class="token punctuation">-</span>iQ_j7slX_YRsGHlpo74VrBM2SirDToXobuSpe77v6MFx6Ol2UsUrxY0ulm_DAjOhZ16jlohPWlhkP0083KBfywwdpyF2oVdALQnT4sI1aDxgUHs<span class="token punctuation">-</span>Pmg6D0NbdN0Ipb<span class="token punctuation">-</span><span class="token punctuation">-</span>s<span class="token punctuation">-</span>Z59QKGr1XH4Pp0Qb9kze6KCJSWOk8<span class="token punctuation">-</span>4pwtpQcT7K2MA1ucyEJB283D5ChQSddo9q7pBkEwq94TLy<span class="token punctuation">-</span>ZbAhHgO89OqVIjY<span class="token punctuation">-</span>3H<span class="token punctuation">-</span>rb5Kd3meGrtGJZJscx7xnn6_DEvbBwp8DmCoM4vfFLUUow
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>6、添加k8s集群</p>
 <p><img src="assets/image-20200821180353378.png" alt="image-20200821180353378"></p>
 
@@ -1534,7 +1535,7 @@ Data
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://TestCabana.github.io/2020/10/20/8345b3edd0ac.html">https://TestCabana.github.io/2020/10/20/8345b3edd0ac.html</a>
+                    <a href="https://TestCabana.github.io/2020/10/20/undefined.html">https://TestCabana.github.io/2020/10/20/undefined.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1759,7 +1760,7 @@ Data
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/11/23/99acc59ed0cb.html">
+                <a href="/2021/11/23/undefined.html">
                     <div class="card-image">
                         
                         
@@ -1808,7 +1809,7 @@ Data
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/20/8345b3edd0ac.html">
+                <a href="/2020/10/20/undefined.html">
                     <div class="card-image">
                         
                         

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="学习了一下接口框架DDT数据的传递过程, TestCabana">
-    <meta name="description" content="有志者事竟成|软件测试工程师">
+    <meta name="description" content="本科 | 计算机科学与技术 | 软件测试工程师">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="TestCabana" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -187,7 +188,7 @@
         <div class="logo-name">TestCabana</div>
         <div class="logo-desc">
             
-            有志者事竟成|软件测试工程师
+            本科 | 计算机科学与技术 | 软件测试工程师
             
         </div>
     </div>
@@ -606,7 +607,7 @@
 <li><p>topics子主题：子主题也是相同的要素</p>
 </li>
 </ol>
-<h5 id="二、python的xmindparser模块常用方法"><a href="#二、python的xmindparser模块常用方法" class="headerlink" title="二、python的xmindparser模块常用方法"></a>二、python的xmindparser模块常用方法</h5><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> xmindparser
+<h5 id="二、python的xmindparser模块常用方法"><a href="#二、python的xmindparser模块常用方法" class="headerlink" title="二、python的xmindparser模块常用方法"></a>二、python的xmindparser模块常用方法</h5><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> xmindparser
 <span class="token comment" spellcheck="true"># xmindparser配置</span>
 xmindparser<span class="token punctuation">.</span>config <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
             <span class="token string">'showTopicId'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">#是否展示主题ID</span>
@@ -622,15 +623,15 @@ data_xml <span class="token operator">=</span> xmindparser<span class="token pun
 file_json <span class="token operator">=</span> xmindparser<span class="token punctuation">.</span>xmind_to_file<span class="token punctuation">(</span>filePath<span class="token punctuation">,</span> <span class="token string">'json'</span><span class="token punctuation">)</span>
 file_xml <span class="token operator">=</span> xmindparser<span class="token punctuation">.</span>xmind_to_file<span class="token punctuation">(</span>filePath<span class="token punctuation">,</span> <span class="token string">'xml'</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">#[&amp;#123;'title': '画布 1', 'topic': &amp;#123;'title': '中心主题', 'topics': [&amp;#123;'title': '分支主题 1', 'note': '备注一', 'makers': ['priority-1', 'tag-red', 'smiley-laugh', 'task-done'], 'labels': ['标签一','标签二'], 'topics': [&amp;#123;'title': '子主题 1', 'makers': ['flag-red']&amp;#125;, &amp;#123;'title': '子主题 2'&amp;#125;]&amp;#125;, &amp;#123;'title': '分支主题 2', 'note': '备注二', 'makers': ['priority-2', 'tag-orange', 'smiley-cry', 'task-start'], 'labels': ['标签二'], 'link': 'http://www.baidu.com', 'topics': [&amp;#123;'title': '子主题 3'&amp;#125;]&amp;#125;]&amp;#125;, 'structure': 'org.xmind.ui.map.unbalanced'&amp;#125;]</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="三、公司的xmind用例结构"><a href="#三、公司的xmind用例结构" class="headerlink" title="三、公司的xmind用例结构"></a>三、公司的xmind用例结构</h5><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20211111194307394.png" alt="image-20211111194307394" style="zoom:200%;" />
 
 <p>一级主题，作为class名，所以尽量用首字母大写的英文单次（必须英文字母或下划线开头、字母/数字/下划线组成，如果有其他字符会被替换为”_”）</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">to_safe_name</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">to_safe_name</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">return</span> str<span class="token punctuation">(</span>re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">"[^a-zA-Z0-9_]+"</span><span class="token punctuation">,</span> <span class="token string">"_"</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h5 id="四、框架中读取xmind接口测试数据的代码解析"><a href="#四、框架中读取xmind接口测试数据的代码解析" class="headerlink" title="四、框架中读取xmind接口测试数据的代码解析"></a>四、框架中读取xmind接口测试数据的代码解析</h5><p>这一部门的代码我全部copy到下面了，因为自己之前ddt没有用过xmind来作为数据载体，所以手写了一遍去理解xmind模板为什么要这么写，觉得太长的话就直接看最后函数把接口数据整理成什么样的格式就行。</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> xmindparser <span class="token keyword">import</span> xmind_to_dict
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> xmindparser <span class="token keyword">import</span> xmind_to_dict
 <span class="token keyword">import</span> json
 
 HOST_TAG_CHOICE <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"mk"</span><span class="token punctuation">,</span> <span class="token string">"qw"</span><span class="token punctuation">,</span> <span class="token string">"bill"</span><span class="token punctuation">,</span> <span class="token string">"qyapi"</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 对应 host_&lt;mk/qw></span>
@@ -771,9 +772,9 @@ case_dict的值，之后会作为pytest的传参
 'path': '/bill-trail-settings-api/trail/event', 'data': '&amp;#123;"eventIcon": "事件图标", "eventName": "事件名称", "eventTopic": "事件", "fieldList": "事件内容列表", "id": "事件ID，编辑时必传", "operator": "操作人", "remark": "备注", "trailId": "旅程项目ID"&amp;#125;', 
 'expect': &amp;#123;'code': 8401, 'msg': '参数不能为空', 'data': None&amp;#125;, 'set_vars': &amp;#123;'customerId': '$..data.id'&amp;#125;&amp;#125;
 '''</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>一个点：因为之前没找到完整的xmind模板，不明白为什么api_name主题下的标签，depends=  和 name=  要存在一个数组depends中，最后悟了。方便dependency去传参，这样没有依赖，却需要别名给其他接口依赖时，depends传入空数组[]。妙！（dict的value存数组也完全ok）</p>
-<pre class=" language-python"><code class="language-python">dp_name<span class="token punctuation">,</span> depends <span class="token operator">=</span> None<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<pre class="line-numbers language-python"><code class="language-python">dp_name<span class="token punctuation">,</span> depends <span class="token operator">=</span> None<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 <span class="token keyword">for</span> dp <span class="token keyword">in</span> api_data<span class="token punctuation">[</span><span class="token string">'depends'</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true">#["addEevent","event"] api_name=event</span>
     <span class="token keyword">if</span> dp <span class="token operator">==</span> api_name<span class="token punctuation">:</span> <span class="token comment" spellcheck="true">#如果apiname是当前自己接口的名字，作为别名</span>
         dp_name <span class="token operator">=</span> api_name
@@ -786,27 +787,27 @@ case_dict的值，之后会作为pytest的传参
 <span class="token comment" spellcheck="true"># skip以#开头的测试用例</span>
 <span class="token keyword">if</span> api_name<span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">"#"</span><span class="token punctuation">)</span> <span class="token operator">or</span> api_desc<span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">"#"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     attrs<span class="token punctuation">[</span>func_name<span class="token punctuation">]</span> <span class="token operator">=</span> pytest<span class="token punctuation">.</span>mark<span class="token punctuation">.</span>skip<span class="token punctuation">(</span>reason<span class="token operator">=</span><span class="token string">'测试用例被注释#'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>attrs<span class="token punctuation">[</span>func_name<span class="token punctuation">]</span><span class="token punctuation">)</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="五、接口脚本自动生成的大概原理和过程"><a href="#五、接口脚本自动生成的大概原理和过程" class="headerlink" title="五、接口脚本自动生成的大概原理和过程"></a>五、接口脚本自动生成的大概原理和过程</h5><p>所用技术：文件写入脚本、compile()内置函数编译、metaclass对子类的改写、装饰器与闭包函数，和一些杂七杂八的</p>
 <p>上面写到了DDT的测试数据xmind载体的解析，拿到了参数之后传入pytest即可（题外话pytest两种传参方式，fixture或者parametrize，一定要知晓参数传递过程的），接下来写一下作者大大将参数融进pytest的过程，可能自己理解的比较简陋，有大佬指点的话感激涕零~</p>
 <p>第一步：构建用例脚本，就是with open去写就ok了，主要写入的是：导包的内容、类模板（包括脚本名称和测试数据），compile后生成脚本的类如下所示~</p>
-<pre class=" language-python"><code class="language-python">@allure<span class="token punctuation">.</span>feature<span class="token punctuation">(</span><span class="token string">'画布 1'</span><span class="token punctuation">)</span>
+<pre class="line-numbers language-python"><code class="language-python">@allure<span class="token punctuation">.</span>feature<span class="token punctuation">(</span><span class="token string">'画布 1'</span><span class="token punctuation">)</span>
 <span class="token keyword">class</span> <span class="token class-name">TestBillTrailSettingApi</span><span class="token punctuation">(</span>PreRequest<span class="token punctuation">,</span> metaclass<span class="token operator">=</span>CaseMetaClass<span class="token punctuation">)</span><span class="token punctuation">:</span>
     test_py <span class="token operator">=</span> <span class="token string">"test_bill-trail-settings-api.py"</span>
     test_cases_data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;接口1&amp;#125;,&amp;#123;接口2&amp;#125;,...]</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>PreRequest这个父类就是一些请求前的操作，比如拿变量值、sessionId，就不展开了。</p>
 <p>第二步：compile生成函数对象，用例的模板字符串参数传入api_name，来动态生成接口函数。模板有很多执行时的细节操作，比如skip、allure敏捷标记等，不详细展开了，贴一下生成的函数代码。如下~</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">create_function</span><span class="token punctuation">(</span>function_express<span class="token punctuation">,</span> namespace<span class="token operator">=</span>None<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">create_function</span><span class="token punctuation">(</span>function_express<span class="token punctuation">,</span> namespace<span class="token operator">=</span>None<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">"""动态生成函数对象"""</span>
     <span class="token keyword">if</span> namespace <span class="token keyword">is</span> <span class="token operator">not</span> None<span class="token punctuation">:</span>
         builtins<span class="token punctuation">.</span>__dict__<span class="token punctuation">.</span>update<span class="token punctuation">(</span>namespace<span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 哇 全部添加到内建模块中</span>
     module_code <span class="token operator">=</span> compile<span class="token punctuation">(</span>function_express<span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">'exec'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 根据模板(字符串)生成可执行的代码，mode为exec（源包含多个python语句时使用）</span>
     function_code <span class="token operator">=</span> <span class="token punctuation">[</span>x <span class="token keyword">for</span> x <span class="token keyword">in</span> module_code<span class="token punctuation">.</span>co_consts <span class="token keyword">if</span> isinstance<span class="token punctuation">(</span>x<span class="token punctuation">,</span> types<span class="token punctuation">.</span>CodeType<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token comment" spellcheck="true">#注意isinstance()会考虑继承关系 所以这里用type()不行哟！</span>
     <span class="token keyword">return</span> types<span class="token punctuation">.</span>FunctionType<span class="token punctuation">(</span>function_code<span class="token punctuation">,</span> builtins<span class="token punctuation">.</span>__dict__<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#返回内存地址&lt;function test_001_event at 0x05A0AA98></span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>第三步：重点来了！！写一个metaclass，来修改子类的属性或方法</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">CaseMetaClass</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">CaseMetaClass</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__new__</span><span class="token punctuation">(</span>cls<span class="token punctuation">,</span> name<span class="token punctuation">,</span> bases<span class="token punctuation">,</span> attrs<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token comment" spellcheck="true"># print("此时new的对象是",cls.__name__) #CaseMetaClass</span>
         test_cases_data <span class="token operator">=</span> attrs<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token string">'test_cases_data'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 字典的pop有返回值 拿到一个画布的接口数据[&amp;#123;接口1&amp;#125;,&amp;#123;接口2&amp;#125;,...]</span>
@@ -847,12 +848,12 @@ case_dict的值，之后会作为pytest的传参
             <span class="token comment" spellcheck="true"># 集成allure装饰器 这个不知道是不是作者大大觉得模块下面展示case就行了，再打story好懒得挨个点开喔，我是这么想的~</span>
             <span class="token comment" spellcheck="true"># attrs[func_name] = allure.story(api_data['api_desc'])(attrs[func_name])</span>
         <span class="token keyword">return</span> super<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__new__<span class="token punctuation">(</span>cls<span class="token punctuation">,</span> name<span class="token punctuation">,</span> bases<span class="token punctuation">,</span> attrs<span class="token punctuation">)</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>一些点：</p>
 <p>1、pytest在收集用例时，按照test_ 开头去找，自动生成的脚本就是test_ 文件名.py，测试用例集按照类来展示一个xmind文件每个画布的接口用例，比如上面的class TestBillTrailSettingApi()，pytest执行时按顺序去解析类，会先调用CaseMetaClass.__ new __()来创建类，所以CaseMetaClass可以借助attrs来改变TestBillTrailSettingApi()类的属性或方法。</p>
 <p>2、metaclass我的理解是the class of the class，类的类，它new出来的是一个类，而非实例。自定义的CaseMetaClass通过new方法返回子类的name、bases、attrs即类名、继承的集合、属性方法。这是meclass与继承不一样层面的原因，子类继承父类除私有属性和方法外的特性，对父类进行重写，但父类无法操纵子类，借用metaclass，就可以对子类进行操作，像装饰器一样去【动态修改】。（关于metaclass这篇还可以：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yssjun/p/9832526.html?ivk_sa=1024320u%EF%BC%8C%E5%A4%9A%E5%A4%9Adebug%E8%AF%95%E4%B8%80%E8%AF%95%E7%90%86%E8%A7%A3%E6%9B%B4%E5%BF%AB%EF%BC%89">https://www.cnblogs.com/yssjun/p/9832526.html?ivk_sa=1024320u，多多debug试一试理解更快）</a></p>
 <p>3、在上述代码的new方法中，通过“手工闭包”来形成装饰器，将函数内存地址传给pytest.mark.parametrize()，等同于平常使用@pytest.mark.parametrize()。下面写了一个最最最简单的闭包函数，当然还有装饰方法、装饰器传参等各种情况就不细说了。只是简单举个栗子~</p>
-<pre class=" language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">outer</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<pre class="line-numbers language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">outer</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">def</span> <span class="token function">inner</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
             <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"before"</span><span class="token punctuation">)</span>
             func<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -867,7 +868,7 @@ case_dict的值，之后会作为pytest的传参
     <span class="token comment" spellcheck="true">#这等价于上面的装饰</span>
     cytest <span class="token operator">=</span> outer<span class="token punctuation">(</span>cytest<span class="token punctuation">)</span>
     cytest<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#调用闭包函数inner</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>4、当xmind的一个画布由多个接口，new方法在for循环中遍历每个接口，根据接口api_name来使子类动态生成多个function，即动态生成了多个接口用例集了，如下图。</p>
 <p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20211120151106113.png" alt="image-20211120151106113"></p>
 <h5 id="六、写不动了"><a href="#六、写不动了" class="headerlink" title="六、写不动了"></a>六、写不动了</h5><p>以上就是大致把数据流看了一下，做的笔记。</p>
@@ -898,7 +899,7 @@ case_dict的值，之后会作为pytest的传参
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://TestCabana.github.io/2021/11/23/99acc59ed0cb.html">https://TestCabana.github.io/2021/11/23/99acc59ed0cb.html</a>
+                    <a href="https://TestCabana.github.io/2021/11/23/undefined.html">https://TestCabana.github.io/2021/11/23/undefined.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1111,7 +1112,7 @@ case_dict的值，之后会作为pytest的传参
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/20/3a966efeeda7.html">
+                <a href="/2022/01/20/undefined.html">
                     <div class="card-image">
                         
                         
@@ -1164,7 +1165,7 @@ case_dict的值，之后会作为pytest的传参
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/20/8345b3edd0ac.html">
+                <a href="/2020/10/20/undefined.html">
                     <div class="card-image">
                         
                         
