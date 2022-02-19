@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TestCabana</title>
+  
+  <subtitle>目光所致皆为曙光</subtitle>
+  <link href="https://testcabana.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://testcabana.github.io/"/>
+  <updated>2022-01-22T13:34:16.783Z</updated>
+  <id>https://testcabana.github.io/</id>
+  
+  <author>
+    <name>谢志强</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>这是第一个博客网站 Hello World</title>
+    <link href="https://testcabana.github.io/2022/01/22/873469c32076.html"/>
+    <id>https://testcabana.github.io/2022/01/22/873469c32076.html</id>
+    <published>2022-01-22T13:34:16.781Z</published>
+    <updated>2022-01-22T13:34:16.783Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>这是第一个博客网站 Hello World</title>
+    <link href="https://testcabana.github.io/2022/01/22/cacc7080ea96.html"/>
+    <id>https://testcabana.github.io/2022/01/22/cacc7080ea96.html</id>
+    <published>2022-01-22T13:32:29.095Z</published>
+    <updated>2022-01-22T13:33:53.244Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>这是第一个博客网站 Hello World</title>
+    <link href="https://testcabana.github.io/2022/01/20/3a966efeeda7.html"/>
+    <id>https://testcabana.github.io/2022/01/20/3a966efeeda7.html</id>
+    <published>2022-01-20T07:14:17.827Z</published>
+    <updated>2022-01-23T03:32:48.170Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://testcabana.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Typora" scheme="https://testcabana.github.io/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="https://testcabana.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习了一下接口框架DDT数据的传递过程</title>
+    <link href="https://testcabana.github.io/2021/11/23/99acc59ed0cb.html"/>
+    <id>https://testcabana.github.io/2021/11/23/99acc59ed0cb.html</id>
+    <published>2021-11-23T02:36:08.505Z</published>
+    <updated>2022-02-10T16:42:35.034Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;学习了一下接口框架DDT数据的传递过程&quot;&gt;&lt;a href=&quot;#学习了一下接口框架DDT数据的传递过程&quot; class=&quot;headerlink&quot; title=&quot;学习了一下接口框架DDT数据的传递过程&quot;&gt;&lt;/a&gt;学习了一下接口框架DDT数据的传递过程&lt;/h4&gt;&lt;h5</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://testcabana.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://testcabana.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分布式版本控制系统</title>
+    <link href="https://testcabana.github.io/2020/10/20/8345b3edd0ac.html"/>
+    <id>https://testcabana.github.io/2020/10/20/8345b3edd0ac.html</id>
+    <published>2020-10-20T11:48:32.000Z</published>
+    <updated>2022-02-11T04:38:26.846Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第1天-分布式版本控制系统&quot;&gt;&lt;a href=&quot;#第1天-分布式版本控制系统&quot; class=&quot;headerlink&quot; title=&quot;第1天-分布式版本控制系统&quot;&gt;&lt;/a&gt;第1天-分布式版本控制系统&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="CICD自动构建" scheme="https://testcabana.github.io/categories/CICD%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/"/>
+    
+    
+    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
+    
+    <category term="Github" scheme="https://testcabana.github.io/tags/Github/"/>
+    
+    <category term="Gitlab" scheme="https://testcabana.github.io/tags/Gitlab/"/>
+    
+    <category term="SVN" scheme="https://testcabana.github.io/tags/SVN/"/>
+    
+  </entry>
+  
+</feed>
