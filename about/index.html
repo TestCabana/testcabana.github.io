@@ -553,27 +553,43 @@
     let categoriesOption = {
         title: {
             text: '文章分类统计图',
-            top: -4,
+            top: -5,
             x: 'center'
         },
         tooltip: {
             trigger: 'item',
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
+        legend: {
+          top: '0%',
+          left: 'center'
+        },
         series: [
             {
                 name: '分类',
                 type: 'pie',
-                radius: '50%',
+                radius: ['40%', '70%'],
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
                 data: [{"name":"Python","value":1},{"name":"CICD自动构建","value":1},{"name":"Markdown","value":1}],
                 itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
+                  borderRadius: 10,
+                  borderColor: '#fff',
+                  borderWidth: 2
+                },
+                emphasis: {
+                  label: {
+                    show: true,
+                    fontSize: '20',
+                    fontWeight: 'bold'
+                  }
+                },
+                label: {
+                  show: false,
+                  position: 'center'
+                },
+                labelLine: {
+                  show: false
+                },
             }
         ]
     };
