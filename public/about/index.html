@@ -553,7 +553,7 @@
     let categoriesOption = {
         title: {
             text: '文章分类统计图',
-            top: -4,
+            top: -5,
             x: 'center'
         },
         tooltip: {
@@ -561,7 +561,7 @@
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
         legend: {
-          top: '5%',
+          top: '10%',
           left: 'center'
         },
         series: [
@@ -569,6 +569,7 @@
                 name: '分类',
                 type: 'pie',
                 radius: ['40%', '70%'],
+                color: ['#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de', '#3ba272', '#fc8452', '#9a60b4', '#ea7ccc'],
                 data: [{name:"CICD自动构建",value:1},{name:"Markdown",value:1},{name:"Python",value:1}],
                 avoidLabelOverlap: false,
                 itemStyle: {
@@ -583,7 +584,7 @@
                 emphasis: {
                   label: {
                     show: true,
-                    fontSize: '40',
+                    fontSize: '20',
                     fontWeight: 'bold'
                   }
                 },
