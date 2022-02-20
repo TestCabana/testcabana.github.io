@@ -38,32 +38,11 @@
   </entry>
   
   <entry>
-    <title>这是第一个博客网站 Hello World</title>
-    <link href="https://testcabana.github.io/2022/01/22/cacc7080ea96.html"/>
-    <id>https://testcabana.github.io/2022/01/22/cacc7080ea96.html</id>
-    <published>2022-01-22T13:32:29.095Z</published>
-    <updated>2022-01-22T13:33:53.244Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>这是第一个博客网站 Hello World</title>
+    <title>分布式版本控制系统</title>
     <link href="https://testcabana.github.io/2022/01/20/3a966efeeda7.html"/>
     <id>https://testcabana.github.io/2022/01/20/3a966efeeda7.html</id>
     <published>2022-01-20T07:14:17.827Z</published>
-    <updated>2022-01-23T03:32:48.170Z</updated>
+    <updated>2022-02-20T09:46:04.710Z</updated>
     
     
       
@@ -76,12 +55,38 @@
     
     
     
-    <category term="Markdown" scheme="https://testcabana.github.io/categories/Markdown/"/>
+    <category term="软件测试基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="计算机基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="Linux基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="数据库基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="业务能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
+    
+    <category term="测试能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    <category term="编程能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
+    
+    <category term="测试开发能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E8%83%BD%E5%8A%9B/"/>
     
     
-    <category term="Typora" scheme="https://testcabana.github.io/tags/Typora/"/>
+    <category term="操作系统基础" scheme="https://testcabana.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/"/>
     
-    <category term="Markdown" scheme="https://testcabana.github.io/tags/Markdown/"/>
+    <category term="计算机网络基础" scheme="https://testcabana.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="Linux命令" scheme="https://testcabana.github.io/tags/Linux%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="MySQL数据库" scheme="https://testcabana.github.io/tags/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="CICD自动构建" scheme="https://testcabana.github.io/tags/CICD%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/"/>
+    
+    <category term="Redis数据库" scheme="https://testcabana.github.io/tags/Redis%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="MongoDb数据库" scheme="https://testcabana.github.io/tags/MongoDb%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="ES分布式存储" scheme="https://testcabana.github.io/tags/ES%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/"/>
     
   </entry>
   
@@ -115,7 +120,7 @@
     <link href="https://testcabana.github.io/2020/10/20/8345b3edd0ac.html"/>
     <id>https://testcabana.github.io/2020/10/20/8345b3edd0ac.html</id>
     <published>2020-10-20T11:48:32.000Z</published>
-    <updated>2022-02-11T04:38:26.846Z</updated>
+    <updated>2022-02-20T09:36:43.770Z</updated>
     
     
       
@@ -128,16 +133,32 @@
     
     
     
-    <category term="CICD自动构建" scheme="https://testcabana.github.io/categories/CICD%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/"/>
+    <category term="软件测试基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="计算机基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="Linux基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="数据库基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="业务能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
+    
+    <category term="测试能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    <category term="编程能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
+    
+    <category term="测试开发能力" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E8%83%BD%E5%8A%9B/"/>
     
     
-    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
+    <category term="操作系统基础" scheme="https://testcabana.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/"/>
     
-    <category term="Github" scheme="https://testcabana.github.io/tags/Github/"/>
+    <category term="计算机网络基础" scheme="https://testcabana.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
     
-    <category term="Gitlab" scheme="https://testcabana.github.io/tags/Gitlab/"/>
+    <category term="Linux命令" scheme="https://testcabana.github.io/tags/Linux%E5%91%BD%E4%BB%A4/"/>
     
-    <category term="SVN" scheme="https://testcabana.github.io/tags/SVN/"/>
+    <category term="MySQL数据库" scheme="https://testcabana.github.io/tags/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="CICD自动构建" scheme="https://testcabana.github.io/tags/CICD%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/"/>
     
   </entry>
   
