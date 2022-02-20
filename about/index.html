@@ -560,15 +560,11 @@
             trigger: 'item',
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
-        legend: {
-          top: '8%',
-          left: 'center'
-        },
         series: [
             {
                 name: '分类',
                 type: 'pie',
-                radius: '50%',
+                radius: ['40%', '70%'],
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
                 data: [{"name":"软件测试基础","value":2},{"name":"Python","value":1},{"name":"计算机基础","value":2},{"name":"Linux基础","value":2},{"name":"数据库基础","value":2},{"name":"业务能力","value":2},{"name":"测试能力","value":2},{"name":"编程能力","value":2},{"name":"测试开发能力","value":2}],
                 radius: ['40%', '70%'],
@@ -578,10 +574,17 @@
                   borderColor: '#fff',
                   borderWidth: 2
                 },
+                label: {
+                  show: false,
+                  position: 'center'
+                },
+                labelLine: {
+                  show: false
+                },
                 emphasis: {
                   label: {
                     show: true,
-                    fontSize: '40',
+                    fontSize: '20',
                     fontWeight: 'bold'
                   }
                 }
