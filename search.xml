@@ -34,11 +34,13 @@
       
         <tags>
             
+            <tag> 操作系统 </tag>
+            
+            <tag> 计算机网络 </tag>
+            
             <tag> Linux命令 </tag>
             
             <tag> MySQL数据库 </tag>
-            
-            <tag> CICD自动构建 </tag>
             
             <tag> Redis数据库 </tag>
             
@@ -46,9 +48,7 @@
             
             <tag> ES分布式存储 </tag>
             
-            <tag> 操作系统 </tag>
-            
-            <tag> 计算机网络 </tag>
+            <tag> CICD自动构建 </tag>
             
         </tags>
       
