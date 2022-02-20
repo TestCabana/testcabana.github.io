@@ -17,20 +17,7 @@
     
     
     <entry>
-      <title>这是第一个博客网站 Hello World</title>
-      <link href="/2022/01/22/cacc7080ea96.html"/>
-      <url>/2022/01/22/cacc7080ea96.html</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">curl <span class="token string">'https://mk-test3.dustess.com/qw-scrm-svc/action/company/getDetail?id=dff27d93-7b73-11ec-9bfb-829da4612e9a'</span> \  -X <span class="token string">'OPTIONS'</span> \  -H <span class="token string">'Connection: keep-alive'</span> \  -H <span class="token string">'Accept: */*'</span> \  -H <span class="token string">'Access-Control-Request-Method: GET'</span> \  -H <span class="token string">'Access-Control-Request-Headers: authorization'</span> \  -H <span class="token string">'Origin: https://ww1d2ec5f82d2a53a2-qw-scrm-test3.dustess.com'</span> \  -H <span class="token string">'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36'</span> \  -H <span class="token string">'Sec-Fetch-Mode: cors'</span> \  -H <span class="token string">'Sec-Fetch-Site: same-site'</span> \  -H <span class="token string">'Sec-Fetch-Dest: empty'</span> \  -H <span class="token string">'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8'</span> \  --compressed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>这是第一个博客网站 Hello World</title>
+      <title>分布式版本控制系统</title>
       <link href="/2022/01/20/3a966efeeda7.html"/>
       <url>/2022/01/20/3a966efeeda7.html</url>
       
@@ -39,16 +26,42 @@
       
       <categories>
           
-          <category> Markdown </category>
+          <category> 软件测试基础 </category>
+          
+          <category> 计算机基础 </category>
+          
+          <category> Linux基础 </category>
+          
+          <category> 数据库基础 </category>
+          
+          <category> 业务能力 </category>
+          
+          <category> 测试能力 </category>
+          
+          <category> 编程能力 </category>
+          
+          <category> 测试开发能力 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Typora </tag>
+            <tag> 操作系统基础 </tag>
             
-            <tag> Markdown </tag>
+            <tag> 计算机网络基础 </tag>
+            
+            <tag> Linux命令 </tag>
+            
+            <tag> MySQL数据库 </tag>
+            
+            <tag> CICD自动构建 </tag>
+            
+            <tag> Redis数据库 </tag>
+            
+            <tag> MongoDb数据库 </tag>
+            
+            <tag> ES分布式存储 </tag>
             
         </tags>
       
@@ -91,20 +104,36 @@
       
       <categories>
           
-          <category> CICD自动构建 </category>
+          <category> 软件测试基础 </category>
+          
+          <category> 计算机基础 </category>
+          
+          <category> Linux基础 </category>
+          
+          <category> 数据库基础 </category>
+          
+          <category> 业务能力 </category>
+          
+          <category> 测试能力 </category>
+          
+          <category> 编程能力 </category>
+          
+          <category> 测试开发能力 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Git </tag>
+            <tag> 操作系统基础 </tag>
             
-            <tag> Github </tag>
+            <tag> 计算机网络基础 </tag>
             
-            <tag> Gitlab </tag>
+            <tag> Linux命令 </tag>
             
-            <tag> SVN </tag>
+            <tag> MySQL数据库 </tag>
+            
+            <tag> CICD自动构建 </tag>
             
         </tags>
       
