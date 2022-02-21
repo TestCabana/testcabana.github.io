@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-02-21T11:19:04.479Z</updated>
+  <updated>2022-02-21T11:25:11.641Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mac最佳组合iTerm2+oh-My-Zsh</title>
+    <link href="https://testcabana.github.io/2022/02/21/bf58b2d1d966.html"/>
+    <id>https://testcabana.github.io/2022/02/21/bf58b2d1d966.html</id>
+    <published>2022-02-21T11:06:48.984Z</published>
+    <updated>2022-02-21T11:25:11.641Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Mac电脑实用工具" scheme="https://testcabana.github.io/categories/Mac%E7%94%B5%E8%84%91%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
+    
+    <category term="oh-my-zsh" scheme="https://testcabana.github.io/tags/oh-my-zsh/"/>
+    
+  </entry>
+  
+  <entry>
     <title>这是第一个博客网站</title>
     <link href="https://testcabana.github.io/2022/02/20/1c6a0038b445.html"/>
     <id>https://testcabana.github.io/2022/02/20/1c6a0038b445.html</id>
     <published>2022-02-20T10:40:32.373Z</published>
-    <updated>2022-02-21T11:19:04.479Z</updated>
+    <updated>2022-02-21T11:25:16.151Z</updated>
     
     
       
