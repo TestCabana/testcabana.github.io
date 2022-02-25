@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-02-22T04:40:47.083Z</updated>
+  <updated>2022-02-25T04:58:09.170Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>这是第一个博客网站</title>
+    <link href="https://testcabana.github.io/2022/02/25/5d26c519d597.html"/>
+    <id>https://testcabana.github.io/2022/02/25/5d26c519d597.html</id>
+    <published>2022-02-25T04:58:09.169Z</published>
+    <updated>2022-02-25T04:58:09.170Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件测试基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="操作系统" scheme="https://testcabana.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac最佳组合iTerm2+oh-My-Zsh</title>
-    <link href="https://testcabana.github.io/2022/02/21/bf58b2d1d966.html"/>
-    <id>https://testcabana.github.io/2022/02/21/bf58b2d1d966.html</id>
-    <published>2022-02-21T11:06:48.984Z</published>
-    <updated>2022-02-22T04:40:47.083Z</updated>
+    <link href="https://testcabana.github.io/2022/02/25/7af535ceb0b4.html"/>
+    <id>https://testcabana.github.io/2022/02/25/7af535ceb0b4.html</id>
+    <published>2022-02-25T04:58:09.037Z</published>
+    <updated>2022-02-25T05:08:14.248Z</updated>
     
     
       
@@ -41,32 +67,6 @@
     <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
     
     <category term="oh-my-zsh" scheme="https://testcabana.github.io/tags/oh-my-zsh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>这是第一个博客网站</title>
-    <link href="https://testcabana.github.io/2022/02/20/1c6a0038b445.html"/>
-    <id>https://testcabana.github.io/2022/02/20/1c6a0038b445.html</id>
-    <published>2022-02-20T10:40:32.373Z</published>
-    <updated>2022-02-21T11:25:16.151Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件测试基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="操作系统" scheme="https://testcabana.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   

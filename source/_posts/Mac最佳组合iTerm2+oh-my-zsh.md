@@ -40,7 +40,7 @@ tags:
 
 
 
-![最佳组合iTerm2+oh-my-zsh](https://www.iterm2.com/img/screenshots/hotkeywindow_full.png)
+![](https://www.iterm2.com/img/screenshots/hotkeywindow_full.png)
 
 
 
@@ -48,7 +48,7 @@ tags:
 
 
 
-![最佳组合iTerm2+oh-my-zsh](https://www.iterm2.com/img/screenshots/search.png)
+![](https://www.iterm2.com/img/screenshots/search.png)
 
 
 
