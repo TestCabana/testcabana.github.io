@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TestCabana</title>
+  
+  <subtitle>目光所致皆为曙光</subtitle>
+  <link href="https://testcabana.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://testcabana.github.io/"/>
+  <updated>2022-02-25T08:18:27.214Z</updated>
+  <id>https://testcabana.github.io/</id>
+  
+  <author>
+    <name>谢志强</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Future未来可期</title>
+    <link href="https://testcabana.github.io/2022/02/25/0f735c98a0fb.html"/>
+    <id>https://testcabana.github.io/2022/02/25/0f735c98a0fb.html</id>
+    <published>2022-02-25T08:04:08.210Z</published>
+    <updated>2022-02-25T08:18:27.214Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Future未来可期" scheme="https://testcabana.github.io/categories/Future%E6%9C%AA%E6%9D%A5%E5%8F%AF%E6%9C%9F/"/>
+    
+    
+    <category term="Report季度总结" scheme="https://testcabana.github.io/tags/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="Read读万卷书" scheme="https://testcabana.github.io/tags/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
+    
+    <category term="Walk行万里路" scheme="https://testcabana.github.io/tags/Walk%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF/"/>
+    
+    <category term="Baby成长日记" scheme="https://testcabana.github.io/tags/Baby%E6%88%90%E9%95%BF%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Develop测试开发</title>
+    <link href="https://testcabana.github.io/2022/02/25/5ba05e04bda0.html"/>
+    <id>https://testcabana.github.io/2022/02/25/5ba05e04bda0.html</id>
+    <published>2022-02-25T08:02:21.500Z</published>
+    <updated>2022-02-25T08:14:18.611Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Develop测试开发" scheme="https://testcabana.github.io/categories/Develop%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="测试工具开发" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="效能工具开发" scheme="https://testcabana.github.io/tags/%E6%95%88%E8%83%BD%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="测试平台开发" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ability编程能力</title>
+    <link href="https://testcabana.github.io/2022/02/25/34086e13c771.html"/>
+    <id>https://testcabana.github.io/2022/02/25/34086e13c771.html</id>
+    <published>2022-02-25T07:59:48.764Z</published>
+    <updated>2022-02-25T08:14:18.611Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Ability编程能力" scheme="https://testcabana.github.io/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
+    
+    
+    <category term="软件设计" scheme="https://testcabana.github.io/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数据结构与算法" scheme="https://testcabana.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Python语言" scheme="https://testcabana.github.io/tags/Python%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="前端语言" scheme="https://testcabana.github.io/tags/%E5%89%8D%E7%AB%AF%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="Java语言" scheme="https://testcabana.github.io/tags/Java%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="Golang语言" scheme="https://testcabana.github.io/tags/Golang%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ability业务能力</title>
+    <link href="https://testcabana.github.io/2022/02/25/321e256c5267.html"/>
+    <id>https://testcabana.github.io/2022/02/25/321e256c5267.html</id>
+    <published>2022-02-25T07:54:51.024Z</published>
+    <updated>2022-02-25T08:14:18.639Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Ability业务能力" scheme="https://testcabana.github.io/categories/Ability%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
+    
+    
+    <category term="业务架构" scheme="https://testcabana.github.io/tags/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84/"/>
+    
+    <category term="产品功能" scheme="https://testcabana.github.io/tags/%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD/"/>
+    
+    <category term="数据流向" scheme="https://testcabana.github.io/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91/"/>
+    
+    <category term="文档编写" scheme="https://testcabana.github.io/tags/%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99/"/>
+    
+    <category term="语言能力" scheme="https://testcabana.github.io/tags/%E8%AF%AD%E8%A8%80%E8%83%BD%E5%8A%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/2022/02/25/49a0350037da.html"/>
+    <id>https://testcabana.github.io/2022/02/25/49a0350037da.html</id>
+    <published>2022-02-25T07:53:56.966Z</published>
+    <updated>2022-02-25T08:14:18.611Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    
+    <category term="测试左移" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E5%B7%A6%E7%A7%BB/"/>
+    
+    <category term="测试右移" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E5%8F%B3%E7%A7%BB/"/>
+    
+    <category term="功能测试" scheme="https://testcabana.github.io/tags/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="接口测试" scheme="https://testcabana.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="精准测试" scheme="https://testcabana.github.io/tags/%E7%B2%BE%E5%87%86%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="接口自动化" scheme="https://testcabana.github.io/tags/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="UI自动化" scheme="https://testcabana.github.io/tags/UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="性能测试" scheme="https://testcabana.github.io/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="安全测试" scheme="https://testcabana.github.io/tags/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="移动端测试" scheme="https://testcabana.github.io/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CI/CD自动构建</title>
+    <link href="https://testcabana.github.io/2022/02/25/727b350d86f4.html"/>
+    <id>https://testcabana.github.io/2022/02/25/727b350d86f4.html</id>
+    <published>2022-02-25T07:53:18.380Z</published>
+    <updated>2022-02-25T08:14:18.637Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="CI/CD自动构建" scheme="https://testcabana.github.io/categories/CI-CD%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/"/>
+    
+    
+    <category term="Git命令" scheme="https://testcabana.github.io/tags/Git%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="Github使用" scheme="https://testcabana.github.io/tags/Github%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="Gitlab使用" scheme="https://testcabana.github.io/tags/Gitlab%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="Jenkins使用" scheme="https://testcabana.github.io/tags/Jenkins%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="Docker使用" scheme="https://testcabana.github.io/tags/Docker%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="K8s现学现用" scheme="https://testcabana.github.io/tags/K8s%E7%8E%B0%E5%AD%A6%E7%8E%B0%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库基础</title>
+    <link href="https://testcabana.github.io/2022/02/25/51ad86f2e9f9.html"/>
+    <id>https://testcabana.github.io/2022/02/25/51ad86f2e9f9.html</id>
+    <published>2022-02-25T07:48:53.684Z</published>
+    <updated>2022-02-25T08:14:18.611Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="数据库基础" scheme="https://testcabana.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="MySQL数据库" scheme="https://testcabana.github.io/tags/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="Oracle数据库" scheme="https://testcabana.github.io/tags/Oracle%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="Redis数据库" scheme="https://testcabana.github.io/tags/Redis%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="MongoDb数据库" scheme="https://testcabana.github.io/tags/MongoDb%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="ES分布式存储" scheme="https://testcabana.github.io/tags/ES%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux基础</title>
+    <link href="https://testcabana.github.io/2022/02/25/9f776230f374.html"/>
+    <id>https://testcabana.github.io/2022/02/25/9f776230f374.html</id>
+    <published>2022-02-25T07:46:32.930Z</published>
+    <updated>2022-02-25T13:52:33.003Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux基础" scheme="https://testcabana.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Linux命令" scheme="https://testcabana.github.io/tags/Linux%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="环境部署" scheme="https://testcabana.github.io/tags/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机基础</title>
+    <link href="https://testcabana.github.io/2022/02/25/3cc904f77227.html"/>
+    <id>https://testcabana.github.io/2022/02/25/3cc904f77227.html</id>
+    <published>2022-02-25T07:45:06.533Z</published>
+    <updated>2022-02-25T13:24:23.165Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机基础" scheme="https://testcabana.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Mac实用工具" scheme="https://testcabana.github.io/tags/Mac%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="操作系统" scheme="https://testcabana.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="计算机网络" scheme="https://testcabana.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试基础</title>
+    <link href="https://testcabana.github.io/2022/02/25/2c0d1ae248e8.html"/>
+    <id>https://testcabana.github.io/2022/02/25/2c0d1ae248e8.html</id>
+    <published>2022-02-25T07:39:47.864Z</published>
+    <updated>2022-02-25T08:14:18.611Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="软件测试基础" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="测试理论" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="测试方法" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/"/>
+    
+    <category term="测试流程" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
+    
+    <category term="测试用例" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/"/>
+    
+    <category term="测试执行" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C/"/>
+    
+    <category term="测试工具" scheme="https://testcabana.github.io/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac最佳组合iTerm2+oh-My-Zsh</title>
+    <link href="https://testcabana.github.io/2022/02/25/f7dd40fd7b34.html"/>
+    <id>https://testcabana.github.io/2022/02/25/f7dd40fd7b34.html</id>
+    <published>2022-02-25T06:16:48.185Z</published>
+    <updated>2022-02-25T13:25:17.520Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Tools工具分享" scheme="https://testcabana.github.io/categories/Tools%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
+    
+    <category term="oh-my-zsh" scheme="https://testcabana.github.io/tags/oh-my-zsh/"/>
+    
+  </entry>
+  
+</feed>
