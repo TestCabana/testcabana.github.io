@@ -577,14 +577,14 @@ services:
         gitlab_rails['gitlab_shell_ssh_port'] = 222 # 替换为ssh端口
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><p><strong>[2] 使用命令启动和停止</strong></p>
-</li>
-</ul>
-<h1 id="然后使用命令启动和停止docker-compose服务"><a href="#然后使用命令启动和停止docker-compose服务" class="headerlink" title="然后使用命令启动和停止docker-compose服务"></a>然后使用命令启动和停止docker-compose服务</h1><pre class="line-numbers language-shell"><code class="language-shell"># 启动docker-compose服务
+<li><p><strong>[2] 使用命令启动和停止docker-compose服务</strong></p>
+<pre class="line-numbers language-shell"><code class="language-shell"># 启动docker-compose服务
 docker-compose up
 # 停止docker-compose服务
 docker-compose down
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
 <h3 id="2-rpm方式部署gitlab服务"><a href="#2-rpm方式部署gitlab服务" class="headerlink" title="2.rpm方式部署gitlab服务"></a>2.rpm方式部署gitlab服务</h3><pre class="line-numbers language-shell"><code class="language-shell">#rpm包地址：https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/
 wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
 rpm -i gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
