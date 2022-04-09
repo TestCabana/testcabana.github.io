@@ -765,19 +765,17 @@ kubectl delete -f gitlab.yaml
 <p>提交代码其实是有很多讲究的，如果我们都按照自己的想法随意的提交代码，到最后自己都不知道当时这次提交到底是为了解决什么问题。良好的代码提交习惯即有利于自己之后的审查，也有助于其他人观看，同时利用脚本来提取有价值的信息。如查看人个人的工作量，每日的工作任务等等。</p>
 </blockquote>
 <ul>
-<li><strong>[1] 提交模板</strong><blockquote>
-<p>我们更多使用的是如下简化版<code>commit</code>模板</p>
-</blockquote>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
+<li><strong>[1] 提交模板</strong><ul>
+<li>我们更多使用的是如下简化版<code>commit</code>模板<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
 <span class="token operator">&lt;</span>提交类型<span class="token operator">></span>-<span class="token operator">&lt;</span>项目名称<span class="token operator">></span>: <span class="token operator">&lt;</span>本次代码提交的动机<span class="token operator">></span>
 <span class="token comment" spellcheck="true"># 示例说明</span>
 feat-Pandas: update runtime to V1.3.0
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><strong>[2] 使用类型</strong><blockquote>
-<p>一般情况下不同类型的使用频率由高到低显示，如下：</p>
-</blockquote>
-<pre class="line-numbers language-bash"><code class="language-bash">feat: 代码新增功能 
+</ul>
+</li>
+<li><strong>[2] 使用类型</strong><ul>
+<li>一般情况下不同类型的使用频率由高到低显示，如下：<pre class="line-numbers language-bash"><code class="language-bash">feat: 代码新增功能 
 fix: 代码修复bug
 perf: 代码性能优化
 style: 代码编码规范或风格上的修改并不影响功能
@@ -789,6 +787,8 @@ revert: 代码回滚
 build: 改变项目构建流程或包依赖
 ci: 改变项目构建流程或包依赖
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
 </li>
 </ul>
 <h3 id="2-分支管理"><a href="#2-分支管理" class="headerlink" title="2.分支管理"></a>2.分支管理</h3><blockquote>
@@ -820,7 +820,6 @@ ci: 改变项目构建流程或包依赖
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ul>
-<hr>
 
                 
             </div>
