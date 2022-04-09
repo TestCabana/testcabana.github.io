@@ -606,8 +606,7 @@ gitlab-ctl logs
 gitlab-ctl <span class="token function">rm</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-Kubernetes部署（需要安装kubectl）"><a href="#3-Kubernetes部署（需要安装kubectl）" class="headerlink" title="3.Kubernetes部署（需要安装kubectl）"></a>3.Kubernetes部署（需要安装kubectl）</h3><ul>
-<li><strong>[1] 编写kubernetes配置文件</strong></li>
-</ul>
+<li><p><strong>[1] 编写kubernetes配置文件</strong></p>
 <pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
 <span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
 <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
@@ -748,7 +747,7 @@ gitlab-ctl <span class="token function">rm</span>
   <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
   <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
+</li>
 <li><p><strong>[2] kubectl相关命令</strong></p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#使用kubectl创建gitlab服务</span>
 kubectl create -f gitlab.yaml
