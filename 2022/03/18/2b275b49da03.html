@@ -550,7 +550,7 @@ docker <span class="token function">rm</span> gitlab
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </li>
 </ul>
-<h4 id="1-2-使用docker-compose启动gitlab服务"><a href="#1-2-使用docker-compose启动gitlab服务" class="headerlink" title="1.2 使用docker compose启动gitlab服务"></a>1.2 使用docker compose启动gitlab服务</h4><ul>
+<h4 id="1-2-使用docker-compose"><a href="#1-2-使用docker-compose" class="headerlink" title="1.2 使用docker compose"></a>1.2 使用docker compose</h4><ul>
 <li><p><strong>[1] 创建docker-compose.yml配置文件</strong></p>
 <pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 创建docker-compose.yml配置文件</span>
 <span class="token comment" spellcheck="true"># 在当前目录下创建docker-compose.yml配置文件</span>
@@ -605,7 +605,10 @@ gitlab-ctl logs
 <span class="token comment" spellcheck="true">#删除Gitlab服务</span>
 gitlab-ctl <span class="token function">rm</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-Kubernetes部署Gitlab服务（需要安装kubectl）"><a href="#3-Kubernetes部署Gitlab服务（需要安装kubectl）" class="headerlink" title="3.Kubernetes部署Gitlab服务（需要安装kubectl）"></a>3.Kubernetes部署Gitlab服务（需要安装kubectl）</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<h3 id="3-Kubernetes部署（需要安装kubectl）"><a href="#3-Kubernetes部署（需要安装kubectl）" class="headerlink" title="3.Kubernetes部署（需要安装kubectl）"></a>3.Kubernetes部署（需要安装kubectl）</h3><ul>
+<li><strong>[1] 编写kubernetes配置文件</strong></li>
+</ul>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
 <span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
 <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
 <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
@@ -745,6 +748,8 @@ gitlab-ctl <span class="token function">rm</span>
   <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
   <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li><p><strong>[2] kubectl相关命令</strong></p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#使用kubectl创建gitlab服务</span>
 kubectl create -f gitlab.yaml
 <span class="token comment" spellcheck="true">#查看gitlab服务状态</span>
@@ -754,6 +759,8 @@ kubectl logs -f -n devops gitlab
 <span class="token comment" spellcheck="true">#删除gitlab服务</span>
 kubectl delete -f gitlab.yaml
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
 <hr>
 <h2 id="二、使用GitLab进行代码管理"><a href="#二、使用GitLab进行代码管理" class="headerlink" title="二、使用GitLab进行代码管理"></a>二、使用GitLab进行代码管理</h2>
                 
