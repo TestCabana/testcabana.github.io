@@ -443,21 +443,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-09
+                    2022-04-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    9 分
                 </div>
                 
 
@@ -481,7 +481,7 @@
 <p><code>GitLab</code>是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。分为：<code>GitLabCE</code>（社区版）和<code>GitLabEE</code>（企业版）</p>
 </blockquote>
 <p><img src="/images/gitlab.png" alt="GitLab部署及代码管理"></p>
-<h2 id="一、安装部署GitLab服务"><a href="#一、安装部署GitLab服务" class="headerlink" title="一、安装部署GitLab服务"></a>一、安装部署GitLab服务</h2><ul>
+<h2 id="一、部署GitLab服务"><a href="#一、部署GitLab服务" class="headerlink" title="一、部署GitLab服务"></a>一、部署GitLab服务</h2><ul>
 <li>GitLab Docker 官方学习文档：<a target="_blank" rel="noopener" href="https://docs.gitlab.com/">https://docs.gitlab.com/</a></li>
 <li>GitLab 官方英文社区版 Docker 镜像：<a target="_blank" rel="noopener" href="https://hub.docker.com/r/gitlab/gitlab-ce/">https://hub.docker.com/r/gitlab/gitlab-ce/</a></li>
 </ul>
@@ -585,7 +585,7 @@ docker-compose down
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ul>
-<h3 id="2-rpm方式部署gitlab服务"><a href="#2-rpm方式部署gitlab服务" class="headerlink" title="2.rpm方式部署gitlab服务"></a>2.rpm方式部署gitlab服务</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#rpm包地址：https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/</span>
+<h3 id="2-rpm方式部署"><a href="#2-rpm方式部署" class="headerlink" title="2.rpm方式部署"></a>2.rpm方式部署</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#rpm包地址：https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/</span>
 <span class="token function">wget</span> https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
 rpm -i gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
 <span class="token comment" spellcheck="true"># 编辑站点地址</span>
@@ -607,145 +607,145 @@ gitlab-ctl <span class="token function">rm</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-Kubernetes部署（需要安装kubectl）"><a href="#3-Kubernetes部署（需要安装kubectl）" class="headerlink" title="3.Kubernetes部署（需要安装kubectl）"></a>3.Kubernetes部署（需要安装kubectl）</h3><ul>
 <li><p><strong>[1] 编写kubernetes配置文件</strong></p>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-    <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-<span class="token key atrule">spec</span><span class="token punctuation">:</span>
-  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">1</span>
-  <span class="token key atrule">revisionHistoryLimit</span><span class="token punctuation">:</span> <span class="token number">10</span>
-  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
-    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
+<pre class="line-numbers language-yaml"><code class="language-yaml">  <span class="token punctuation">---</span>
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
+  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
+  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
       <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-  <span class="token key atrule">template</span><span class="token punctuation">:</span>
-    <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-      <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
+  <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+    <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">1</span>
+    <span class="token key atrule">revisionHistoryLimit</span><span class="token punctuation">:</span> <span class="token number">10</span>
+    <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+      <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
         <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-      <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-      <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">spec</span><span class="token punctuation">:</span>
-      <span class="token key atrule">containers</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-          <span class="token key atrule">image</span><span class="token punctuation">:</span> gitlab/gitlab<span class="token punctuation">-</span>ce<span class="token punctuation">:</span>latest
-          <span class="token key atrule">imagePullPolicy</span><span class="token punctuation">:</span> Always
-          <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-            <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-              <span class="token key atrule">name</span><span class="token punctuation">:</span> web
-              <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP
-            <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">22</span>
-              <span class="token key atrule">name</span><span class="token punctuation">:</span> agent
-              <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP
-          <span class="token key atrule">resources</span><span class="token punctuation">:</span>
-            <span class="token key atrule">limits</span><span class="token punctuation">:</span>
-              <span class="token key atrule">cpu</span><span class="token punctuation">:</span> 1000m
-              <span class="token key atrule">memory</span><span class="token punctuation">:</span> 4Gi
-            <span class="token key atrule">requests</span><span class="token punctuation">:</span>
-              <span class="token key atrule">cpu</span><span class="token punctuation">:</span> 500m
-              <span class="token key atrule">memory</span><span class="token punctuation">:</span> 512Mi
-          <span class="token key atrule">livenessProbe</span><span class="token punctuation">:</span>
-            <span class="token key atrule">httpGet</span><span class="token punctuation">:</span>
-              <span class="token key atrule">path</span><span class="token punctuation">:</span> /users/sign_in
-              <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-            <span class="token key atrule">initialDelaySeconds</span><span class="token punctuation">:</span> <span class="token number">60</span>
-            <span class="token key atrule">timeoutSeconds</span><span class="token punctuation">:</span> <span class="token number">5</span>
-            <span class="token key atrule">failureThreshold</span><span class="token punctuation">:</span> <span class="token number">12</span>
-          <span class="token key atrule">readinessProbe</span><span class="token punctuation">:</span>
-            <span class="token key atrule">httpGet</span><span class="token punctuation">:</span>
-              <span class="token key atrule">path</span><span class="token punctuation">:</span> /users/sign_in
-              <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-            <span class="token key atrule">initialDelaySeconds</span><span class="token punctuation">:</span> <span class="token number">60</span>
-            <span class="token key atrule">timeoutSeconds</span><span class="token punctuation">:</span> <span class="token number">5</span>
-            <span class="token key atrule">failureThreshold</span><span class="token punctuation">:</span> <span class="token number">12</span>
-          <span class="token key atrule">volumeMounts</span><span class="token punctuation">:</span>
-            <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>conf
-              <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /etc/gitlab
-            <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>log
-              <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /var/log/gitlab
-            <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>data
-              <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /var/opt/gitlab
-          <span class="token key atrule">env</span><span class="token punctuation">:</span>
-            <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab_HOME
-              <span class="token key atrule">value</span><span class="token punctuation">:</span> /var/lib/gitlab
-      <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>conf
-          <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
-            <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/config
-            <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
-        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>log
-          <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
-            <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/logs
-            <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
-        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>data
-          <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
-            <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/data
-            <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
-      <span class="token key atrule">serviceAccountName</span><span class="token punctuation">:</span> gitlab
-<span class="token punctuation">---</span>
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-    <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">template</span><span class="token punctuation">:</span>
+      <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+        <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+          <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
+        <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
+        <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
+      <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+        <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
+            <span class="token key atrule">image</span><span class="token punctuation">:</span> gitlab/gitlab<span class="token punctuation">-</span>ce<span class="token punctuation">:</span>latest
+            <span class="token key atrule">imagePullPolicy</span><span class="token punctuation">:</span> Always
+            <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+              <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
+                <span class="token key atrule">name</span><span class="token punctuation">:</span> web
+                <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP
+              <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">22</span>
+                <span class="token key atrule">name</span><span class="token punctuation">:</span> agent
+                <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP
+            <span class="token key atrule">resources</span><span class="token punctuation">:</span>
+              <span class="token key atrule">limits</span><span class="token punctuation">:</span>
+                <span class="token key atrule">cpu</span><span class="token punctuation">:</span> 1000m
+                <span class="token key atrule">memory</span><span class="token punctuation">:</span> 4Gi
+              <span class="token key atrule">requests</span><span class="token punctuation">:</span>
+                <span class="token key atrule">cpu</span><span class="token punctuation">:</span> 500m
+                <span class="token key atrule">memory</span><span class="token punctuation">:</span> 512Mi
+            <span class="token key atrule">livenessProbe</span><span class="token punctuation">:</span>
+              <span class="token key atrule">httpGet</span><span class="token punctuation">:</span>
+                <span class="token key atrule">path</span><span class="token punctuation">:</span> /users/sign_in
+                <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
+              <span class="token key atrule">initialDelaySeconds</span><span class="token punctuation">:</span> <span class="token number">60</span>
+              <span class="token key atrule">timeoutSeconds</span><span class="token punctuation">:</span> <span class="token number">5</span>
+              <span class="token key atrule">failureThreshold</span><span class="token punctuation">:</span> <span class="token number">12</span>
+            <span class="token key atrule">readinessProbe</span><span class="token punctuation">:</span>
+              <span class="token key atrule">httpGet</span><span class="token punctuation">:</span>
+                <span class="token key atrule">path</span><span class="token punctuation">:</span> /users/sign_in
+                <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
+              <span class="token key atrule">initialDelaySeconds</span><span class="token punctuation">:</span> <span class="token number">60</span>
+              <span class="token key atrule">timeoutSeconds</span><span class="token punctuation">:</span> <span class="token number">5</span>
+              <span class="token key atrule">failureThreshold</span><span class="token punctuation">:</span> <span class="token number">12</span>
+            <span class="token key atrule">volumeMounts</span><span class="token punctuation">:</span>
+              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>conf
+                <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /etc/gitlab
+              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>log
+                <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /var/log/gitlab
+              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>data
+                <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /var/opt/gitlab
+            <span class="token key atrule">env</span><span class="token punctuation">:</span>
+              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab_HOME
+                <span class="token key atrule">value</span><span class="token punctuation">:</span> /var/lib/gitlab
+        <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>conf
+            <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
+              <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/config
+              <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>log
+            <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
+              <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/logs
+              <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>data
+            <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
+              <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/data
+              <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
+        <span class="token key atrule">serviceAccountName</span><span class="token punctuation">:</span> gitlab
+  <span class="token punctuation">---</span>
+  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
+  <span class="token punctuation">---</span>
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
+  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
+  <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> web
+        <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
+        <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
+        <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> slave
+        <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">22</span>
+        <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">22</span>
+        <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">30022</span>
+    <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+      <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
+  <span class="token punctuation">---</span>
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
+  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
+  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
   <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
   <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-<span class="token punctuation">---</span>
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-    <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
+  <span class="token key atrule">rules</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"create"</span><span class="token punctuation">,</span><span class="token string">"delete"</span><span class="token punctuation">,</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"patch"</span><span class="token punctuation">,</span><span class="token string">"update"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods/exec"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"create"</span><span class="token punctuation">,</span><span class="token string">"delete"</span><span class="token punctuation">,</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"patch"</span><span class="token punctuation">,</span><span class="token string">"update"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods/log"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"secrets"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">---</span>
+  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> RoleBinding
+  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
   <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
   <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-<span class="token key atrule">spec</span><span class="token punctuation">:</span>
-  <span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
-  <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> web
-      <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-      <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-      <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> slave
-      <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">22</span>
-      <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">22</span>
-      <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">30022</span>
-  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
-    <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-<span class="token punctuation">---</span>
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-<span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-<span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-<span class="token key atrule">rules</span><span class="token punctuation">:</span>
-<span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-  <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods"</span><span class="token punctuation">]</span>
-  <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"create"</span><span class="token punctuation">,</span><span class="token string">"delete"</span><span class="token punctuation">,</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"patch"</span><span class="token punctuation">,</span><span class="token string">"update"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
-<span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-  <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods/exec"</span><span class="token punctuation">]</span>
-  <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"create"</span><span class="token punctuation">,</span><span class="token string">"delete"</span><span class="token punctuation">,</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"patch"</span><span class="token punctuation">,</span><span class="token string">"update"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
-<span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-  <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods/log"</span><span class="token punctuation">]</span>
-  <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
-<span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-  <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"secrets"</span><span class="token punctuation">]</span>
-  <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">]</span>
-<span class="token punctuation">---</span>
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> RoleBinding
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-<span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-<span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-<span class="token key atrule">roleRef</span><span class="token punctuation">:</span>
-<span class="token key atrule">apiGroup</span><span class="token punctuation">:</span> rbac.authorization.k8s.io
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
-<span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-<span class="token key atrule">subjects</span><span class="token punctuation">:</span>
-<span class="token punctuation">-</span> <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+  <span class="token key atrule">roleRef</span><span class="token punctuation">:</span>
+  <span class="token key atrule">apiGroup</span><span class="token punctuation">:</span> rbac.authorization.k8s.io
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
   <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
+  <span class="token key atrule">subjects</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p><strong>[2] kubectl相关命令</strong></p>
@@ -761,7 +761,67 @@ kubectl delete -f gitlab.yaml
 </li>
 </ul>
 <hr>
-<h2 id="二、使用GitLab进行代码管理"><a href="#二、使用GitLab进行代码管理" class="headerlink" title="二、使用GitLab进行代码管理"></a>二、使用GitLab进行代码管理</h2>
+<h2 id="二、GitLab代码管理"><a href="#二、GitLab代码管理" class="headerlink" title="二、GitLab代码管理"></a>二、GitLab代码管理</h2><h3 id="1-代码提交规范"><a href="#1-代码提交规范" class="headerlink" title="1.代码提交规范"></a>1.代码提交规范</h3><blockquote>
+<p>提交代码其实是有很多讲究的，如果我们都按照自己的想法随意的提交代码，到最后自己都不知道当时这次提交到底是为了解决什么问题。良好的代码提交习惯即有利于自己之后的审查，也有助于其他人观看，同时利用脚本来提取有价值的信息。如查看人个人的工作量，每日的工作任务等等。</p>
+</blockquote>
+<ul>
+<li><strong>[1] 提交模板</strong><blockquote>
+<p>我们更多使用的是如下简化版<code>commit</code>模板</p>
+</blockquote>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
+<span class="token operator">&lt;</span>提交类型<span class="token operator">></span>-<span class="token operator">&lt;</span>项目名称<span class="token operator">></span>: <span class="token operator">&lt;</span>本次代码提交的动机<span class="token operator">></span>
+<span class="token comment" spellcheck="true"># 示例说明</span>
+feat-Pandas: update runtime to V1.3.0
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><strong>[2] 使用类型</strong><blockquote>
+<p>一般情况下不同类型的使用频率由高到低显示，如下：</p>
+</blockquote>
+<pre class="line-numbers language-bash"><code class="language-bash">feat: 代码新增功能 
+fix: 代码修复bug
+perf: 代码性能优化
+style: 代码编码规范或风格上的修改并不影响功能
+docs: 代码文档修改
+refactor: 代码重构
+test: 代码测试
+chore: 代码构建、版本控制、编译等工作
+revert: 代码回滚
+build: 改变项目构建流程或包依赖
+ci: 改变项目构建流程或包依赖
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h3 id="2-分支管理"><a href="#2-分支管理" class="headerlink" title="2.分支管理"></a>2.分支管理</h3><blockquote>
+<p>分支管理是一个非常重要的环节，如果我们没有分支管理，那么我们的代码就会被所有人看到，这样就会导致我们的代码被改动。</p>
+</blockquote>
+<ul>
+<li><p><strong>[1] develop分支-开发分支</strong><br>开发分支是开发人员最常用的分支，在开发分支上进行开发，当完成了开发，可以提交到master分支上，这样就可以让开发的代码可以被其他人看到。</p>
+</li>
+<li><p><strong>[2] feature分支-功能分支</strong><br>对于新功能开发，应从 develop 上切出一个 feature 分支进行开发，命名格式为 feature&#x2F;project。其中功能名使用小写单词结合中划线连缀方式，如 feature&#x2F;update-web-style。feature 分支进行编译通过并自测通过后，再合并到主干 develop 分支上。</p>
+</li>
+<li><p><strong>[3] master分支-主分支</strong><br>当 develop 分支开发完成一个版本的时候，测试没有问题之后就可以将其提交之后合并到 master分支了，master 分支内容会自动发布到内网正式环境。需要注意的是，一般情况从开发分支合入到主干分支不会有代码冲突的，如果有的话那就是没有按照上述流程严格执行的结果。</p>
+</li>
+<li><p><strong>[4] release分支-预发布分支</strong><br>将已经在 master 内网正式环境上测试没有问题的版本合入 release 分支，打包给客户部署或者更新线上环境，完成最后的更新操作。</p>
+</li>
+</ul>
+<h3 id="3-Git常用命令"><a href="#3-Git常用命令" class="headerlink" title="3.Git常用命令"></a>3.Git常用命令</h3><ul>
+<li><strong>[1] Git常用命令</strong><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#创建分支</span>
+<span class="token function">git</span> branch <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
+<span class="token comment" spellcheck="true">#切换分支</span>
+<span class="token function">git</span> checkout <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
+<span class="token comment" spellcheck="true">#删除分支</span>
+<span class="token function">git</span> branch -d <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
+<span class="token comment" spellcheck="true"># 查看当前分支</span>
+<span class="token function">git</span> branch
+<span class="token comment" spellcheck="true"># 查看当前分支的最后一次提交</span>
+<span class="token function">git</span> log -1
+<span class="token comment" spellcheck="true"># 查看当前分支的最后一次提交的提交信息</span>
+<span class="token function">git</span> log -1 --pretty<span class="token operator">=</span>%B
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<hr>
+
                 
             </div>
             <hr/>
@@ -1282,7 +1342,7 @@ kubectl delete -f gitlab.yaml
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">17.3k</span>&nbsp;字
+                class="white-color">18.1k</span>&nbsp;字
             
             
             
