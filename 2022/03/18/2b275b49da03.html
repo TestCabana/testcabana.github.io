@@ -489,14 +489,16 @@
 <p>主要介绍，使用docker命令和docker compose部署GitLab-ce社区版。</p>
 </blockquote>
 <h4 id="1-1-使用docker命令"><a href="#1-1-使用docker命令" class="headerlink" title="1.1 使用docker命令"></a>1.1 使用docker命令</h4><ul>
-<li><p><strong>[1] 获取Gitlab-ce最新版本镜像</strong></p>
+<li><strong>[1] 获取Gitlab-ce最新版本镜像</strong></li>
+</ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 拉取gitlab-ce最新版本镜像</span>
 docker pull gitlab/gitlab-ce:latest
 <span class="token comment" spellcheck="true"># 查看镜像是否拉取成功</span>
 docker images
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p><strong>[2] 添加容器挂载目录，在当前目录下创建gitlab的对应config、logs、data文件目录，容器启动后可以映射到本机，方便后续可以直接在主机查看和编辑，不用再进入容器操作</strong></p>
+<ul>
+<li><strong>[2] 添加容器挂载目录，在当前目录下创建gitlab的对应config、logs、data文件目录，容器启动后可以映射到本机，方便后续可以直接在主机查看和编辑，不用再进入容器操作</strong></li>
+</ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器挂载目录</span>
 <span class="token function">mkdir</span> -p ~/gitlab/config ~/gitlab/logs ~/gitlab/data
 <span class="token comment" spellcheck="true">#注释</span>
@@ -504,8 +506,9 @@ config：存储gitlab配置信息
 logs：存储日志
 data：存储数据
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p><strong>[3] 创建并启动容器</strong></p>
+<ul>
+<li><strong>[3] 创建并启动容器</strong></li>
+</ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器</span>
 docker run -d -p 80:80 -p 443:443 -p 222:22 --name gitlab --restart always -v ~/gitlab/config:/etc/gitlab -v ~/gitlab/logs:/var/log/gitlab -v ~/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
 <span class="token comment" spellcheck="true">#注释</span>
@@ -515,8 +518,9 @@ docker run -d -p 80:80 -p 443:443 -p 222:22 --name gitlab --restart always -v ~/
 --restart表示：设置容器重启策略 <span class="token punctuation">(</span>always--在容器退出时总是重启容器；unless-stopped--在容器退出时总是重启容器，但是不考虑在Docker守护进程启动时就已经停止了的容器<span class="token punctuation">)</span>
 -v表示：将容器内配置信息、日志、数据等文件夹挂载到宿主机指定目录
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p><strong>[4] 修改gitlab.rb配置文件</strong></p>
+<ul>
+<li><strong>[4] 修改gitlab.rb配置文件</strong></li>
+</ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 修改gitlab.rb配置文件</span>
 <span class="token comment" spellcheck="true"># 进入gitlab容器</span>
 docker <span class="token function">exec</span> -it gitlab <span class="token function">bash</span>
@@ -532,8 +536,9 @@ gitlab-ctl reconfigure
 <span class="token comment" spellcheck="true"># 在容器内查看gitlab初始密码</span>
 <span class="token function">cat</span> /etc/gitlab/initial_root_password
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p><strong>[5] 开启|停止|重启|删除gitlab服务</strong></p>
+<ul>
+<li><strong>[5] 开启|停止|重启|删除gitlab服务</strong></li>
+</ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 开启gitlab服务</span>
 docker start gitlab
 <span class="token comment" spellcheck="true"># 停止gitlab服务</span>
@@ -543,15 +548,15 @@ docker restart gitlab
 <span class="token comment" spellcheck="true"># 删除gitlab服务</span>
 docker <span class="token function">rm</span> gitlab
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p><strong>[6] 浏览器访问Gitlab</strong></p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 通过浏览器访问 http://&lt;主机IP>:端口 就可以看到运行结果。初次启动会比较慢，耐心等待。</span>
+<ul>
+<li><strong>[6] 浏览器访问Gitlab</strong><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 通过浏览器访问 http://&lt;主机IP>:端口 就可以看到运行结果。初次启动会比较慢，耐心等待。</span>
 <span class="token comment" spellcheck="true"># 账号为root，使用gitlab初始密码登录成功之后需要修改密码</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </li>
 </ul>
 <h4 id="1-2-使用docker-compose"><a href="#1-2-使用docker-compose" class="headerlink" title="1.2 使用docker compose"></a>1.2 使用docker compose</h4><ul>
-<li><p><strong>[1] 创建docker-compose.yml配置文件</strong></p>
+<li><strong>[1] 创建docker-compose.yml配置文件</strong></li>
+</ul>
 <pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 创建docker-compose.yml配置文件</span>
 <span class="token comment" spellcheck="true"># 在当前目录下创建docker-compose.yml配置文件</span>
 touch docker<span class="token punctuation">-</span>compose.yml
@@ -576,15 +581,14 @@ touch docker<span class="token punctuation">-</span>compose.yml
         external_url 'http:172.16.180.138'      # 替换为服务器ip
         gitlab_rails['gitlab_shell_ssh_port'] = 222 # 替换为ssh端口</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p><strong>[2] 使用命令启动和停止docker-compose服务</strong></p>
+<ul>
+<li><strong>[2] 使用命令启动和停止docker-compose服务</strong></li>
+</ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 启动docker-compose服务</span>
 docker-compose up
 <span class="token comment" spellcheck="true"># 停止docker-compose服务</span>
 docker-compose down
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
 <h3 id="2-rpm方式部署"><a href="#2-rpm方式部署" class="headerlink" title="2.rpm方式部署"></a>2.rpm方式部署</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#rpm包地址：https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/</span>
 <span class="token function">wget</span> https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
 rpm -i gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
@@ -606,7 +610,8 @@ gitlab-ctl logs
 gitlab-ctl <span class="token function">rm</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-Kubernetes部署（需要安装kubectl）"><a href="#3-Kubernetes部署（需要安装kubectl）" class="headerlink" title="3.Kubernetes部署（需要安装kubectl）"></a>3.Kubernetes部署（需要安装kubectl）</h3><ul>
-<li><p><strong>[1] 编写kubernetes配置文件</strong></p>
+<li><strong>[1] 编写kubernetes配置文件</strong></li>
+</ul>
 <pre class="line-numbers language-yaml"><code class="language-yaml">  <span class="token punctuation">---</span>
   <span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
   <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
@@ -747,8 +752,9 @@ gitlab-ctl <span class="token function">rm</span>
     <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
     <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p><strong>[2] kubectl相关命令</strong></p>
+<ul>
+<li><strong>[2] kubectl相关命令</strong></li>
+</ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#使用kubectl创建gitlab服务</span>
 kubectl create -f gitlab.yaml
 <span class="token comment" spellcheck="true">#查看gitlab服务状态</span>
@@ -758,8 +764,6 @@ kubectl logs -f -n devops gitlab
 <span class="token comment" spellcheck="true">#删除gitlab服务</span>
 kubectl delete -f gitlab.yaml
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
 <hr>
 <h2 id="二、GitLab代码管理"><a href="#二、GitLab代码管理" class="headerlink" title="二、GitLab代码管理"></a>二、GitLab代码管理</h2><h3 id="1-代码提交规范"><a href="#1-代码提交规范" class="headerlink" title="1.代码提交规范"></a>1.代码提交规范</h3><blockquote>
 <p>提交代码其实是有很多讲究的，如果我们都按照自己的想法随意的提交代码，到最后自己都不知道当时这次提交到底是为了解决什么问题。良好的代码提交习惯即有利于自己之后的审查，也有助于其他人观看，同时利用脚本来提取有价值的信息。如查看人个人的工作量，每日的工作任务等等。</p>
