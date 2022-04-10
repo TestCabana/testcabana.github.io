@@ -549,11 +549,11 @@ docker restart gitlab
 docker <span class="token function">rm</span> gitlab
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li><strong>[6] 浏览器访问Gitlab</strong><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 通过浏览器访问 http://&lt;主机IP>:端口 就可以看到运行结果。初次启动会比较慢，耐心等待。</span>
+<li><strong>[6] 浏览器访问Gitlab</strong></li>
+</ul>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 通过浏览器访问 http://&lt;主机IP>:端口 就可以看到运行结果。初次启动会比较慢，耐心等待。</span>
 <span class="token comment" spellcheck="true"># 账号为root，使用gitlab初始密码登录成功之后需要修改密码</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</li>
-</ul>
 <h4 id="1-2-使用docker-compose"><a href="#1-2-使用docker-compose" class="headerlink" title="1.2 使用docker compose"></a>1.2 使用docker compose</h4><ul>
 <li><strong>[1] 创建docker-compose.yml配置文件</strong></li>
 </ul>
@@ -770,16 +770,22 @@ kubectl delete -f gitlab.yaml
 </blockquote>
 <ul>
 <li><strong>[1] 提交模板</strong><ul>
-<li>我们更多使用的是如下简化版<code>commit</code>模板<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
+<li>我们更多使用的是如下简化版<code>commit</code>模板</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
 <span class="token operator">&lt;</span>提交类型<span class="token operator">></span>-<span class="token operator">&lt;</span>项目名称<span class="token operator">></span>: <span class="token operator">&lt;</span>本次代码提交的动机<span class="token operator">></span>
 <span class="token comment" spellcheck="true"># 示例说明</span>
 feat-Pandas: update runtime to V1.3.0
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
+<ul>
+<li><strong>[2] 使用类型</strong><ul>
+<li>一般情况下不同类型的使用频率由高到低显示，如下：</li>
 </ul>
 </li>
-<li><strong>[2] 使用类型</strong><ul>
-<li>一般情况下不同类型的使用频率由高到低显示，如下：<pre class="line-numbers language-bash"><code class="language-bash">feat: 代码新增功能 
+</ul>
+<pre class="line-numbers language-bash"><code class="language-bash">feat: 代码新增功能 
 fix: 代码修复bug
 perf: 代码性能优化
 style: 代码编码规范或风格上的修改并不影响功能
@@ -791,25 +797,29 @@ revert: 代码回滚
 build: 改变项目构建流程或包依赖
 ci: 改变项目构建流程或包依赖
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
 <h3 id="2-分支管理"><a href="#2-分支管理" class="headerlink" title="2.分支管理"></a>2.分支管理</h3><blockquote>
 <p>分支管理是一个非常重要的环节，如果我们没有分支管理，那么我们的代码就会被所有人看到，这样就会导致我们的代码被改动。</p>
 </blockquote>
 <ul>
-<li><p><strong>[1] develop分支-开发分支</strong><br>开发分支是开发人员最常用的分支，在开发分支上进行开发，当完成了开发，可以提交到master分支上，这样就可以让开发的代码可以被其他人看到。</p>
-</li>
-<li><p><strong>[2] feature分支-功能分支</strong><br>对于新功能开发，应从 develop 上切出一个 feature 分支进行开发，命名格式为 feature&#x2F;project。其中功能名使用小写单词结合中划线连缀方式，如 feature&#x2F;update-web-style。feature 分支进行编译通过并自测通过后，再合并到主干 develop 分支上。</p>
-</li>
-<li><p><strong>[3] master分支-主分支</strong><br>当 develop 分支开发完成一个版本的时候，测试没有问题之后就可以将其提交之后合并到 master分支了，master 分支内容会自动发布到内网正式环境。需要注意的是，一般情况从开发分支合入到主干分支不会有代码冲突的，如果有的话那就是没有按照上述流程严格执行的结果。</p>
-</li>
-<li><p><strong>[4] release分支-预发布分支</strong><br>将已经在 master 内网正式环境上测试没有问题的版本合入 release 分支，打包给客户部署或者更新线上环境，完成最后的更新操作。</p>
-</li>
+<li><strong>[1] develop分支-开发分支</strong></li>
 </ul>
+<p>开发分支是开发人员最常用的分支，在开发分支上进行开发，当完成了开发，可以提交到master分支上，这样就可以让开发的代码可以被其他人看到。</p>
+<ul>
+<li><strong>[2] feature分支-功能分支</strong></li>
+</ul>
+<p>对于新功能开发，应从 develop 上切出一个 feature 分支进行开发，命名格式为 feature&#x2F;project。其中功能名使用小写单词结合中划线连缀方式，如 feature&#x2F;update-web-style。feature 分支进行编译通过并自测通过后，再合并到主干 develop 分支上。</p>
+<ul>
+<li><strong>[3] master分支-主分支</strong></li>
+</ul>
+<p>当 develop 分支开发完成一个版本的时候，测试没有问题之后就可以将其提交之后合并到 master分支了，master 分支内容会自动发布到内网正式环境。需要注意的是，一般情况从开发分支合入到主干分支不会有代码冲突的，如果有的话那就是没有按照上述流程严格执行的结果。</p>
+<ul>
+<li><strong>[4] release分支-预发布分支</strong></li>
+</ul>
+<p>将已经在 master 内网正式环境上测试没有问题的版本合入 release 分支，打包给客户部署或者更新线上环境，完成最后的更新操作。</p>
 <h3 id="3-Git常用命令"><a href="#3-Git常用命令" class="headerlink" title="3.Git常用命令"></a>3.Git常用命令</h3><ul>
-<li><strong>[1] Git常用命令</strong><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#创建分支</span>
+<li><strong>[1] Git常用命令</strong></li>
+</ul>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#创建分支</span>
 <span class="token function">git</span> branch <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
 <span class="token comment" spellcheck="true">#切换分支</span>
 <span class="token function">git</span> checkout <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
@@ -822,8 +832,6 @@ ci: 改变项目构建流程或包依赖
 <span class="token comment" spellcheck="true"># 查看当前分支的最后一次提交的提交信息</span>
 <span class="token function">git</span> log -1 --pretty<span class="token operator">=</span>%B
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
 
                 
             </div>
