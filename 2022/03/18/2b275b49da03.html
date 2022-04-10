@@ -510,14 +510,15 @@ data：存储数据
 <li><strong>[3] 创建并启动容器</strong></li>
 </ul>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器</span>
-docker run -d -p 80:80 -p 443:443 -p 222:22 --name gitlab --restart always -v ~/gitlab/config:/etc/gitlab -v ~/gitlab/logs:/var/log/gitlab -v ~/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
+docker run -d -p 80:80 -p 443:443 -p 222:22 --name gitlab --restart always 
+-v ~/gitlab/config:/etc/gitlab -v ~/gitlab/logs:/var/log/gitlab -v ~/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
 <span class="token comment" spellcheck="true">#注释</span>
 -d表示：后台运行
 -p表示：将容器内部端口向外映射
 --name表示：命名容器名称
 --restart表示：设置容器重启策略 <span class="token punctuation">(</span>always--在容器退出时总是重启容器；unless-stopped--在容器退出时总是重启容器，但是不考虑在Docker守护进程启动时就已经停止了的容器<span class="token punctuation">)</span>
 -v表示：将容器内配置信息、日志、数据等文件夹挂载到宿主机指定目录
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li><strong>[4] 修改gitlab.rb配置文件</strong></li>
 </ul>
