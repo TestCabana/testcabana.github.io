@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="GitLab安装及代码管理（一）, TestCabana">
+    <meta name="keywords" content="博客文章模板1, TestCabana">
     <meta name="description" content="计算机科学与技术 | 软件测试工程师">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>GitLab安装及代码管理（一） | TestCabana</title>
+    <title>博客文章模板1 | TestCabana</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/libs/awesome/css/all.css">
@@ -30,8 +30,7 @@
     <script src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="TestCabana" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -290,12 +289,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">GitLab安装及代码管理（一）</h1>
+                    <h1 class="description center-align post-title">博客文章模板1</h1>
                 </div>
             </div>
         </div>
@@ -409,17 +408,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/GitLab/">
-                                <span class="chip bg-color">GitLab</span>
-                            </a>
-                        
-                            <a href="/tags/Git/">
-                                <span class="chip bg-color">Git</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -440,7 +431,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-18
+                    2022-04-10
                 </div>
                 
 
@@ -454,14 +445,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.1k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    6 分
                 </div>
                 
 
@@ -495,25 +486,25 @@
 <h4 id="1-1-使用docker命令"><a href="#1-1-使用docker命令" class="headerlink" title="1.1 使用docker命令"></a>1.1 使用docker命令</h4><ul>
 <li><strong>[1] 获取Gitlab-ce最新版本镜像</strong></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 拉取gitlab-ce最新版本镜像</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 拉取gitlab-ce最新版本镜像</span>
 docker pull gitlab/gitlab-ce:latest
 <span class="token comment" spellcheck="true"># 查看镜像是否拉取成功</span>
 docker images
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>[2] 添加容器挂载目录，在当前目录下创建gitlab的对应config、logs、data文件目录，容器启动后可以映射到本机，方便后续可以直接在主机查看和编辑，不用再进入容器操作</strong></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器挂载目录</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器挂载目录</span>
 <span class="token function">mkdir</span> -p ~/gitlab/config ~/gitlab/logs ~/gitlab/data
 <span class="token comment" spellcheck="true">#注释</span>
 config：存储gitlab配置信息
 logs：存储日志
 data：存储数据
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>[3] 创建并启动容器</strong></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器</span>
 docker run -d -p 80:80 -p 443:443 -p 222:22 --name gitlab --restart always 
 -v ~/gitlab/config:/etc/gitlab -v ~/gitlab/logs:/var/log/gitlab -v ~/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
 <span class="token comment" spellcheck="true">#注释</span>
@@ -522,11 +513,11 @@ docker run -d -p 80:80 -p 443:443 -p 222:22 --name gitlab --restart always
 --name表示：命名容器名称
 --restart表示：设置容器重启策略 <span class="token punctuation">(</span>always--在容器退出时总是重启容器；unless-stopped--在容器退出时总是重启容器，但是不考虑在Docker守护进程启动时就已经停止了的容器<span class="token punctuation">)</span>
 -v表示：将容器内配置信息、日志、数据等文件夹挂载到宿主机指定目录
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>[4] 修改gitlab.rb配置文件</strong></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 修改gitlab.rb配置文件</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 修改gitlab.rb配置文件</span>
 <span class="token comment" spellcheck="true"># 进入gitlab容器</span>
 docker <span class="token function">exec</span> -it gitlab <span class="token function">bash</span>
 <span class="token comment" spellcheck="true"># 在容器内部修改gitlab.rb配置文件</span>
@@ -540,11 +531,11 @@ gitlab_rails<span class="token punctuation">[</span><span class="token string">'
 gitlab-ctl reconfigure
 <span class="token comment" spellcheck="true"># 在容器内查看gitlab初始密码</span>
 <span class="token function">cat</span> /etc/gitlab/initial_root_password
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>[5] 开启|停止|重启|删除gitlab服务</strong></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 开启gitlab服务</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 开启gitlab服务</span>
 docker start gitlab
 <span class="token comment" spellcheck="true"># 停止gitlab服务</span>
 docker stop gitlab
@@ -552,49 +543,25 @@ docker stop gitlab
 docker restart gitlab
 <span class="token comment" spellcheck="true"># 删除gitlab服务</span>
 docker <span class="token function">rm</span> gitlab
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>[6] 浏览器访问Gitlab</strong></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 通过浏览器访问 http://&lt;主机IP>:端口 就可以看到运行结果。初次启动会比较慢，耐心等待。</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 通过浏览器访问 http://&lt;主机IP>:端口 就可以看到运行结果。初次启动会比较慢，耐心等待。</span>
 <span class="token comment" spellcheck="true"># 账号为root，使用gitlab初始密码登录成功之后需要修改密码</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</code></pre>
 <h4 id="1-2-使用docker-compose"><a href="#1-2-使用docker-compose" class="headerlink" title="1.2 使用docker compose"></a>1.2 使用docker compose</h4><ul>
-<li><strong>[1] 创建docker-compose.yml配置文件</strong></li>
+<li><p><strong>[1] 创建docker-compose.yml配置文件</strong></p>
+</li>
+<li><p><strong>[2] 使用命令启动和停止docker-compose服务</strong></p>
+</li>
 </ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 创建docker-compose.yml配置文件</span>
-<span class="token comment" spellcheck="true"># 在当前目录下创建docker-compose.yml配置文件</span>
-touch docker<span class="token punctuation">-</span>compose.yml
-<span class="token comment" spellcheck="true"># 在docker-compose.yml配置文件中添加内容</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'1'</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">gitlab</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> gitlab/gitlab<span class="token punctuation">-</span>ce<span class="token punctuation">:</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> <span class="token string">"80:80"</span>
-      <span class="token punctuation">-</span> <span class="token string">"443:443"</span>
-      <span class="token punctuation">-</span> <span class="token string">"222:22"</span>
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> ~/gitlab/config<span class="token punctuation">:</span>/etc/gitlab
-      <span class="token punctuation">-</span> ~/gitlab/logs<span class="token punctuation">:</span>/var/log/gitlab
-      <span class="token punctuation">-</span> ~/gitlab/data<span class="token punctuation">:</span>/var/opt/gitlab
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token key atrule">TZ</span><span class="token punctuation">:</span> <span class="token string">'Asia/Shanghai'</span>
-      <span class="token key atrule">GITLAB_OMNIBUS_CONFIG</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
-        external_url 'http:172.16.180.138'      # 替换为服务器ip
-        gitlab_rails['gitlab_shell_ssh_port'] = 222 # 替换为ssh端口</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li><strong>[2] 使用命令启动和停止docker-compose服务</strong></li>
-</ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 启动docker-compose服务</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 启动docker-compose服务</span>
 docker-compose up
 <span class="token comment" spellcheck="true"># 停止docker-compose服务</span>
 docker-compose down
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-rpm方式部署"><a href="#2-rpm方式部署" class="headerlink" title="2.rpm方式部署"></a>2.rpm方式部署</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#rpm包地址：https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/</span>
+</code></pre>
+<h3 id="2-rpm方式部署"><a href="#2-rpm方式部署" class="headerlink" title="2.rpm方式部署"></a>2.rpm方式部署</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#rpm包地址：https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/</span>
 <span class="token function">wget</span> https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
 rpm -i gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
 <span class="token comment" spellcheck="true"># 编辑站点地址</span>
@@ -613,154 +580,14 @@ gitlab-ctl restart
 gitlab-ctl logs
 <span class="token comment" spellcheck="true">#删除Gitlab服务</span>
 gitlab-ctl <span class="token function">rm</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <h3 id="3-Kubernetes部署（需要安装kubectl）"><a href="#3-Kubernetes部署（需要安装kubectl）" class="headerlink" title="3.Kubernetes部署（需要安装kubectl）"></a>3.Kubernetes部署（需要安装kubectl）</h3><ul>
-<li><strong>[1] 编写kubernetes配置文件</strong></li>
+<li><p><strong>[1] 编写kubernetes配置文件</strong></p>
+</li>
+<li><p><strong>[2] kubectl相关命令</strong></p>
+</li>
 </ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml">  <span class="token punctuation">---</span>
-  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
-  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
-  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-      <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-  <span class="token key atrule">spec</span><span class="token punctuation">:</span>
-    <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">1</span>
-    <span class="token key atrule">revisionHistoryLimit</span><span class="token punctuation">:</span> <span class="token number">10</span>
-    <span class="token key atrule">selector</span><span class="token punctuation">:</span>
-      <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
-        <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">template</span><span class="token punctuation">:</span>
-      <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-        <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-          <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-        <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-        <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-      <span class="token key atrule">spec</span><span class="token punctuation">:</span>
-        <span class="token key atrule">containers</span><span class="token punctuation">:</span>
-          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-            <span class="token key atrule">image</span><span class="token punctuation">:</span> gitlab/gitlab<span class="token punctuation">-</span>ce<span class="token punctuation">:</span>latest
-            <span class="token key atrule">imagePullPolicy</span><span class="token punctuation">:</span> Always
-            <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-              <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-                <span class="token key atrule">name</span><span class="token punctuation">:</span> web
-                <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP
-              <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">22</span>
-                <span class="token key atrule">name</span><span class="token punctuation">:</span> agent
-                <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP
-            <span class="token key atrule">resources</span><span class="token punctuation">:</span>
-              <span class="token key atrule">limits</span><span class="token punctuation">:</span>
-                <span class="token key atrule">cpu</span><span class="token punctuation">:</span> 1000m
-                <span class="token key atrule">memory</span><span class="token punctuation">:</span> 4Gi
-              <span class="token key atrule">requests</span><span class="token punctuation">:</span>
-                <span class="token key atrule">cpu</span><span class="token punctuation">:</span> 500m
-                <span class="token key atrule">memory</span><span class="token punctuation">:</span> 512Mi
-            <span class="token key atrule">livenessProbe</span><span class="token punctuation">:</span>
-              <span class="token key atrule">httpGet</span><span class="token punctuation">:</span>
-                <span class="token key atrule">path</span><span class="token punctuation">:</span> /users/sign_in
-                <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-              <span class="token key atrule">initialDelaySeconds</span><span class="token punctuation">:</span> <span class="token number">60</span>
-              <span class="token key atrule">timeoutSeconds</span><span class="token punctuation">:</span> <span class="token number">5</span>
-              <span class="token key atrule">failureThreshold</span><span class="token punctuation">:</span> <span class="token number">12</span>
-            <span class="token key atrule">readinessProbe</span><span class="token punctuation">:</span>
-              <span class="token key atrule">httpGet</span><span class="token punctuation">:</span>
-                <span class="token key atrule">path</span><span class="token punctuation">:</span> /users/sign_in
-                <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-              <span class="token key atrule">initialDelaySeconds</span><span class="token punctuation">:</span> <span class="token number">60</span>
-              <span class="token key atrule">timeoutSeconds</span><span class="token punctuation">:</span> <span class="token number">5</span>
-              <span class="token key atrule">failureThreshold</span><span class="token punctuation">:</span> <span class="token number">12</span>
-            <span class="token key atrule">volumeMounts</span><span class="token punctuation">:</span>
-              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>conf
-                <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /etc/gitlab
-              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>log
-                <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /var/log/gitlab
-              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>data
-                <span class="token key atrule">mountPath</span><span class="token punctuation">:</span> /var/opt/gitlab
-            <span class="token key atrule">env</span><span class="token punctuation">:</span>
-              <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab_HOME
-                <span class="token key atrule">value</span><span class="token punctuation">:</span> /var/lib/gitlab
-        <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>conf
-            <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
-              <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/config
-              <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
-          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>log
-            <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
-              <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/logs
-              <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
-          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>data
-            <span class="token key atrule">hostPath</span><span class="token punctuation">:</span> 
-              <span class="token key atrule">path</span><span class="token punctuation">:</span> /data/devops/gitlab/data
-              <span class="token key atrule">type</span><span class="token punctuation">:</span> Directory
-        <span class="token key atrule">serviceAccountName</span><span class="token punctuation">:</span> gitlab
-  <span class="token punctuation">---</span>
-  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
-  <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
-  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-      <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-  <span class="token punctuation">---</span>
-  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
-  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
-  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-      <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-  <span class="token key atrule">spec</span><span class="token punctuation">:</span>
-    <span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> web
-        <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-        <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-        <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">30088</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> slave
-        <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">22</span>
-        <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">22</span>
-        <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">30022</span>
-    <span class="token key atrule">selector</span><span class="token punctuation">:</span>
-      <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> gitlab
-  <span class="token punctuation">---</span>
-  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
-  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
-  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-  <span class="token key atrule">rules</span><span class="token punctuation">:</span>
-  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods"</span><span class="token punctuation">]</span>
-    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"create"</span><span class="token punctuation">,</span><span class="token string">"delete"</span><span class="token punctuation">,</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"patch"</span><span class="token punctuation">,</span><span class="token string">"update"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
-  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods/exec"</span><span class="token punctuation">]</span>
-    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"create"</span><span class="token punctuation">,</span><span class="token string">"delete"</span><span class="token punctuation">,</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"patch"</span><span class="token punctuation">,</span><span class="token string">"update"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
-  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pods/log"</span><span class="token punctuation">]</span>
-    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span><span class="token string">"list"</span><span class="token punctuation">,</span><span class="token string">"watch"</span><span class="token punctuation">]</span>
-  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"secrets"</span><span class="token punctuation">]</span>
-    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">]</span>
-  <span class="token punctuation">---</span>
-  <span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
-  <span class="token key atrule">kind</span><span class="token punctuation">:</span> RoleBinding
-  <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-  <span class="token key atrule">roleRef</span><span class="token punctuation">:</span>
-  <span class="token key atrule">apiGroup</span><span class="token punctuation">:</span> rbac.authorization.k8s.io
-  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-  <span class="token key atrule">subjects</span><span class="token punctuation">:</span>
-  <span class="token punctuation">-</span> <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
-    <span class="token key atrule">name</span><span class="token punctuation">:</span> gitlab
-    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> devops
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li><strong>[2] kubectl相关命令</strong></li>
-</ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#使用kubectl创建gitlab服务</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#使用kubectl创建gitlab服务</span>
 kubectl create -f gitlab.yaml
 <span class="token comment" spellcheck="true">#查看gitlab服务状态</span>
 kubectl get pods -n devops
@@ -768,7 +595,7 @@ kubectl get pods -n devops
 kubectl logs -f -n devops gitlab
 <span class="token comment" spellcheck="true">#删除gitlab服务</span>
 kubectl delete -f gitlab.yaml
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <hr>
 <h2 id="二、GitLab代码管理"><a href="#二、GitLab代码管理" class="headerlink" title="二、GitLab代码管理"></a>二、GitLab代码管理</h2><h3 id="1-代码提交规范"><a href="#1-代码提交规范" class="headerlink" title="1.代码提交规范"></a>1.代码提交规范</h3><blockquote>
 <p>提交代码其实是有很多讲究的，如果我们都按照自己的想法随意的提交代码，到最后自己都不知道当时这次提交到底是为了解决什么问题。良好的代码提交习惯即有利于自己之后的审查，也有助于其他人观看，同时利用脚本来提取有价值的信息。如查看人个人的工作量，每日的工作任务等等。</p>
@@ -779,18 +606,18 @@ kubectl delete -f gitlab.yaml
 </ul>
 </li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
 <span class="token operator">&lt;</span>提交类型<span class="token operator">></span>-<span class="token operator">&lt;</span>项目名称<span class="token operator">></span>: <span class="token operator">&lt;</span>本次代码提交的动机<span class="token operator">></span>
 <span class="token comment" spellcheck="true"># 示例说明</span>
 feat-Pandas: update runtime to V1.3.0
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>[2] 使用类型</strong><ul>
 <li>一般情况下不同类型的使用频率由高到低显示，如下：</li>
 </ul>
 </li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash">feat: 代码新增功能 
+<pre class=" language-bash"><code class="language-bash">feat: 代码新增功能 
 fix: 代码修复bug
 perf: 代码性能优化
 style: 代码编码规范或风格上的修改并不影响功能
@@ -801,7 +628,7 @@ chore: 代码构建、版本控制、编译等工作
 revert: 代码回滚
 build: 改变项目构建流程或包依赖
 ci: 改变项目构建流程或包依赖
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <h3 id="2-分支管理"><a href="#2-分支管理" class="headerlink" title="2.分支管理"></a>2.分支管理</h3><blockquote>
 <p>分支管理是一个非常重要的环节，如果我们没有分支管理，那么我们的代码就会被所有人看到，这样就会导致我们的代码被改动。</p>
 </blockquote>
@@ -824,7 +651,7 @@ ci: 改变项目构建流程或包依赖
 <h3 id="3-Git常用命令"><a href="#3-Git常用命令" class="headerlink" title="3.Git常用命令"></a>3.Git常用命令</h3><ul>
 <li><strong>[1] Git常用命令</strong></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#创建分支</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#创建分支</span>
 <span class="token function">git</span> branch <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
 <span class="token comment" spellcheck="true">#切换分支</span>
 <span class="token function">git</span> checkout <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
@@ -836,7 +663,7 @@ ci: 改变项目构建流程或包依赖
 <span class="token function">git</span> log -1
 <span class="token comment" spellcheck="true"># 查看当前分支的最后一次提交的提交信息</span>
 <span class="token function">git</span> log -1 --pretty<span class="token operator">=</span>%B
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 
                 
             </div>
@@ -853,7 +680,7 @@ ci: 改变项目构建流程或包依赖
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">谢志强</a>
+                    <a href="/about" rel="external nofollow noreferrer">zq.xie</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -863,7 +690,7 @@ ci: 改变项目构建流程或包依赖
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://TestCabana.github.io/posts/1780.html">https://TestCabana.github.io/posts/1780.html</a>
+                    <a href="https://TestCabana.github.io/posts/6a6161fe/">https://TestCabana.github.io/posts/6a6161fe/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -876,7 +703,7 @@ ci: 改变项目构建流程或包依赖
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">谢志强</a>
+                    <a href="/about" target="_blank">zq.xie</a>
                     !
                 </span>
             </div>
@@ -900,15 +727,7 @@ ci: 改变项目构建流程或包依赖
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/GitLab/">
-                                    <span class="chip bg-color">GitLab</span>
-                                </a>
-                            
-                                <a href="/tags/Git/">
-                                    <span class="chip bg-color">Git</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -1081,7 +900,49 @@ ci: 改变项目构建流程或包依赖
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/posts/1780.html">
+                <a href="/posts/6a6161fe/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="博客文章模板1">
+                        
+                        <span class="card-title">博客文章模板1</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B5%8B%E8%AF%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/" class="post-category">
+                                    测试服务部署
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/1780/">
                     <div class="card-image">
                         
                         
@@ -1112,7 +973,6 @@ ci: 改变项目构建流程或包依赖
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1122,67 +982,6 @@ ci: 改变项目构建流程或包依赖
                     
                     <a href="/tags/Git/">
                         <span class="chip bg-color">Git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/3896.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="Test1">
-                        
-                        <span class="card-title">Test1</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%B5%8B%E8%AF%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/" class="post-category">
-                                    测试服务部署
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/">
-                        <span class="chip bg-color">Report季度总结</span>
-                    </a>
-                    
-                    <a href="/tags/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/">
-                        <span class="chip bg-color">Read读万卷书</span>
-                    </a>
-                    
-                    <a href="/tags/Walk%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF/">
-                        <span class="chip bg-color">Walk行万里路</span>
-                    </a>
-                    
-                    <a href="/tags/Baby%E6%88%90%E9%95%BF%E6%97%A5%E8%AE%B0/">
-                        <span class="chip bg-color">Baby成长日记</span>
                     </a>
                     
                 </div>
@@ -1366,7 +1165,7 @@ ci: 改变项目构建流程或包依赖
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.9k</span>&nbsp;字
+                class="white-color">6.6k</span>&nbsp;字
             
             
             
