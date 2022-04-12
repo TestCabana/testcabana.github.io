@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-04-10T14:01:36.533Z</updated>
+  <updated>2022-04-12T04:32:32.927Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>GitLab安装及代码管理（一）</title>
-    <link href="https://testcabana.github.io/2022/03/18/5a79bb47eec7.html"/>
-    <id>https://testcabana.github.io/2022/03/18/5a79bb47eec7.html</id>
+    <link href="https://testcabana.github.io/posts/1780.html"/>
+    <id>https://testcabana.github.io/posts/1780.html</id>
     <published>2022-03-18T08:15:34.376Z</published>
-    <updated>2022-04-10T14:01:36.533Z</updated>
+    <updated>2022-04-12T04:32:32.927Z</updated>
     
     
       
@@ -46,10 +46,10 @@
   
   <entry>
     <title>Test1</title>
-    <link href="https://testcabana.github.io/2022/02/25/a67862d5b501.html"/>
-    <id>https://testcabana.github.io/2022/02/25/a67862d5b501.html</id>
+    <link href="https://testcabana.github.io/posts/3896.html"/>
+    <id>https://testcabana.github.io/posts/3896.html</id>
     <published>2022-02-25T08:04:08.210Z</published>
-    <updated>2022-04-10T15:28:34.590Z</updated>
+    <updated>2022-04-12T04:32:32.977Z</updated>
     
     
       
@@ -59,7 +59,7 @@
     <summary type="html">
 
 	&lt;div class=&quot;row&quot;&gt;
-    &lt;embed src=&quot;test1.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot;</summary>
+    &lt;embed src=&quot;./test1/test1.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot;</summary>
         
       
     
@@ -80,10 +80,10 @@
   
   <entry>
     <title>Linux基础</title>
-    <link href="https://testcabana.github.io/2022/02/25/9f776230f374.html"/>
-    <id>https://testcabana.github.io/2022/02/25/9f776230f374.html</id>
+    <link href="https://testcabana.github.io/posts/18445.html"/>
+    <id>https://testcabana.github.io/posts/18445.html</id>
     <published>2022-02-25T07:46:32.930Z</published>
-    <updated>2022-03-06T15:16:22.116Z</updated>
+    <updated>2022-04-12T04:32:32.934Z</updated>
     
     
       
@@ -108,10 +108,10 @@
   
   <entry>
     <title>Mac最佳组合iTerm2+oh-My-Zsh</title>
-    <link href="https://testcabana.github.io/2022/02/25/f7dd40fd7b34.html"/>
-    <id>https://testcabana.github.io/2022/02/25/f7dd40fd7b34.html</id>
+    <link href="https://testcabana.github.io/posts/2146.html"/>
+    <id>https://testcabana.github.io/posts/2146.html</id>
     <published>2022-02-25T06:16:48.185Z</published>
-    <updated>2022-03-06T15:17:16.204Z</updated>
+    <updated>2022-04-12T04:32:32.968Z</updated>
     
     
       
