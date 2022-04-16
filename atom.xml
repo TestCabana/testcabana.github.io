@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-04-12T04:58:55.130Z</updated>
+  <updated>2022-04-16T15:47:29.784Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -17,11 +17,177 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Read读万卷书</title>
+    <link href="https://testcabana.github.io/posts/5312e213.html"/>
+    <id>https://testcabana.github.io/posts/5312e213.html</id>
+    <published>2022-04-16T15:44:01.147Z</published>
+    <updated>2022-04-16T15:47:29.784Z</updated>
+    
+    
+    
+    
+    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>季度总结</title>
+    <link href="https://testcabana.github.io/posts/b99beeab.html"/>
+    <id>https://testcabana.github.io/posts/b99beeab.html</id>
+    <published>2022-04-16T15:40:54.001Z</published>
+    <updated>2022-04-16T15:47:29.832Z</updated>
+    
+    
+    
+    
+    <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ability编程能力</title>
+    <link href="https://testcabana.github.io/posts/36352edc.html"/>
+    <id>https://testcabana.github.io/posts/36352edc.html</id>
+    <published>2022-04-16T15:36:31.157Z</published>
+    <updated>2022-04-16T15:47:29.735Z</updated>
+    
+    
+    
+    
+    <category term="Ability编程能力" scheme="https://testcabana.github.io/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/posts/e6107735.html"/>
+    <id>https://testcabana.github.io/posts/e6107735.html</id>
+    <published>2022-04-16T15:35:20.546Z</published>
+    <updated>2022-04-16T15:47:29.731Z</updated>
+    
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ability业务能力</title>
+    <link href="https://testcabana.github.io/posts/1526445f.html"/>
+    <id>https://testcabana.github.io/posts/1526445f.html</id>
+    <published>2022-04-16T15:33:32.125Z</published>
+    <updated>2022-04-16T15:47:29.712Z</updated>
+    
+    
+    
+    
+    <category term="Ability业务能力" scheme="https://testcabana.github.io/categories/Ability%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tools测试工具</title>
+    <link href="https://testcabana.github.io/posts/a1aae69.html"/>
+    <id>https://testcabana.github.io/posts/a1aae69.html</id>
+    <published>2022-04-16T15:08:52.361Z</published>
+    <updated>2022-04-16T15:47:29.834Z</updated>
+    
+    
+    
+    
+    <category term="Tools测试工具" scheme="https://testcabana.github.io/categories/Tools%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
+    
+    <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
+    
+    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
+    
+    <category term="Jira" scheme="https://testcabana.github.io/tags/Jira/"/>
+    
+    <category term="禅道" scheme="https://testcabana.github.io/tags/%E7%A6%85%E9%81%93/"/>
+    
+    <category term="wiki" scheme="https://testcabana.github.io/tags/wiki/"/>
+    
+    <category term="topd" scheme="https://testcabana.github.io/tags/topd/"/>
+    
+    <category term="Xmind" scheme="https://testcabana.github.io/tags/Xmind/"/>
+    
+    <category term="Xshell" scheme="https://testcabana.github.io/tags/Xshell/"/>
+    
+    <category term="Fiddler" scheme="https://testcabana.github.io/tags/Fiddler/"/>
+    
+    <category term="Charles" scheme="https://testcabana.github.io/tags/Charles/"/>
+    
+    <category term="WireShark" scheme="https://testcabana.github.io/tags/WireShark/"/>
+    
+    <category term="StreamDock" scheme="https://testcabana.github.io/tags/StreamDock/"/>
+    
+    <category term="Postman" scheme="https://testcabana.github.io/tags/Postman/"/>
+    
+    <category term="Jmeter" scheme="https://testcabana.github.io/tags/Jmeter/"/>
+    
+    <category term="MeterSphere" scheme="https://testcabana.github.io/tags/MeterSphere/"/>
+    
+    <category term="Swagger" scheme="https://testcabana.github.io/tags/Swagger/"/>
+    
+    <category term="yapi" scheme="https://testcabana.github.io/tags/yapi/"/>
+    
+    <category term="LoadRunner" scheme="https://testcabana.github.io/tags/LoadRunner/"/>
+    
+    <category term="StressTest" scheme="https://testcabana.github.io/tags/StressTest/"/>
+    
+    <category term="WeTest" scheme="https://testcabana.github.io/tags/WeTest/"/>
+    
+    <category term="AppScan" scheme="https://testcabana.github.io/tags/AppScan/"/>
+    
+    <category term="Nmap" scheme="https://testcabana.github.io/tags/Nmap/"/>
+    
+    <category term="sqlmap" scheme="https://testcabana.github.io/tags/sqlmap/"/>
+    
+    <category term="nessus" scheme="https://testcabana.github.io/tags/nessus/"/>
+    
+    <category term="Drozer" scheme="https://testcabana.github.io/tags/Drozer/"/>
+    
+    <category term="Monkey" scheme="https://testcabana.github.io/tags/Monkey/"/>
+    
+    <category term="GT" scheme="https://testcabana.github.io/tags/GT/"/>
+    
+    <category term="QNET" scheme="https://testcabana.github.io/tags/QNET/"/>
+    
+    <category term="PerfDog" scheme="https://testcabana.github.io/tags/PerfDog/"/>
+    
+    <category term="Sonar" scheme="https://testcabana.github.io/tags/Sonar/"/>
+    
+    <category term="prometheus" scheme="https://testcabana.github.io/tags/prometheus/"/>
+    
+    <category term="Grafana" scheme="https://testcabana.github.io/tags/Grafana/"/>
+    
+    <category term="Navicat" scheme="https://testcabana.github.io/tags/Navicat/"/>
+    
+    <category term="phpMyAdmin" scheme="https://testcabana.github.io/tags/phpMyAdmin/"/>
+    
+    <category term="SublimeText" scheme="https://testcabana.github.io/tags/SublimeText/"/>
+    
+    <category term="VisualStudioCode" scheme="https://testcabana.github.io/tags/VisualStudioCode/"/>
+    
+    <category term="PyCharm" scheme="https://testcabana.github.io/tags/PyCharm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitLab安装及代码管理（一）</title>
     <link href="https://testcabana.github.io/posts/4f33f425.html"/>
     <id>https://testcabana.github.io/posts/4f33f425.html</id>
-    <published>2022-03-18T08:15:34.376Z</published>
-    <updated>2022-04-12T04:58:55.130Z</updated>
+    <published>2022-04-16T15:05:46.114Z</published>
+    <updated>2022-04-16T15:47:29.751Z</updated>
     
     
       
@@ -35,65 +201,221 @@
     
     
     
-    <category term="测试服务部署" scheme="https://testcabana.github.io/categories/%E6%B5%8B%E8%AF%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/"/>
+    <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
     
-    
-    <category term="GitLab" scheme="https://testcabana.github.io/tags/GitLab/"/>
     
     <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
     
-  </entry>
-  
-  <entry>
-    <title>微服务之服务拆分</title>
-    <link href="https://testcabana.github.io/posts/4b73f3e6.html"/>
-    <id>https://testcabana.github.io/posts/4b73f3e6.html</id>
-    <published>2022-02-25T08:04:08.210Z</published>
-    <updated>2022-04-14T05:01:12.934Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;embed src=&quot;./hello.pdf&quot; width=&quot;100%&quot; height=&quot;750&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="测试服务部署" scheme="https://testcabana.github.io/categories/%E6%B5%8B%E8%AF%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/"/>
-    
-    
-    <category term="PDF文件" scheme="https://testcabana.github.io/tags/PDF%E6%96%87%E4%BB%B6/"/>
+    <category term="GitLab" scheme="https://testcabana.github.io/tags/GitLab/"/>
     
   </entry>
   
   <entry>
-    <title>Linux基础</title>
-    <link href="https://testcabana.github.io/posts/a4a81253.html"/>
-    <id>https://testcabana.github.io/posts/a4a81253.html</id>
-    <published>2022-02-25T07:46:32.930Z</published>
-    <updated>2022-04-12T04:58:55.134Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
-        
-      
+    <title>CI CD容器构建</title>
+    <link href="https://testcabana.github.io/posts/8657ec7a.html"/>
+    <id>https://testcabana.github.io/posts/8657ec7a.html</id>
+    <published>2022-04-16T15:00:10.432Z</published>
+    <updated>2022-04-16T15:47:29.748Z</updated>
     
     
     
-    <category term="Linux基础" scheme="https://testcabana.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
     
     
-    <category term="Linux命令" scheme="https://testcabana.github.io/tags/Linux%E5%91%BD%E4%BB%A4/"/>
+    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
     
-    <category term="环境部署" scheme="https://testcabana.github.io/tags/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+    <category term="Gitlab" scheme="https://testcabana.github.io/tags/Gitlab/"/>
+    
+    <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
+    
+    <category term="Docker" scheme="https://testcabana.github.io/tags/Docker/"/>
+    
+    <category term="K8s" scheme="https://testcabana.github.io/tags/K8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微服务及中间件</title>
+    <link href="https://testcabana.github.io/posts/7d288360.html"/>
+    <id>https://testcabana.github.io/posts/7d288360.html</id>
+    <published>2022-04-16T14:50:45.175Z</published>
+    <updated>2022-04-16T15:47:29.842Z</updated>
+    
+    
+    
+    
+    <category term="微服务及中间件" scheme="https://testcabana.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8F%8A%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+    <category term="SpringCloud" scheme="https://testcabana.github.io/tags/SpringCloud/"/>
+    
+    <category term="SpringBoot" scheme="https://testcabana.github.io/tags/SpringBoot/"/>
+    
+    <category term="Nacos" scheme="https://testcabana.github.io/tags/Nacos/"/>
+    
+    <category term="Driud" scheme="https://testcabana.github.io/tags/Driud/"/>
+    
+    <category term="Hadoop" scheme="https://testcabana.github.io/tags/Hadoop/"/>
+    
+    <category term="canal" scheme="https://testcabana.github.io/tags/canal/"/>
+    
+    <category term="Kafka" scheme="https://testcabana.github.io/tags/Kafka/"/>
+    
+    <category term="RocketMQ" scheme="https://testcabana.github.io/tags/RocketMQ/"/>
+    
+    <category term="NSQ" scheme="https://testcabana.github.io/tags/NSQ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux及数据库</title>
+    <link href="https://testcabana.github.io/posts/f3160526.html"/>
+    <id>https://testcabana.github.io/posts/f3160526.html</id>
+    <published>2022-04-16T14:40:17.175Z</published>
+    <updated>2022-04-16T15:47:29.771Z</updated>
+    
+    
+    
+    
+    <category term="Linux及数据库" scheme="https://testcabana.github.io/categories/Linux%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+    <category term="LinuxShell" scheme="https://testcabana.github.io/tags/LinuxShell/"/>
+    
+    <category term="LinuxBash" scheme="https://testcabana.github.io/tags/LinuxBash/"/>
+    
+    <category term="MySQL" scheme="https://testcabana.github.io/tags/MySQL/"/>
+    
+    <category term="SQL" scheme="https://testcabana.github.io/tags/SQL/"/>
+    
+    <category term="PostgreSQL" scheme="https://testcabana.github.io/tags/PostgreSQL/"/>
+    
+    <category term="Oracle" scheme="https://testcabana.github.io/tags/Oracle/"/>
+    
+    <category term="MongoDB" scheme="https://testcabana.github.io/tags/MongoDB/"/>
+    
+    <category term="Redis" scheme="https://testcabana.github.io/tags/Redis/"/>
+    
+    <category term="ElasticSearch" scheme="https://testcabana.github.io/tags/ElasticSearch/"/>
+    
+    <category term="database" scheme="https://testcabana.github.io/tags/database/"/>
+    
+    <category term="table" scheme="https://testcabana.github.io/tags/table/"/>
+    
+    <category term="column" scheme="https://testcabana.github.io/tags/column/"/>
+    
+    <category term="row" scheme="https://testcabana.github.io/tags/row/"/>
+    
+    <category term="index" scheme="https://testcabana.github.io/tags/index/"/>
+    
+    <category term="primary" scheme="https://testcabana.github.io/tags/primary/"/>
+    
+    <category term="foreign" scheme="https://testcabana.github.io/tags/foreign/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络</title>
+    <link href="https://testcabana.github.io/posts/e255a10a.html"/>
+    <id>https://testcabana.github.io/posts/e255a10a.html</id>
+    <published>2022-04-16T14:25:58.118Z</published>
+    <updated>2022-04-16T15:47:29.866Z</updated>
+    
+    
+    
+    
+    <category term="计算机网络" scheme="https://testcabana.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="CPU" scheme="https://testcabana.github.io/tags/CPU/"/>
+    
+    <category term="Memory" scheme="https://testcabana.github.io/tags/Memory/"/>
+    
+    <category term="Disk" scheme="https://testcabana.github.io/tags/Disk/"/>
+    
+    <category term="Network" scheme="https://testcabana.github.io/tags/Network/"/>
+    
+    <category term="I/O" scheme="https://testcabana.github.io/tags/I-O/"/>
+    
+    <category term="Firewall" scheme="https://testcabana.github.io/tags/Firewall/"/>
+    
+    <category term="HTTP" scheme="https://testcabana.github.io/tags/HTTP/"/>
+    
+    <category term="HTTPS" scheme="https://testcabana.github.io/tags/HTTPS/"/>
+    
+    <category term="FTP" scheme="https://testcabana.github.io/tags/FTP/"/>
+    
+    <category term="DNS" scheme="https://testcabana.github.io/tags/DNS/"/>
+    
+    <category term="DHCP" scheme="https://testcabana.github.io/tags/DHCP/"/>
+    
+    <category term="Telnet" scheme="https://testcabana.github.io/tags/Telnet/"/>
+    
+    <category term="SMTP" scheme="https://testcabana.github.io/tags/SMTP/"/>
+    
+    <category term="TFTP" scheme="https://testcabana.github.io/tags/TFTP/"/>
+    
+    <category term="TCP" scheme="https://testcabana.github.io/tags/TCP/"/>
+    
+    <category term="UDP" scheme="https://testcabana.github.io/tags/UDP/"/>
+    
+    <category term="IP" scheme="https://testcabana.github.io/tags/IP/"/>
+    
+    <category term="GET" scheme="https://testcabana.github.io/tags/GET/"/>
+    
+    <category term="POST" scheme="https://testcabana.github.io/tags/POST/"/>
+    
+    <category term="PUT" scheme="https://testcabana.github.io/tags/PUT/"/>
+    
+    <category term="DELETE" scheme="https://testcabana.github.io/tags/DELETE/"/>
+    
+    <category term="PATCH" scheme="https://testcabana.github.io/tags/PATCH/"/>
+    
+    <category term="HEAD" scheme="https://testcabana.github.io/tags/HEAD/"/>
+    
+    <category term="OPTIONS" scheme="https://testcabana.github.io/tags/OPTIONS/"/>
+    
+    <category term="cookie" scheme="https://testcabana.github.io/tags/cookie/"/>
+    
+    <category term="session" scheme="https://testcabana.github.io/tags/session/"/>
+    
+    <category term="token" scheme="https://testcabana.github.io/tags/token/"/>
+    
+    <category term="WebSocket" scheme="https://testcabana.github.io/tags/WebSocket/"/>
+    
+    <category term="RPC" scheme="https://testcabana.github.io/tags/RPC/"/>
+    
+    <category term="CDN" scheme="https://testcabana.github.io/tags/CDN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试理论</title>
+    <link href="https://testcabana.github.io/posts/fdfa8c6c.html"/>
+    <id>https://testcabana.github.io/posts/fdfa8c6c.html</id>
+    <published>2022-04-16T14:17:26.046Z</published>
+    <updated>2022-04-16T15:47:29.975Z</updated>
+    
+    
+    
+    
+    <category term="软件测试理论" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    
+    <category term="TestBasis" scheme="https://testcabana.github.io/tags/TestBasis/"/>
+    
+    <category term="TestMethod" scheme="https://testcabana.github.io/tags/TestMethod/"/>
+    
+    <category term="TestFlow" scheme="https://testcabana.github.io/tags/TestFlow/"/>
+    
+    <category term="TestPlan" scheme="https://testcabana.github.io/tags/TestPlan/"/>
+    
+    <category term="TestCase" scheme="https://testcabana.github.io/tags/TestCase/"/>
+    
+    <category term="TestResult" scheme="https://testcabana.github.io/tags/TestResult/"/>
+    
+    <category term="TestReport" scheme="https://testcabana.github.io/tags/TestReport/"/>
     
   </entry>
   
@@ -102,7 +424,7 @@
     <link href="https://testcabana.github.io/posts/34dc1aa6.html"/>
     <id>https://testcabana.github.io/posts/34dc1aa6.html</id>
     <published>2022-02-25T06:16:48.185Z</published>
-    <updated>2022-04-12T04:58:55.140Z</updated>
+    <updated>2022-04-16T15:47:29.708Z</updated>
     
     
       
@@ -116,7 +438,7 @@
     
     
     
-    <category term="Tools工具分享" scheme="https://testcabana.github.io/categories/Tools%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/"/>
+    <category term="Tools测试工具" scheme="https://testcabana.github.io/categories/Tools%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     
     
     <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
