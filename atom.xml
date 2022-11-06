@@ -49,15 +49,17 @@
     <link href="https://testcabana.github.io/posts/6a6161fe.html"/>
     <id>https://testcabana.github.io/posts/6a6161fe.html</id>
     <published>2022-10-29T07:10:04.448Z</published>
-    <updated>2022-11-06T15:13:14.177Z</updated>
+    <updated>2022-11-06T15:47:01.171Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;GitLab&lt;/code&gt;是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。分为：&lt;code&gt;GitLabCE</summary>
+    <summary type="html">
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;mydocument.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot;</summary>
         
       
     
@@ -85,6 +87,8 @@
     
     <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
     
+    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
+    
     <category term="Jira" scheme="https://testcabana.github.io/tags/Jira/"/>
     
     <category term="禅道" scheme="https://testcabana.github.io/tags/%E7%A6%85%E9%81%93/"/>
@@ -96,8 +100,6 @@
     <category term="Xmind" scheme="https://testcabana.github.io/tags/Xmind/"/>
     
     <category term="Xshell" scheme="https://testcabana.github.io/tags/Xshell/"/>
-    
-    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
     
     <category term="Fiddler" scheme="https://testcabana.github.io/tags/Fiddler/"/>
     
@@ -258,6 +260,36 @@
   </entry>
   
   <entry>
+    <title>Read读万卷书</title>
+    <link href="https://testcabana.github.io/posts/5312e213.html"/>
+    <id>https://testcabana.github.io/posts/5312e213.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>季度总结</title>
+    <link href="https://testcabana.github.io/posts/b99beeab.html"/>
+    <id>https://testcabana.github.io/posts/b99beeab.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Linux及数据库</title>
     <link href="https://testcabana.github.io/posts/f3160526.html"/>
     <id>https://testcabana.github.io/posts/f3160526.html</id>
@@ -301,36 +333,6 @@
     <category term="primary" scheme="https://testcabana.github.io/tags/primary/"/>
     
     <category term="foreign" scheme="https://testcabana.github.io/tags/foreign/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Read读万卷书</title>
-    <link href="https://testcabana.github.io/posts/5312e213.html"/>
-    <id>https://testcabana.github.io/posts/5312e213.html</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>季度总结</title>
-    <link href="https://testcabana.github.io/posts/b99beeab.html"/>
-    <id>https://testcabana.github.io/posts/b99beeab.html</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
-    
     
   </entry>
   
