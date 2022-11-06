@@ -350,14 +350,14 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">12</a></span>
+    <span class="count"><a href="/categories">11</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">104</a></span>
+    <span class="count"><a href="/tags">105</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -380,14 +380,14 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">12</a></span>
+    <span class="count"><a href="/categories">11</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">104</a></span>
+    <span class="count"><a href="/tags">105</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -513,7 +513,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11"]
+            data: ["2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04"]
         },
         yAxis: {
             type: 'value',
@@ -523,7 +523,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,12,0,0,0,0,0,1,0],
+                data: [0,0,0,0,0,0,0,0,0,0,1,0,12],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -565,7 +565,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"测试服务部署","value":1},{"name":"Ability业务能力","value":1},{"name":"Ability测试能力","value":1},{"name":"Ability编程能力","value":1},{"name":"CI CD容器构建","value":2},{"name":"Linux及数据库","value":1},{"name":"Read读万卷书","value":1},{"name":"Report季度总结","value":1},{"name":"Tools测试工具","value":1},{"name":"微服务及中间件","value":1},{"name":"计算机网络","value":1},{"name":"软件测试理论","value":1}],
+                data: [{"name":"Ability业务能力","value":1},{"name":"Ability测试能力","value":1},{"name":"Ability编程能力","value":1},{"name":"CI CD容器构建","value":2},{"name":"Linux及数据库","value":1},{"name":"Tools测试工具","value":2},{"name":"Read读万卷书","value":1},{"name":"Report季度总结","value":1},{"name":"微服务及中间件","value":1},{"name":"计算机网络","value":1},{"name":"软件测试理论","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -589,7 +589,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Git","Jenkins","Gitlab","Docker","K8s","LinuxShell","LinuxBash","MySQL","SQL","PostgreSQL"]
+                data: ["Git","Jenkins","iTerm2","Gitlab","Docker","K8s","GitLab","LinuxShell","LinuxBash","MySQL"]
             }
         ],
         yAxis: [
@@ -602,7 +602,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [3,2,1,1,1,1,1,1,1,1],
+                data: [3,2,2,1,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -802,6 +802,12 @@
             
             
             
+            <a href="/tags/GitLab/">
+                <span class="chip center-align waves-effect waves-light chip-default">GitLab</span>
+            </a>
+            
+            
+            
             <a href="/tags/LinuxShell/">
                 <span class="chip center-align waves-effect waves-light chip-default">LinuxShell</span>
             </a>
@@ -894,8 +900,14 @@
             
             
             
-            <a href="/tags/GitLab/">
-                <span class="chip center-align waves-effect waves-light chip-default">GitLab</span>
+            <a href="/tags/iTerm2/">
+                <span class="chip center-align waves-effect waves-light chip-default">iTerm2</span>
+            </a>
+            
+            
+            
+            <a href="/tags/oh-my-zsh/">
+                <span class="chip center-align waves-effect waves-light chip-default">oh-my-zsh</span>
             </a>
             
             
@@ -918,12 +930,6 @@
             
             
             
-            <a href="/tags/Tapd/">
-                <span class="chip center-align waves-effect waves-light chip-default">Tapd</span>
-            </a>
-            
-            
-            
             <a href="/tags/Xmind/">
                 <span class="chip center-align waves-effect waves-light chip-default">Xmind</span>
             </a>
@@ -932,12 +938,6 @@
             
             <a href="/tags/Xshell/">
                 <span class="chip center-align waves-effect waves-light chip-default">Xshell</span>
-            </a>
-            
-            
-            
-            <a href="/tags/iTerm2/">
-                <span class="chip center-align waves-effect waves-light chip-default">iTerm2</span>
             </a>
             
             
@@ -1391,6 +1391,12 @@
             </a>
             
             
+            
+            <a href="/tags/Tapd/">
+                <span class="chip center-align waves-effect waves-light chip-default">Tapd</span>
+            </a>
+            
+            
         </div>
     </div>
     
@@ -1462,7 +1468,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.9k</span>&nbsp;字
+                class="white-color">3.4k</span>&nbsp;字
             
             
             
