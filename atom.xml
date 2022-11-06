@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-04-16T15:47:29.784Z</updated>
+  <updated>2022-10-29T07:10:04.450Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -17,76 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Read读万卷书</title>
-    <link href="https://testcabana.github.io/posts/5312e213.html"/>
-    <id>https://testcabana.github.io/posts/5312e213.html</id>
-    <published>2022-04-16T15:44:01.147Z</published>
-    <updated>2022-04-16T15:47:29.784Z</updated>
+    <title>博客文章模板1</title>
+    <link href="https://testcabana.github.io/posts/6a6161fe.html"/>
+    <id>https://testcabana.github.io/posts/6a6161fe.html</id>
+    <published>2022-10-29T07:10:04.448Z</published>
+    <updated>2022-10-29T07:10:04.450Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;GitLab&lt;/code&gt;是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。分为：&lt;code&gt;GitLabCE</summary>
+        
+      
     
     
     
-    
-    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>季度总结</title>
-    <link href="https://testcabana.github.io/posts/b99beeab.html"/>
-    <id>https://testcabana.github.io/posts/b99beeab.html</id>
-    <published>2022-04-16T15:40:54.001Z</published>
-    <updated>2022-04-16T15:47:29.832Z</updated>
-    
-    
-    
-    
-    <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ability编程能力</title>
-    <link href="https://testcabana.github.io/posts/36352edc.html"/>
-    <id>https://testcabana.github.io/posts/36352edc.html</id>
-    <published>2022-04-16T15:36:31.157Z</published>
-    <updated>2022-04-16T15:47:29.735Z</updated>
-    
-    
-    
-    
-    <category term="Ability编程能力" scheme="https://testcabana.github.io/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ability测试能力</title>
-    <link href="https://testcabana.github.io/posts/e6107735.html"/>
-    <id>https://testcabana.github.io/posts/e6107735.html</id>
-    <published>2022-04-16T15:35:20.546Z</published>
-    <updated>2022-04-16T15:47:29.731Z</updated>
-    
-    
-    
-    
-    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ability业务能力</title>
-    <link href="https://testcabana.github.io/posts/1526445f.html"/>
-    <id>https://testcabana.github.io/posts/1526445f.html</id>
-    <published>2022-04-16T15:33:32.125Z</published>
-    <updated>2022-04-16T15:47:29.712Z</updated>
-    
-    
-    
-    
-    <category term="Ability业务能力" scheme="https://testcabana.github.io/categories/Ability%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
+    <category term="测试服务部署" scheme="https://testcabana.github.io/categories/%E6%B5%8B%E8%AF%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/"/>
     
     
   </entry>
@@ -95,8 +44,8 @@
     <title>Tools测试工具</title>
     <link href="https://testcabana.github.io/posts/a1aae69.html"/>
     <id>https://testcabana.github.io/posts/a1aae69.html</id>
-    <published>2022-04-16T15:08:52.361Z</published>
-    <updated>2022-04-17T13:25:21.833Z</updated>
+    <published>2022-04-17T13:25:21.000Z</published>
+    <updated>2022-04-17T13:25:21.000Z</updated>
     
     
     
@@ -108,17 +57,19 @@
     
     <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
     
-    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
-    
     <category term="Jira" scheme="https://testcabana.github.io/tags/Jira/"/>
     
     <category term="禅道" scheme="https://testcabana.github.io/tags/%E7%A6%85%E9%81%93/"/>
     
     <category term="wiki" scheme="https://testcabana.github.io/tags/wiki/"/>
     
+    <category term="Tapd" scheme="https://testcabana.github.io/tags/Tapd/"/>
+    
     <category term="Xmind" scheme="https://testcabana.github.io/tags/Xmind/"/>
     
     <category term="Xshell" scheme="https://testcabana.github.io/tags/Xshell/"/>
+    
+    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
     
     <category term="Fiddler" scheme="https://testcabana.github.io/tags/Fiddler/"/>
     
@@ -178,16 +129,14 @@
     
     <category term="PyCharm" scheme="https://testcabana.github.io/tags/PyCharm/"/>
     
-    <category term="Tapd" scheme="https://testcabana.github.io/tags/Tapd/"/>
-    
   </entry>
   
   <entry>
     <title>GitLab安装及代码管理（一）</title>
     <link href="https://testcabana.github.io/posts/4f33f425.html"/>
     <id>https://testcabana.github.io/posts/4f33f425.html</id>
-    <published>2022-04-16T15:05:46.114Z</published>
-    <updated>2022-04-16T15:47:29.751Z</updated>
+    <published>2022-04-16T15:49:46.000Z</published>
+    <updated>2022-04-16T15:49:46.000Z</updated>
     
     
       
@@ -211,11 +160,56 @@
   </entry>
   
   <entry>
+    <title>Ability业务能力</title>
+    <link href="https://testcabana.github.io/posts/1526445f.html"/>
+    <id>https://testcabana.github.io/posts/1526445f.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability业务能力" scheme="https://testcabana.github.io/categories/Ability%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/posts/e6107735.html"/>
+    <id>https://testcabana.github.io/posts/e6107735.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ability编程能力</title>
+    <link href="https://testcabana.github.io/posts/36352edc.html"/>
+    <id>https://testcabana.github.io/posts/36352edc.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability编程能力" scheme="https://testcabana.github.io/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>CI CD容器构建</title>
     <link href="https://testcabana.github.io/posts/8657ec7a.html"/>
     <id>https://testcabana.github.io/posts/8657ec7a.html</id>
-    <published>2022-04-16T15:00:10.432Z</published>
-    <updated>2022-04-16T15:47:29.748Z</updated>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
     
     
     
@@ -236,44 +230,11 @@
   </entry>
   
   <entry>
-    <title>微服务及中间件</title>
-    <link href="https://testcabana.github.io/posts/7d288360.html"/>
-    <id>https://testcabana.github.io/posts/7d288360.html</id>
-    <published>2022-04-16T14:50:45.175Z</published>
-    <updated>2022-04-16T15:47:29.842Z</updated>
-    
-    
-    
-    
-    <category term="微服务及中间件" scheme="https://testcabana.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8F%8A%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
-    
-    
-    <category term="SpringCloud" scheme="https://testcabana.github.io/tags/SpringCloud/"/>
-    
-    <category term="SpringBoot" scheme="https://testcabana.github.io/tags/SpringBoot/"/>
-    
-    <category term="Nacos" scheme="https://testcabana.github.io/tags/Nacos/"/>
-    
-    <category term="Driud" scheme="https://testcabana.github.io/tags/Driud/"/>
-    
-    <category term="Hadoop" scheme="https://testcabana.github.io/tags/Hadoop/"/>
-    
-    <category term="canal" scheme="https://testcabana.github.io/tags/canal/"/>
-    
-    <category term="Kafka" scheme="https://testcabana.github.io/tags/Kafka/"/>
-    
-    <category term="RocketMQ" scheme="https://testcabana.github.io/tags/RocketMQ/"/>
-    
-    <category term="NSQ" scheme="https://testcabana.github.io/tags/NSQ/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Linux及数据库</title>
     <link href="https://testcabana.github.io/posts/f3160526.html"/>
     <id>https://testcabana.github.io/posts/f3160526.html</id>
-    <published>2022-04-16T14:40:17.175Z</published>
-    <updated>2022-04-16T15:47:29.771Z</updated>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
     
     
     
@@ -316,11 +277,74 @@
   </entry>
   
   <entry>
+    <title>Read读万卷书</title>
+    <link href="https://testcabana.github.io/posts/5312e213.html"/>
+    <id>https://testcabana.github.io/posts/5312e213.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>季度总结</title>
+    <link href="https://testcabana.github.io/posts/b99beeab.html"/>
+    <id>https://testcabana.github.io/posts/b99beeab.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>微服务及中间件</title>
+    <link href="https://testcabana.github.io/posts/7d288360.html"/>
+    <id>https://testcabana.github.io/posts/7d288360.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="微服务及中间件" scheme="https://testcabana.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8F%8A%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+    <category term="SpringCloud" scheme="https://testcabana.github.io/tags/SpringCloud/"/>
+    
+    <category term="SpringBoot" scheme="https://testcabana.github.io/tags/SpringBoot/"/>
+    
+    <category term="Nacos" scheme="https://testcabana.github.io/tags/Nacos/"/>
+    
+    <category term="Driud" scheme="https://testcabana.github.io/tags/Driud/"/>
+    
+    <category term="Hadoop" scheme="https://testcabana.github.io/tags/Hadoop/"/>
+    
+    <category term="canal" scheme="https://testcabana.github.io/tags/canal/"/>
+    
+    <category term="Kafka" scheme="https://testcabana.github.io/tags/Kafka/"/>
+    
+    <category term="RocketMQ" scheme="https://testcabana.github.io/tags/RocketMQ/"/>
+    
+    <category term="NSQ" scheme="https://testcabana.github.io/tags/NSQ/"/>
+    
+  </entry>
+  
+  <entry>
     <title>计算机网络</title>
     <link href="https://testcabana.github.io/posts/e255a10a.html"/>
     <id>https://testcabana.github.io/posts/e255a10a.html</id>
-    <published>2022-04-16T14:25:58.118Z</published>
-    <updated>2022-04-16T15:47:29.866Z</updated>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
     
     
     
@@ -394,8 +418,8 @@
     <title>软件测试理论</title>
     <link href="https://testcabana.github.io/posts/fdfa8c6c.html"/>
     <id>https://testcabana.github.io/posts/fdfa8c6c.html</id>
-    <published>2022-04-16T14:17:26.046Z</published>
-    <updated>2022-04-16T15:47:29.975Z</updated>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
     
     
     
@@ -416,34 +440,6 @@
     <category term="TestResult" scheme="https://testcabana.github.io/tags/TestResult/"/>
     
     <category term="TestReport" scheme="https://testcabana.github.io/tags/TestReport/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac最佳组合iTerm2+oh-My-Zsh</title>
-    <link href="https://testcabana.github.io/posts/34dc1aa6.html"/>
-    <id>https://testcabana.github.io/posts/34dc1aa6.html</id>
-    <published>2022-02-25T06:16:48.185Z</published>
-    <updated>2022-04-16T15:47:29.708Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;工欲善其事，必先利其器，作为一个长期使用 &lt;code&gt;Vim&lt;/code&gt; 作为主力编程开发工具的我来说，在命令行下面工作是必不可少的一件事情了。虽然 &lt;code&gt;Mac&lt;/code&gt; 系统自带了 &lt;code&gt;Terminal&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="Tools测试工具" scheme="https://testcabana.github.io/categories/Tools%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
-    
-    <category term="oh-my-zsh" scheme="https://testcabana.github.io/tags/oh-my-zsh/"/>
     
   </entry>
   
