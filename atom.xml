@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-11-06T15:51:54.907Z</updated>
+  <updated>2022-11-07T04:44:14.406Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="https://testcabana.github.io/posts/6a6161fe.html"/>
     <id>https://testcabana.github.io/posts/6a6161fe.html</id>
     <published>2022-11-06T15:51:54.907Z</published>
-    <updated>2022-11-06T15:51:54.907Z</updated>
+    <updated>2022-11-07T04:44:14.406Z</updated>
     
     
       
       
         
         
-    <summary type="html">
-
-	&lt;div class=&quot;row&quot;&gt;
-    &lt;embed src=&quot;mydocument.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot;</summary>
+    <summary type="html">&lt;object data=&quot;./博客文章模板1/mydocument.pdf&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot;</summary>
         
       
     
@@ -260,6 +257,36 @@
   </entry>
   
   <entry>
+    <title>季度总结</title>
+    <link href="https://testcabana.github.io/posts/b99beeab.html"/>
+    <id>https://testcabana.github.io/posts/b99beeab.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Read读万卷书</title>
+    <link href="https://testcabana.github.io/posts/5312e213.html"/>
+    <id>https://testcabana.github.io/posts/5312e213.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Linux及数据库</title>
     <link href="https://testcabana.github.io/posts/f3160526.html"/>
     <id>https://testcabana.github.io/posts/f3160526.html</id>
@@ -307,36 +334,6 @@
   </entry>
   
   <entry>
-    <title>Read读万卷书</title>
-    <link href="https://testcabana.github.io/posts/5312e213.html"/>
-    <id>https://testcabana.github.io/posts/5312e213.html</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>季度总结</title>
-    <link href="https://testcabana.github.io/posts/b99beeab.html"/>
-    <id>https://testcabana.github.io/posts/b99beeab.html</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>微服务及中间件</title>
     <link href="https://testcabana.github.io/posts/7d288360.html"/>
     <id>https://testcabana.github.io/posts/7d288360.html</id>
@@ -366,6 +363,35 @@
     <category term="RocketMQ" scheme="https://testcabana.github.io/tags/RocketMQ/"/>
     
     <category term="NSQ" scheme="https://testcabana.github.io/tags/NSQ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试理论</title>
+    <link href="https://testcabana.github.io/posts/fdfa8c6c.html"/>
+    <id>https://testcabana.github.io/posts/fdfa8c6c.html</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="软件测试理论" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    
+    <category term="TestBasis" scheme="https://testcabana.github.io/tags/TestBasis/"/>
+    
+    <category term="TestMethod" scheme="https://testcabana.github.io/tags/TestMethod/"/>
+    
+    <category term="TestFlow" scheme="https://testcabana.github.io/tags/TestFlow/"/>
+    
+    <category term="TestPlan" scheme="https://testcabana.github.io/tags/TestPlan/"/>
+    
+    <category term="TestCase" scheme="https://testcabana.github.io/tags/TestCase/"/>
+    
+    <category term="TestResult" scheme="https://testcabana.github.io/tags/TestResult/"/>
+    
+    <category term="TestReport" scheme="https://testcabana.github.io/tags/TestReport/"/>
     
   </entry>
   
@@ -441,35 +467,6 @@
     <category term="RPC" scheme="https://testcabana.github.io/tags/RPC/"/>
     
     <category term="CDN" scheme="https://testcabana.github.io/tags/CDN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试理论</title>
-    <link href="https://testcabana.github.io/posts/fdfa8c6c.html"/>
-    <id>https://testcabana.github.io/posts/fdfa8c6c.html</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="软件测试理论" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
-    
-    
-    <category term="TestBasis" scheme="https://testcabana.github.io/tags/TestBasis/"/>
-    
-    <category term="TestMethod" scheme="https://testcabana.github.io/tags/TestMethod/"/>
-    
-    <category term="TestFlow" scheme="https://testcabana.github.io/tags/TestFlow/"/>
-    
-    <category term="TestPlan" scheme="https://testcabana.github.io/tags/TestPlan/"/>
-    
-    <category term="TestCase" scheme="https://testcabana.github.io/tags/TestCase/"/>
-    
-    <category term="TestResult" scheme="https://testcabana.github.io/tags/TestResult/"/>
-    
-    <category term="TestReport" scheme="https://testcabana.github.io/tags/TestReport/"/>
     
   </entry>
   
