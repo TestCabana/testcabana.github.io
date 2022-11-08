@@ -18,8 +18,8 @@
   
   <entry>
     <title>博客文章模板1</title>
-    <link href="https://testcabana.github.io/posts/6a6161fe.html/"/>
-    <id>https://testcabana.github.io/posts/6a6161fe.html/</id>
+    <link href="https://testcabana.github.io/posts/6a6161fe"/>
+    <id>https://testcabana.github.io/posts/6a6161fe</id>
     <published>2022-11-06T15:51:54.907Z</published>
     <updated>2022-11-07T05:13:10.310Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>Mac最佳组合iTerm2+oh-My-Zsh</title>
-    <link href="https://testcabana.github.io/posts/34dc1aa6.html/"/>
-    <id>https://testcabana.github.io/posts/34dc1aa6.html/</id>
+    <link href="https://testcabana.github.io/posts/34dc1aa6"/>
+    <id>https://testcabana.github.io/posts/34dc1aa6</id>
     <published>2022-11-06T15:09:31.423Z</published>
     <updated>2022-11-06T15:09:31.423Z</updated>
     
@@ -69,8 +69,8 @@
   
   <entry>
     <title>Tools测试工具</title>
-    <link href="https://testcabana.github.io/posts/a1aae69.html/"/>
-    <id>https://testcabana.github.io/posts/a1aae69.html/</id>
+    <link href="https://testcabana.github.io/posts/a1aae69"/>
+    <id>https://testcabana.github.io/posts/a1aae69</id>
     <published>2022-04-17T13:25:21.000Z</published>
     <updated>2022-04-17T13:25:21.000Z</updated>
     
@@ -160,8 +160,8 @@
   
   <entry>
     <title>GitLab安装及代码管理（一）</title>
-    <link href="https://testcabana.github.io/posts/4f33f425.html/"/>
-    <id>https://testcabana.github.io/posts/4f33f425.html/</id>
+    <link href="https://testcabana.github.io/posts/4f33f425"/>
+    <id>https://testcabana.github.io/posts/4f33f425</id>
     <published>2022-04-16T15:49:46.000Z</published>
     <updated>2022-04-16T15:49:46.000Z</updated>
     
@@ -180,16 +180,16 @@
     <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
     
     
-    <category term="GitLab" scheme="https://testcabana.github.io/tags/GitLab/"/>
-    
     <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
+    
+    <category term="GitLab" scheme="https://testcabana.github.io/tags/GitLab/"/>
     
   </entry>
   
   <entry>
     <title>Ability业务能力</title>
-    <link href="https://testcabana.github.io/posts/1526445f.html/"/>
-    <id>https://testcabana.github.io/posts/1526445f.html/</id>
+    <link href="https://testcabana.github.io/posts/1526445f"/>
+    <id>https://testcabana.github.io/posts/1526445f</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -202,24 +202,9 @@
   </entry>
   
   <entry>
-    <title>Ability测试能力</title>
-    <link href="https://testcabana.github.io/posts/e6107735.html/"/>
-    <id>https://testcabana.github.io/posts/e6107735.html/</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Ability编程能力</title>
-    <link href="https://testcabana.github.io/posts/36352edc.html/"/>
-    <id>https://testcabana.github.io/posts/36352edc.html/</id>
+    <link href="https://testcabana.github.io/posts/36352edc"/>
+    <id>https://testcabana.github.io/posts/36352edc</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -233,8 +218,8 @@
   
   <entry>
     <title>CI CD容器构建</title>
-    <link href="https://testcabana.github.io/posts/8657ec7a.html/"/>
-    <id>https://testcabana.github.io/posts/8657ec7a.html/</id>
+    <link href="https://testcabana.github.io/posts/8657ec7a"/>
+    <id>https://testcabana.github.io/posts/8657ec7a</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -257,9 +242,24 @@
   </entry>
   
   <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/posts/e6107735"/>
+    <id>https://testcabana.github.io/posts/e6107735</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Linux及数据库</title>
-    <link href="https://testcabana.github.io/posts/f3160526.html/"/>
-    <id>https://testcabana.github.io/posts/f3160526.html/</id>
+    <link href="https://testcabana.github.io/posts/f3160526"/>
+    <id>https://testcabana.github.io/posts/f3160526</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -305,8 +305,8 @@
   
   <entry>
     <title>Read读万卷书</title>
-    <link href="https://testcabana.github.io/posts/5312e213.html/"/>
-    <id>https://testcabana.github.io/posts/5312e213.html/</id>
+    <link href="https://testcabana.github.io/posts/5312e213"/>
+    <id>https://testcabana.github.io/posts/5312e213</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -320,8 +320,8 @@
   
   <entry>
     <title>季度总结</title>
-    <link href="https://testcabana.github.io/posts/b99beeab.html/"/>
-    <id>https://testcabana.github.io/posts/b99beeab.html/</id>
+    <link href="https://testcabana.github.io/posts/b99beeab"/>
+    <id>https://testcabana.github.io/posts/b99beeab</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -335,8 +335,8 @@
   
   <entry>
     <title>微服务及中间件</title>
-    <link href="https://testcabana.github.io/posts/7d288360.html/"/>
-    <id>https://testcabana.github.io/posts/7d288360.html/</id>
+    <link href="https://testcabana.github.io/posts/7d288360"/>
+    <id>https://testcabana.github.io/posts/7d288360</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -368,8 +368,8 @@
   
   <entry>
     <title>计算机网络</title>
-    <link href="https://testcabana.github.io/posts/e255a10a.html/"/>
-    <id>https://testcabana.github.io/posts/e255a10a.html/</id>
+    <link href="https://testcabana.github.io/posts/e255a10a"/>
+    <id>https://testcabana.github.io/posts/e255a10a</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
@@ -443,8 +443,8 @@
   
   <entry>
     <title>软件测试理论</title>
-    <link href="https://testcabana.github.io/posts/fdfa8c6c.html/"/>
-    <id>https://testcabana.github.io/posts/fdfa8c6c.html/</id>
+    <link href="https://testcabana.github.io/posts/fdfa8c6c"/>
+    <id>https://testcabana.github.io/posts/fdfa8c6c</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
