@@ -84,8 +84,6 @@
     
     <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
     
-    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
-    
     <category term="Jira" scheme="https://testcabana.github.io/tags/Jira/"/>
     
     <category term="禅道" scheme="https://testcabana.github.io/tags/%E7%A6%85%E9%81%93/"/>
@@ -97,6 +95,8 @@
     <category term="Xmind" scheme="https://testcabana.github.io/tags/Xmind/"/>
     
     <category term="Xshell" scheme="https://testcabana.github.io/tags/Xshell/"/>
+    
+    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
     
     <category term="Fiddler" scheme="https://testcabana.github.io/tags/Fiddler/"/>
     
@@ -202,6 +202,21 @@
   </entry>
   
   <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/posts/e6107735"/>
+    <id>https://testcabana.github.io/posts/e6107735</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Ability编程能力</title>
     <link href="https://testcabana.github.io/posts/36352edc"/>
     <id>https://testcabana.github.io/posts/36352edc</id>
@@ -238,21 +253,6 @@
     <category term="Docker" scheme="https://testcabana.github.io/tags/Docker/"/>
     
     <category term="K8s" scheme="https://testcabana.github.io/tags/K8s/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ability测试能力</title>
-    <link href="https://testcabana.github.io/posts/e6107735"/>
-    <id>https://testcabana.github.io/posts/e6107735</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
-    
     
   </entry>
   

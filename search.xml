@@ -70,8 +70,6 @@
             
             <tag> Jenkins </tag>
             
-            <tag> iTerm2 </tag>
-            
             <tag> Jira </tag>
             
             <tag> 禅道 </tag>
@@ -83,6 +81,8 @@
             <tag> Xmind </tag>
             
             <tag> Xshell </tag>
+            
+            <tag> iTerm2 </tag>
             
             <tag> Fiddler </tag>
             
@@ -195,6 +195,25 @@
     
     
     <entry>
+      <title>Ability测试能力</title>
+      <link href="/posts/e6107735.html"/>
+      <url>/posts/e6107735.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability测试能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ability编程能力</title>
       <link href="/posts/36352edc.html"/>
       <url>/posts/36352edc.html</url>
@@ -241,25 +260,6 @@
             <tag> K8s </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Ability测试能力</title>
-      <link href="/posts/e6107735.html"/>
-      <url>/posts/e6107735.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability测试能力 </category>
-          
-      </categories>
-      
       
     </entry>
     
