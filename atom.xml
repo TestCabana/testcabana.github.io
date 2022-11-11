@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-11-07T05:13:10.310Z</updated>
+  <updated>2022-11-11T16:13:10.398Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://testcabana.github.io/posts/6a6161fe"/>
     <id>https://testcabana.github.io/posts/6a6161fe</id>
     <published>2022-11-06T15:51:54.907Z</published>
-    <updated>2022-11-07T05:13:10.310Z</updated>
+    <updated>2022-11-11T16:13:10.398Z</updated>
     
     
       
@@ -34,7 +34,7 @@
     
     
     
-    <category term="测试服务部署" scheme="https://testcabana.github.io/categories/%E6%B5%8B%E8%AF%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/"/>
+    <category term="Tools测试工具" scheme="https://testcabana.github.io/categories/Tools%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
