@@ -84,6 +84,8 @@
     
     <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
     
+    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
+    
     <category term="Jira" scheme="https://testcabana.github.io/tags/Jira/"/>
     
     <category term="禅道" scheme="https://testcabana.github.io/tags/%E7%A6%85%E9%81%93/"/>
@@ -95,8 +97,6 @@
     <category term="Xmind" scheme="https://testcabana.github.io/tags/Xmind/"/>
     
     <category term="Xshell" scheme="https://testcabana.github.io/tags/Xshell/"/>
-    
-    <category term="iTerm2" scheme="https://testcabana.github.io/tags/iTerm2/"/>
     
     <category term="Fiddler" scheme="https://testcabana.github.io/tags/Fiddler/"/>
     
