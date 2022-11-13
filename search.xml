@@ -195,25 +195,6 @@
     
     
     <entry>
-      <title>Ability测试能力</title>
-      <link href="/posts/e6107735.html"/>
-      <url>/posts/e6107735.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability测试能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ability编程能力</title>
       <link href="/posts/36352edc.html"/>
       <url>/posts/36352edc.html</url>
@@ -224,6 +205,25 @@
       <categories>
           
           <category> Ability编程能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ability测试能力</title>
+      <link href="/posts/e6107735.html"/>
+      <url>/posts/e6107735.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability测试能力 </category>
           
       </categories>
       
@@ -359,6 +359,47 @@
     
     
     <entry>
+      <title>微服务及中间件</title>
+      <link href="/posts/7d288360.html"/>
+      <url>/posts/7d288360.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 微服务及中间件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringCloud </tag>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> Nacos </tag>
+            
+            <tag> Driud </tag>
+            
+            <tag> Hadoop </tag>
+            
+            <tag> canal </tag>
+            
+            <tag> Kafka </tag>
+            
+            <tag> RocketMQ </tag>
+            
+            <tag> NSQ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>计算机网络</title>
       <link href="/posts/e255a10a.html"/>
       <url>/posts/e255a10a.html</url>
@@ -434,47 +475,6 @@
             <tag> RPC </tag>
             
             <tag> CDN </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微服务及中间件</title>
-      <link href="/posts/7d288360.html"/>
-      <url>/posts/7d288360.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 微服务及中间件 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> SpringCloud </tag>
-            
-            <tag> SpringBoot </tag>
-            
-            <tag> Nacos </tag>
-            
-            <tag> Driud </tag>
-            
-            <tag> Hadoop </tag>
-            
-            <tag> canal </tag>
-            
-            <tag> Kafka </tag>
-            
-            <tag> RocketMQ </tag>
-            
-            <tag> NSQ </tag>
             
         </tags>
       
