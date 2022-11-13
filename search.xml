@@ -165,9 +165,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> GitLab </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -208,58 +208,6 @@
           
       </categories>
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Ability测试能力</title>
-      <link href="/posts/e6107735.html"/>
-      <url>/posts/e6107735.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability测试能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CI CD容器构建</title>
-      <link href="/posts/8657ec7a.html"/>
-      <url>/posts/8657ec7a.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> CI CD容器构建 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Git </tag>
-            
-            <tag> Gitlab </tag>
-            
-            <tag> Jenkins </tag>
-            
-            <tag> Docker </tag>
-            
-            <tag> K8s </tag>
-            
-        </tags>
       
     </entry>
     
@@ -321,16 +269,49 @@
     
     
     <entry>
-      <title>Read读万卷书</title>
-      <link href="/posts/5312e213.html"/>
-      <url>/posts/5312e213.html</url>
+      <title>CI CD容器构建</title>
+      <link href="/posts/8657ec7a.html"/>
+      <url>/posts/8657ec7a.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> Read读万卷书 </category>
+          <category> CI CD容器构建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> Gitlab </tag>
+            
+            <tag> Jenkins </tag>
+            
+            <tag> Docker </tag>
+            
+            <tag> K8s </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ability测试能力</title>
+      <link href="/posts/e6107735.html"/>
+      <url>/posts/e6107735.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability测试能力 </category>
           
       </categories>
       
@@ -350,6 +331,25 @@
       <categories>
           
           <category> Report季度总结 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Read读万卷书</title>
+      <link href="/posts/5312e213.html"/>
+      <url>/posts/5312e213.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Read读万卷书 </category>
           
       </categories>
       

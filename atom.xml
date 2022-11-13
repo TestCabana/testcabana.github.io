@@ -180,9 +180,9 @@
     <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
     
     
-    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
-    
     <category term="GitLab" scheme="https://testcabana.github.io/tags/GitLab/"/>
+    
+    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
     
   </entry>
   
@@ -213,46 +213,6 @@
     
     <category term="Ability编程能力" scheme="https://testcabana.github.io/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Ability测试能力</title>
-    <link href="https://testcabana.github.io/posts/e6107735"/>
-    <id>https://testcabana.github.io/posts/e6107735</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>CI CD容器构建</title>
-    <link href="https://testcabana.github.io/posts/8657ec7a"/>
-    <id>https://testcabana.github.io/posts/8657ec7a</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
-    
-    
-    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
-    
-    <category term="Gitlab" scheme="https://testcabana.github.io/tags/Gitlab/"/>
-    
-    <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
-    
-    <category term="Docker" scheme="https://testcabana.github.io/tags/Docker/"/>
-    
-    <category term="K8s" scheme="https://testcabana.github.io/tags/K8s/"/>
     
   </entry>
   
@@ -304,16 +264,41 @@
   </entry>
   
   <entry>
-    <title>Read读万卷书</title>
-    <link href="https://testcabana.github.io/posts/5312e213"/>
-    <id>https://testcabana.github.io/posts/5312e213</id>
+    <title>CI CD容器构建</title>
+    <link href="https://testcabana.github.io/posts/8657ec7a"/>
+    <id>https://testcabana.github.io/posts/8657ec7a</id>
     <published>2022-04-16T15:47:29.000Z</published>
     <updated>2022-04-16T15:47:29.000Z</updated>
     
     
     
     
-    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
+    <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
+    
+    
+    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
+    
+    <category term="Gitlab" scheme="https://testcabana.github.io/tags/Gitlab/"/>
+    
+    <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
+    
+    <category term="Docker" scheme="https://testcabana.github.io/tags/Docker/"/>
+    
+    <category term="K8s" scheme="https://testcabana.github.io/tags/K8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/posts/e6107735"/>
+    <id>https://testcabana.github.io/posts/e6107735</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
     
     
   </entry>
@@ -329,6 +314,21 @@
     
     
     <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Read读万卷书</title>
+    <link href="https://testcabana.github.io/posts/5312e213"/>
+    <id>https://testcabana.github.io/posts/5312e213</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
     
     
   </entry>

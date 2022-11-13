@@ -552,13 +552,8 @@
     let categoriesOption = {
         title: {
             text: '文章分类统计图',
-            top: -5,
+            top: -4,
             x: 'center'
-        },
-        legend: {
-          top: '5%',
-          left: 'center',
-          show: false
         },
         tooltip: {
             trigger: 'item',
@@ -568,32 +563,19 @@
             {
                 name: '分类',
                 type: 'pie',
-                radius: ['40%', '75%'],
-                avoidLabelOverlap: false,
-                data: [{"name":"Ability业务能力","value":1},{"name":"Ability编程能力","value":1},{"name":"CI CD容器构建","value":2},{"name":"Ability测试能力","value":1},{"name":"Linux及数据库","value":1},{"name":"Read读万卷书","value":1},{"name":"Tools测试工具","value":2},{"name":"Report季度总结","value":1},{"name":"微服务及中间件","value":1},{"name":"计算机网络","value":1},{"name":"软件测试理论","value":1}],
+                radius: '50%',
+                color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
+                data: [{"name":"Ability业务能力","value":1},{"name":"Ability编程能力","value":1},{"name":"Linux及数据库","value":1},{"name":"CI CD容器构建","value":2},{"name":"Ability测试能力","value":1},{"name":"Report季度总结","value":2},{"name":"Read读万卷书","value":1},{"name":"Tools测试工具","value":2},{"name":"微服务及中间件","value":1},{"name":"计算机网络","value":1},{"name":"软件测试理论","value":1}],
                 itemStyle: {
-                  borderRadius: 10,
-                  borderColor: '#fff',
-                  borderWidth: 2
-                },
-                label: {
-                  show: false,
-                  position: 'center'
-                },
-                emphasis: {
-                  label: {
-                     show: true,
-                     fontSize: '20',
-                     fontWeight: 'bold'
-                  }
-                },
-                labelLine: {
-                  show: false
-                }   
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
             }
         ]
     };
-
 
     
 
@@ -607,7 +589,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Git","Jenkins","iTerm2","Gitlab","Docker","K8s","LinuxShell","LinuxBash","MySQL","SQL"]
+                data: ["Git","Jenkins","iTerm2","LinuxShell","LinuxBash","MySQL","SQL","PostgreSQL","Oracle","MongoDB"]
             }
         ],
         yAxis: [
@@ -790,36 +772,6 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/Git/">
-                <span class="chip center-align waves-effect waves-light chip-default">Git</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Gitlab/">
-                <span class="chip center-align waves-effect waves-light chip-default">Gitlab</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Jenkins/">
-                <span class="chip center-align waves-effect waves-light chip-default">Jenkins</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Docker/">
-                <span class="chip center-align waves-effect waves-light chip-default">Docker</span>
-            </a>
-            
-            
-            
-            <a href="/tags/K8s/">
-                <span class="chip center-align waves-effect waves-light chip-default">K8s</span>
-            </a>
-            
-            
-            
             <a href="/tags/LinuxShell/">
                 <span class="chip center-align waves-effect waves-light chip-default">LinuxShell</span>
             </a>
@@ -908,6 +860,42 @@
             
             <a href="/tags/foreign/">
                 <span class="chip center-align waves-effect waves-light chip-default">foreign</span>
+            </a>
+            
+            
+            
+            <a href="/tags/GitLab/">
+                <span class="chip center-align waves-effect waves-light chip-default">GitLab</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Git/">
+                <span class="chip center-align waves-effect waves-light chip-default">Git</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Gitlab/">
+                <span class="chip center-align waves-effect waves-light chip-default">Gitlab</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Jenkins/">
+                <span class="chip center-align waves-effect waves-light chip-default">Jenkins</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Docker/">
+                <span class="chip center-align waves-effect waves-light chip-default">Docker</span>
+            </a>
+            
+            
+            
+            <a href="/tags/K8s/">
+                <span class="chip center-align waves-effect waves-light chip-default">K8s</span>
             </a>
             
             
@@ -1130,12 +1118,6 @@
             
             <a href="/tags/PyCharm/">
                 <span class="chip center-align waves-effect waves-light chip-default">PyCharm</span>
-            </a>
-            
-            
-            
-            <a href="/tags/GitLab/">
-                <span class="chip center-align waves-effect waves-light chip-default">GitLab</span>
             </a>
             
             
