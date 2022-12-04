@@ -182,25 +182,6 @@
     
     
     <entry>
-      <title>Ability业务能力</title>
-      <link href="/posts/1526445f.html"/>
-      <url>/posts/1526445f.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability业务能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ability测试能力</title>
       <link href="/posts/e6107735.html"/>
       <url>/posts/e6107735.html</url>
@@ -211,6 +192,25 @@
       <categories>
           
           <category> Ability测试能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ability业务能力</title>
+      <link href="/posts/1526445f.html"/>
+      <url>/posts/1526445f.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability业务能力 </category>
           
       </categories>
       
@@ -327,25 +327,6 @@
     
     
     <entry>
-      <title>季度总结</title>
-      <link href="/posts/b99beeab.html"/>
-      <url>/posts/b99beeab.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Report季度总结 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Read读万卷书</title>
       <link href="/posts/5312e213.html"/>
       <url>/posts/5312e213.html</url>
@@ -365,78 +346,19 @@
     
     
     <entry>
-      <title>微服务及中间件</title>
-      <link href="/posts/7d288360.html"/>
-      <url>/posts/7d288360.html</url>
+      <title>季度总结</title>
+      <link href="/posts/b99beeab.html"/>
+      <url>/posts/b99beeab.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> 微服务及中间件 </category>
+          <category> Report季度总结 </category>
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> SpringCloud </tag>
-            
-            <tag> SpringBoot </tag>
-            
-            <tag> Nacos </tag>
-            
-            <tag> Driud </tag>
-            
-            <tag> Hadoop </tag>
-            
-            <tag> canal </tag>
-            
-            <tag> Kafka </tag>
-            
-            <tag> RocketMQ </tag>
-            
-            <tag> NSQ </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>软件测试理论</title>
-      <link href="/posts/fdfa8c6c.html"/>
-      <url>/posts/fdfa8c6c.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件测试理论 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TestBasis </tag>
-            
-            <tag> TestMethod </tag>
-            
-            <tag> TestFlow </tag>
-            
-            <tag> TestPlan </tag>
-            
-            <tag> TestCase </tag>
-            
-            <tag> TestResult </tag>
-            
-            <tag> TestReport </tag>
-            
-        </tags>
       
     </entry>
     
@@ -518,6 +440,84 @@
             <tag> RPC </tag>
             
             <tag> CDN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微服务及中间件</title>
+      <link href="/posts/7d288360.html"/>
+      <url>/posts/7d288360.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 微服务及中间件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringCloud </tag>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> Nacos </tag>
+            
+            <tag> Driud </tag>
+            
+            <tag> Hadoop </tag>
+            
+            <tag> canal </tag>
+            
+            <tag> Kafka </tag>
+            
+            <tag> RocketMQ </tag>
+            
+            <tag> NSQ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>软件测试理论</title>
+      <link href="/posts/fdfa8c6c.html"/>
+      <url>/posts/fdfa8c6c.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试理论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TestBasis </tag>
+            
+            <tag> TestMethod </tag>
+            
+            <tag> TestFlow </tag>
+            
+            <tag> TestPlan </tag>
+            
+            <tag> TestCase </tag>
+            
+            <tag> TestResult </tag>
+            
+            <tag> TestReport </tag>
             
         </tags>
       
