@@ -6,7 +6,7 @@
   <link href="https://testcabana.github.io/atom.xml" rel="self"/>
   
   <link href="https://testcabana.github.io/"/>
-  <updated>2022-11-11T16:25:04.843Z</updated>
+  <updated>2022-12-04T10:05:36.914Z</updated>
   <id>https://testcabana.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客文章模板1</title>
+    <title>K8s集群搭建</title>
     <link href="https://testcabana.github.io/posts/6a6161fe"/>
     <id>https://testcabana.github.io/posts/6a6161fe</id>
     <published>2022-11-06T15:51:54.907Z</published>
-    <updated>2022-11-11T16:25:04.843Z</updated>
+    <updated>2022-12-04T10:05:36.914Z</updated>
     
     
       
@@ -36,6 +36,8 @@
     
     <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
     
+    
+    <category term="k8s" scheme="https://testcabana.github.io/tags/k8s/"/>
     
   </entry>
   
@@ -163,7 +165,7 @@
     <link href="https://testcabana.github.io/posts/4f33f425"/>
     <id>https://testcabana.github.io/posts/4f33f425</id>
     <published>2022-04-16T15:49:46.000Z</published>
-    <updated>2022-04-16T15:49:46.000Z</updated>
+    <updated>2022-11-16T15:03:05.235Z</updated>
     
     
       
@@ -180,9 +182,9 @@
     <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
     
     
-    <category term="GitLab" scheme="https://testcabana.github.io/tags/GitLab/"/>
-    
     <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
+    
+    <category term="GitLab" scheme="https://testcabana.github.io/tags/GitLab/"/>
     
   </entry>
   
@@ -202,6 +204,21 @@
   </entry>
   
   <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/posts/e6107735"/>
+    <id>https://testcabana.github.io/posts/e6107735</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Ability编程能力</title>
     <link href="https://testcabana.github.io/posts/36352edc"/>
     <id>https://testcabana.github.io/posts/36352edc</id>
@@ -213,6 +230,31 @@
     
     <category term="Ability编程能力" scheme="https://testcabana.github.io/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>CI CD容器构建</title>
+    <link href="https://testcabana.github.io/posts/8657ec7a"/>
+    <id>https://testcabana.github.io/posts/8657ec7a</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
+    
+    
+    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
+    
+    <category term="Gitlab" scheme="https://testcabana.github.io/tags/Gitlab/"/>
+    
+    <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
+    
+    <category term="Docker" scheme="https://testcabana.github.io/tags/Docker/"/>
+    
+    <category term="K8s" scheme="https://testcabana.github.io/tags/K8s/"/>
     
   </entry>
   
@@ -260,46 +302,6 @@
     <category term="primary" scheme="https://testcabana.github.io/tags/primary/"/>
     
     <category term="foreign" scheme="https://testcabana.github.io/tags/foreign/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CI CD容器构建</title>
-    <link href="https://testcabana.github.io/posts/8657ec7a"/>
-    <id>https://testcabana.github.io/posts/8657ec7a</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="CI CD容器构建" scheme="https://testcabana.github.io/categories/CI-CD%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/"/>
-    
-    
-    <category term="Git" scheme="https://testcabana.github.io/tags/Git/"/>
-    
-    <category term="Gitlab" scheme="https://testcabana.github.io/tags/Gitlab/"/>
-    
-    <category term="Jenkins" scheme="https://testcabana.github.io/tags/Jenkins/"/>
-    
-    <category term="Docker" scheme="https://testcabana.github.io/tags/Docker/"/>
-    
-    <category term="K8s" scheme="https://testcabana.github.io/tags/K8s/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ability测试能力</title>
-    <link href="https://testcabana.github.io/posts/e6107735"/>
-    <id>https://testcabana.github.io/posts/e6107735</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
-    
     
   </entry>
   
@@ -363,6 +365,35 @@
     <category term="RocketMQ" scheme="https://testcabana.github.io/tags/RocketMQ/"/>
     
     <category term="NSQ" scheme="https://testcabana.github.io/tags/NSQ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试理论</title>
+    <link href="https://testcabana.github.io/posts/fdfa8c6c"/>
+    <id>https://testcabana.github.io/posts/fdfa8c6c</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="软件测试理论" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    
+    <category term="TestBasis" scheme="https://testcabana.github.io/tags/TestBasis/"/>
+    
+    <category term="TestMethod" scheme="https://testcabana.github.io/tags/TestMethod/"/>
+    
+    <category term="TestFlow" scheme="https://testcabana.github.io/tags/TestFlow/"/>
+    
+    <category term="TestPlan" scheme="https://testcabana.github.io/tags/TestPlan/"/>
+    
+    <category term="TestCase" scheme="https://testcabana.github.io/tags/TestCase/"/>
+    
+    <category term="TestResult" scheme="https://testcabana.github.io/tags/TestResult/"/>
+    
+    <category term="TestReport" scheme="https://testcabana.github.io/tags/TestReport/"/>
     
   </entry>
   
@@ -438,35 +469,6 @@
     <category term="RPC" scheme="https://testcabana.github.io/tags/RPC/"/>
     
     <category term="CDN" scheme="https://testcabana.github.io/tags/CDN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试理论</title>
-    <link href="https://testcabana.github.io/posts/fdfa8c6c"/>
-    <id>https://testcabana.github.io/posts/fdfa8c6c</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="软件测试理论" scheme="https://testcabana.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
-    
-    
-    <category term="TestBasis" scheme="https://testcabana.github.io/tags/TestBasis/"/>
-    
-    <category term="TestMethod" scheme="https://testcabana.github.io/tags/TestMethod/"/>
-    
-    <category term="TestFlow" scheme="https://testcabana.github.io/tags/TestFlow/"/>
-    
-    <category term="TestPlan" scheme="https://testcabana.github.io/tags/TestPlan/"/>
-    
-    <category term="TestCase" scheme="https://testcabana.github.io/tags/TestCase/"/>
-    
-    <category term="TestResult" scheme="https://testcabana.github.io/tags/TestResult/"/>
-    
-    <category term="TestReport" scheme="https://testcabana.github.io/tags/TestReport/"/>
     
   </entry>
   

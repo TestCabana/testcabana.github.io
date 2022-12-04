@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="博客文章模板1, TestCabana">
+    <meta name="keywords" content="K8s集群搭建, TestCabana">
     <meta name="description" content="计算机科学与技术 | 软件测试工程师">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>博客文章模板1 | TestCabana</title>
+    <title>K8s集群搭建 | TestCabana</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/libs/awesome/css/all.css">
@@ -289,12 +289,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">博客文章模板1</h1>
+                    <h1 class="description center-align post-title">K8s集群搭建</h1>
                 </div>
             </div>
         </div>
@@ -408,9 +408,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/k8s/">
+                                <span class="chip bg-color">k8s</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -438,21 +442,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-11-12
+                    2022-12-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    3.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    14 分
                 </div>
                 
 
@@ -474,196 +478,458 @@
             <div id="articleContent">
                 <p><object data="./test01/mydocument.pdf" type="application/pdf" width="100%" height="100%"></object></p>
 <blockquote>
-<p><code>GitLab</code>是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。分为：<code>GitLabCE</code>（社区版）和<code>GitLabEE</code>（企业版）</p>
+<p>基于k8s搭建的一套CI&#x2F;CD系统，其目的是方便k8s和服务端相关技术的实践，在搭建过程中会涉及docker、dockerhub、k8s、github、jenkins、kubesphere</p>
 </blockquote>
-<p><img src="/images/gitlab.png" alt="GitLab安装及代码管理"></p>
-<h2 id="一、安装GitLab服务"><a href="#一、安装GitLab服务" class="headerlink" title="一、安装GitLab服务"></a>一、安装GitLab服务</h2><ul>
-<li>GitLab Docker 官方学习文档：<a target="_blank" rel="noopener" href="https://docs.gitlab.com/">https://docs.gitlab.com/</a></li>
-<li>GitLab 官方英文社区版 Docker 镜像：<a target="_blank" rel="noopener" href="https://hub.docker.com/r/gitlab/gitlab-ce/">https://hub.docker.com/r/gitlab/gitlab-ce/</a></li>
-</ul>
-<h3 id="1-Docker方式部署"><a href="#1-Docker方式部署" class="headerlink" title="1.Docker方式部署"></a>1.Docker方式部署</h3><blockquote>
-<p>主要介绍，使用docker命令和docker compose部署GitLab-ce社区版。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16094046-97c8b0209b00b611.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt="img"></p>
+<h2 id="一、介绍"><a href="#一、介绍" class="headerlink" title="一、介绍"></a>一、介绍</h2><p>k8s集群有两种方式</p>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>优势</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>kubeadm</td>
+<td>简单、快速</td>
+<td>无法更好的理解k8s各个组件之间的关系</td>
+</tr>
+<tr>
+<td>二进制包安装</td>
+<td>繁琐、复杂</td>
+<td>可能更好的理解k8s集群组件的关系</td>
+</tr>
+</tbody></table>
+<p>并且集群也分为简单版和复杂版，此教程采用kubeadm快速搭建一个简单集群（只有一个maste节点，两个工作节点）</p>
+<h3 id="1-硬件"><a href="#1-硬件" class="headerlink" title="1.硬件"></a>1.硬件</h3><blockquote>
+<p>注：机器至少是2核2G的配置</p>
 </blockquote>
-<h4 id="1-1-使用docker命令"><a href="#1-1-使用docker命令" class="headerlink" title="1.1 使用docker命令"></a>1.1 使用docker命令</h4><ul>
-<li><strong>[1] 获取Gitlab-ce最新版本镜像</strong></li>
-</ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 拉取gitlab-ce最新版本镜像</span>
-docker pull gitlab/gitlab-ce:latest
-<span class="token comment" spellcheck="true"># 查看镜像是否拉取成功</span>
-docker images
-</code></pre>
+<p>一台Mac物理机+3台Centos虚拟机，机器可以是虚拟机、三台物理机器或服务器。我使用的是三台centos7的虚拟机！</p>
 <ul>
-<li><strong>[2] 添加容器挂载目录，在当前目录下创建gitlab的对应config、logs、data文件目录，容器启动后可以映射到本机，方便后续可以直接在主机查看和编辑，不用再进入容器操作</strong></li>
+<li>Mac物理机 安装了Docker、在Docker中启动Jenkins容器（使用windows、linux也是ok的）</li>
+<li>3台Centos虚拟机 部署k8s集群，集群中一个master节点，两个工作node节点</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器挂载目录</span>
-<span class="token function">mkdir</span> -p ~/gitlab/config ~/gitlab/logs ~/gitlab/data
-<span class="token comment" spellcheck="true">#注释</span>
-config：存储gitlab配置信息
-logs：存储日志
-data：存储数据
-</code></pre>
-<ul>
-<li><strong>[3] 创建并启动容器</strong></li>
+<table>
+<thead>
+<tr>
+<th>hostname</th>
+<th>ip地址</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>server130</td>
+<td>192.168.31.130</td>
+<td>master节点</td>
+</tr>
+<tr>
+<td>server131</td>
+<td>192.168.31.131</td>
+<td>node1节点</td>
+</tr>
+<tr>
+<td>server132</td>
+<td>192.168.31.132</td>
+<td>node2节点</td>
+</tr>
+</tbody></table>
+<h3 id="2-软件"><a href="#2-软件" class="headerlink" title="2.    软件"></a>2.    软件</h3><ul>
+<li>docker 容器引擎</li>
+<li>dockerhub 官方的docker镜像注册服务器（可以在本地搭建Harbor代替）</li>
+<li>k8s 一个容器编排管理工具，用于部署应用程序</li>
+<li>github 源代码仓库（可以在本地搭建gitlab代替）</li>
+<li>jenkins 发布工具</li>
+<li>kubesphere  k8s的web管理工具</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建容器</span>
-docker run -d -p 80:80 -p 443:443 -p 222:22 --name gitlab --restart always 
--v ~/gitlab/config:/etc/gitlab -v ~/gitlab/logs:/var/log/gitlab -v ~/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
-<span class="token comment" spellcheck="true">#注释</span>
--d表示：后台运行
--p表示：将容器内部端口向外映射
---name表示：命名容器名称
---restart表示：设置容器重启策略 <span class="token punctuation">(</span>always--在容器退出时总是重启容器；unless-stopped--在容器退出时总是重启容器，但是不考虑在Docker守护进程启动时就已经停止了的容器<span class="token punctuation">)</span>
--v表示：将容器内配置信息、日志、数据等文件夹挂载到宿主机指定目录
+<h2 id="二、k8s集群搭建"><a href="#二、k8s集群搭建" class="headerlink" title="二、k8s集群搭建"></a>二、k8s集群搭建</h2><blockquote>
+<p>注意：除特别说明外，以下命令需在三台机器中都执行，建议找一个可以同时在多台机器中执行命令的工具（mac环境下可以使用item2支持多窗口同时输入命令）</p>
+</blockquote>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    打开这个功能的快捷键：会弹出告警信息，点OK确认。然后我们在第一个窗口中输入命令，会发现后面几个窗口都会自动同步输入命令。</span>
+⌘<span class="token punctuation">(</span>command<span class="token punctuation">)</span> + ⇧<span class="token punctuation">(</span>shift<span class="token punctuation">)</span> + i
+<span class="token comment" spellcheck="true">#    关闭该功能的快捷键：</span>
+⌘<span class="token punctuation">(</span>command<span class="token punctuation">)</span> + ⇧<span class="token punctuation">(</span>shift<span class="token punctuation">)</span> + ⌥<span class="token punctuation">(</span>option<span class="token punctuation">)</span> +i
 </code></pre>
-<ul>
-<li><strong>[4] 修改gitlab.rb配置文件</strong></li>
-</ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 修改gitlab.rb配置文件</span>
-<span class="token comment" spellcheck="true"># 进入gitlab容器</span>
-docker <span class="token function">exec</span> -it gitlab <span class="token function">bash</span>
-<span class="token comment" spellcheck="true"># 在容器内部修改gitlab.rb配置文件</span>
-<span class="token function">vi</span> /etc/gitlab/gitlab.rb
-external_url <span class="token operator">=</span> <span class="token string">'http://172.16.180.138'</span> ip替换为服务器ip（此处不能加端口，会无法启动服务）
-gitlab_rails<span class="token punctuation">[</span><span class="token string">'gitlab_ssh_host'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'172.16.180.138'</span> 开放ssh服务
-gitlab_rails<span class="token punctuation">[</span><span class="token string">'gitlab_shell_ssh_port'</span><span class="token punctuation">]</span> <span class="token operator">=</span> 222 开放ssh端口
-<span class="token comment" spellcheck="true"># 在宿主机查看gitlab.rb配置文件</span>
-<span class="token function">cat</span> /etc/gitlab/gitlab.rb
-<span class="token comment" spellcheck="true"># 使更改配置生效</span>
-gitlab-ctl reconfigure
-<span class="token comment" spellcheck="true"># 在容器内查看gitlab初始密码</span>
-<span class="token function">cat</span> /etc/gitlab/initial_root_password
-</code></pre>
-<ul>
-<li><strong>[5] 开启|停止|重启|删除gitlab服务</strong></li>
-</ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 开启gitlab服务</span>
-docker start gitlab
-<span class="token comment" spellcheck="true"># 停止gitlab服务</span>
-docker stop gitlab
-<span class="token comment" spellcheck="true"># 重启gitlab服务</span>
-docker restart gitlab
-<span class="token comment" spellcheck="true"># 删除gitlab服务</span>
-docker <span class="token function">rm</span> gitlab
-</code></pre>
-<ul>
-<li><strong>[6] 浏览器访问Gitlab</strong></li>
-</ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 通过浏览器访问 http://&lt;主机IP>:端口 就可以看到运行结果。初次启动会比较慢，耐心等待。</span>
-<span class="token comment" spellcheck="true"># 账号为root，使用gitlab初始密码登录成功之后需要修改密码</span>
-</code></pre>
-<h4 id="1-2-使用docker-compose"><a href="#1-2-使用docker-compose" class="headerlink" title="1.2 使用docker compose"></a>1.2 使用docker compose</h4><ul>
-<li><p><strong>[1] 创建docker-compose.yml配置文件</strong></p>
-</li>
-<li><p><strong>[2] 使用命令启动和停止docker-compose服务</strong></p>
-</li>
-</ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 启动docker-compose服务</span>
-docker-compose up
-<span class="token comment" spellcheck="true"># 停止docker-compose服务</span>
-docker-compose down
-</code></pre>
-<h3 id="2-rpm方式部署"><a href="#2-rpm方式部署" class="headerlink" title="2.rpm方式部署"></a>2.rpm方式部署</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#rpm包地址：https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/</span>
-<span class="token function">wget</span> https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
-rpm -i gitlab-ce-12.9.0-ce.0.el7.x86_64.rpm
-<span class="token comment" spellcheck="true"># 编辑站点地址</span>
-<span class="token function">vi</span> /etc/gitlab.rb   
-<span class="token comment" spellcheck="true">#使更改配置生效</span>
-gitlab-ctl reconfigure
-<span class="token comment" spellcheck="true">#查看Gitlab服务状态</span>
-gitlab-ctl status
-<span class="token comment" spellcheck="true">#启动Gitlab服务</span>
-gitlab-ctl start
-<span class="token comment" spellcheck="true">#停止Gitlab服务</span>
-gitlab-ctl stop
-<span class="token comment" spellcheck="true">#重启Gitlab服务</span>
-gitlab-ctl restart
-<span class="token comment" spellcheck="true">#查看Gitlab服务日志</span>
-gitlab-ctl logs
-<span class="token comment" spellcheck="true">#删除Gitlab服务</span>
-gitlab-ctl <span class="token function">rm</span>
-</code></pre>
-<h3 id="3-Kubernetes部署（需要安装kubectl）"><a href="#3-Kubernetes部署（需要安装kubectl）" class="headerlink" title="3.Kubernetes部署（需要安装kubectl）"></a>3.Kubernetes部署（需要安装kubectl）</h3><ul>
-<li><p><strong>[1] 编写kubernetes配置文件</strong></p>
-</li>
-<li><p><strong>[2] kubectl相关命令</strong></p>
-</li>
-</ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#使用kubectl创建gitlab服务</span>
-kubectl create -f gitlab.yaml
-<span class="token comment" spellcheck="true">#查看gitlab服务状态</span>
-kubectl get pods -n devops
-<span class="token comment" spellcheck="true">#查看gitlab服务日志</span>
-kubectl logs -f -n devops gitlab
-<span class="token comment" spellcheck="true">#删除gitlab服务</span>
-kubectl delete -f gitlab.yaml
-</code></pre>
-<hr>
-<h2 id="二、GitLab代码管理"><a href="#二、GitLab代码管理" class="headerlink" title="二、GitLab代码管理"></a>二、GitLab代码管理</h2><h3 id="1-代码提交规范"><a href="#1-代码提交规范" class="headerlink" title="1.代码提交规范"></a>1.代码提交规范</h3><blockquote>
-<p>提交代码其实是有很多讲究的，如果我们都按照自己的想法随意的提交代码，到最后自己都不知道当时这次提交到底是为了解决什么问题。良好的代码提交习惯即有利于自己之后的审查，也有助于其他人观看，同时利用脚本来提取有价值的信息。如查看人个人的工作量，每日的工作任务等等。</p>
+<h3 id="1-安装docker"><a href="#1-安装docker" class="headerlink" title="1.    安装docker"></a>1.    安装docker</h3><blockquote>
+<p>主要介绍，安装docker-ce社区版。</p>
+<p>Docker 官方下载文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/get-docker/">https://docs.docker.com/get-docker/</a></p>
+<p>docker-ce社区版安装步骤：<a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/docker-ce">https://developer.aliyun.com/mirror/docker-ce</a></p>
 </blockquote>
 <ul>
-<li><strong>[1] 提交模板</strong><ul>
-<li>我们更多使用的是如下简化版<code>commit</code>模板</li>
+<li><strong>[1] CentOS 7（使用 yum 进行安装）</strong></li>
 </ul>
-</li>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># step 1: 安装必要的一些系统工具</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> -y yum-utils device-mapper-persistent-data lvm2
+<span class="token comment" spellcheck="true"># Step 2: 添加软件源信息</span>
+<span class="token function">sudo</span> yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+<span class="token comment" spellcheck="true"># Step 3</span>
+<span class="token function">sudo</span> <span class="token function">sed</span> -i <span class="token string">'s+download.docker.com+mirrors.aliyun.com/docker-ce+'</span> /etc/yum.repos.d/docker-ce.repo
+<span class="token comment" spellcheck="true"># Step 4: 更新并安装Docker-CE</span>
+<span class="token function">sudo</span> yum -y <span class="token function">install</span> docker-ce
+<span class="token comment" spellcheck="true"># Step 4: 开启Docker服务</span>
+<span class="token function">sudo</span> <span class="token function">service</span> docker start
+<span class="token comment" spellcheck="true">#配置docker的阿里云镜像加速器地址</span>
+<span class="token function">vi</span> /etc/docker/daemon.json
+<span class="token comment" spellcheck="true">#    内容如下</span>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+  <span class="token string">"exec-opts"</span>:<span class="token punctuation">[</span><span class="token string">"native.cgroupdriver=systemd"</span><span class="token punctuation">]</span>,
+  <span class="token string">"registry-mirrors"</span><span class="token keyword">:</span> <span class="token punctuation">[</span><span class="token string">"https://tn98v01s.mirror.aliyuncs.com"</span><span class="token punctuation">]</span>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+<span class="token comment" spellcheck="true">#    重启docker</span>
+<span class="token function">sudo</span> systemctl daemon-reload
+<span class="token function">sudo</span> systemctl restart docker
+<span class="token comment" spellcheck="true">#    统一重启服务器</span>
+<span class="token function">reboot</span>
+
+<span class="token comment" spellcheck="true"># 注意：</span>
+<span class="token comment" spellcheck="true"># 官方软件源默认启用了最新的软件，您可以通过编辑软件源的方式获取各个版本的软件包。例如官方并没有将测试版本的软件源置为可用，您可以通过以下方式开启。同理可以开启各种测试版本等。</span>
+<span class="token comment" spellcheck="true"># vim /etc/yum.repos.d/docker-ce.repo</span>
+<span class="token comment" spellcheck="true"># 将[docker-ce-test]下方的enabled=0修改为enabled=1</span>
+
+<span class="token comment" spellcheck="true">#    安装指定版本的Docker-CE:</span>
+<span class="token comment" spellcheck="true"># Step 1: 查找Docker-CE的版本:</span>
+yum list docker-ce --showduplicates <span class="token operator">|</span> <span class="token function">sort</span> -r
+<span class="token comment" spellcheck="true">#   Loading mirror speeds from cached hostfile</span>
+<span class="token comment" spellcheck="true">#   Loaded plugins: branch, fastestmirror, langpacks</span>
+<span class="token comment" spellcheck="true">#   docker-ce.x86_64            17.03.1.ce-1.el7.centos            docker-ce-stable</span>
+<span class="token comment" spellcheck="true">#   docker-ce.x86_64            17.03.1.ce-1.el7.centos            @docker-ce-stable</span>
+<span class="token comment" spellcheck="true">#   docker-ce.x86_64            17.03.0.ce-1.el7.centos            docker-ce-stable</span>
+<span class="token comment" spellcheck="true">#   Available Packages</span>
+<span class="token comment" spellcheck="true"># Step2: 安装指定版本的Docker-CE: (VERSION例如上面的17.03.0.ce.1-1.el7.centos)</span>
+<span class="token function">sudo</span> yum -y <span class="token function">install</span> docker-ce-<span class="token punctuation">[</span>VERSION<span class="token punctuation">]</span>
+</code></pre>
+<h3 id="2-修改机器的网卡及host配置文件"><a href="#2-修改机器的网卡及host配置文件" class="headerlink" title="2.    修改机器的网卡及host配置文件"></a>2.    修改机器的网卡及host配置文件</h3><ul>
+<li><strong>[1] 如果安装后虚拟机ip与宿主机ip不一致，将网络类型该为“自动检测”即可</strong></li>
 </ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 模板格式</span>
-<span class="token operator">&lt;</span>提交类型<span class="token operator">></span>-<span class="token operator">&lt;</span>项目名称<span class="token operator">></span>: <span class="token operator">&lt;</span>本次代码提交的动机<span class="token operator">></span>
-<span class="token comment" spellcheck="true"># 示例说明</span>
-feat-Pandas: update runtime to V1.3.0
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 查看ip</span>
+ip addr
+<span class="token comment" spellcheck="true">#    注意：如果出现虚拟机无法ping同主机的情况，说明主机与虚拟机不在一个网段上，将虚拟机的网段与主机的保持一致即可。比如主机为192.168.0.2，那么虚拟机就要为192.168.0.x</span>
+</code></pre>
+<p>![image-20221203232216054](&#x2F;Users&#x2F;xzq&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20221203232216054.png)</p>
+<p>![image-20221203232317617](&#x2F;Users&#x2F;xzq&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20221203232317617.png)</p>
+<ul>
+<li><strong>[2] 修改3台虚拟机的网卡配置文件</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 3台虚拟机分别在ifcfg-ens*配置文件中添加，之前安装都是ens33，这个版本是ens160。</span>
+<span class="token function">vi</span> /etc/sysconfig/network-scripts/ifcfg-ens160
+<span class="token comment" spellcheck="true">#    添加如下内容</span>
+IPADDR<span class="token operator">=</span>192.168.31.130 <span class="token comment" spellcheck="true">#静态IP，第一台ip：130，第二台ip：131，第三台ip：132</span>
+GATEWAY<span class="token operator">=</span>192.168.31.1 <span class="token comment" spellcheck="true">#默认网关</span>
+NETMASK<span class="token operator">=</span>255.255.255.0 <span class="token comment" spellcheck="true">#子网掩码 </span>
+<span class="token comment" spellcheck="true">#    重启网卡</span>
+<span class="token function">service</span> network restart
+<span class="token comment" spellcheck="true">#    查询ip，发现配置的ip已经出现</span>
+ip addr
 </code></pre>
 <ul>
-<li><strong>[2] 使用类型</strong><ul>
-<li>一般情况下不同类型的使用频率由高到低显示，如下：</li>
+<li><strong>[3] 修改机器的hostname、hosts文件</strong></li>
 </ul>
-</li>
-</ul>
-<pre class=" language-bash"><code class="language-bash">feat: 代码新增功能 
-fix: 代码修复bug
-perf: 代码性能优化
-style: 代码编码规范或风格上的修改并不影响功能
-docs: 代码文档修改
-refactor: 代码重构
-test: 代码测试
-chore: 代码构建、版本控制、编译等工作
-revert: 代码回滚
-build: 改变项目构建流程或包依赖
-ci: 改变项目构建流程或包依赖
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 使用vi分别编辑3台虚拟机的hostname文件</span>
+<span class="token function">vi</span> /etc/hostname
+<span class="token comment" spellcheck="true">#    内容如下</span>
+server130 <span class="token comment" spellcheck="true">#第一台虚拟机</span>
+server131 <span class="token comment" spellcheck="true">#第二台虚拟机</span>
+server132 <span class="token comment" spellcheck="true">#第三台虚拟机</span>
+<span class="token comment" spellcheck="true">#    使用vi分别编辑3台虚拟机的hosts文件</span>
+<span class="token function">vi</span> /etc/hosts
+<span class="token comment" spellcheck="true">#    添加如下内容</span>
+192.168.31.130 master
+192.168.31.131 node1
+192.168.31.132 node2
+<span class="token comment" spellcheck="true"># 最后，执行ping master 看配置是否成功</span>
 </code></pre>
-<h3 id="2-分支管理"><a href="#2-分支管理" class="headerlink" title="2.分支管理"></a>2.分支管理</h3><blockquote>
-<p>分支管理是一个非常重要的环节，如果我们没有分支管理，那么我们的代码就会被所有人看到，这样就会导致我们的代码被改动。</p>
+<h3 id="3-禁用防火墙、linux系统的安全服务、swap分区"><a href="#3-禁用防火墙、linux系统的安全服务、swap分区" class="headerlink" title="3.    禁用防火墙、linux系统的安全服务、swap分区"></a>3.    禁用防火墙、<strong>linux系统的安全服务</strong>、<strong>swap分区</strong></h3><ul>
+<li><strong>[1]禁用防火墙</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    docker会产生很多端口规则，为了引起不必要的麻烦，自己关闭掉（反正这个环境只是学习使用的，生成环境不要这么做）</span>
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl stop iptables
+systemctl disable iptables
+</code></pre>
+<ul>
+<li><strong>[2]禁用linux系统的安全服务</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    selinux是linux下的一个安全服务，安装软件会产生各种奇葩问题，直接禁用掉</span>
+<span class="token function">vi</span> /etc/selinux/config
+<span class="token comment" spellcheck="true">#    设置如下内容</span>
+SELINUX<span class="token operator">=</span>disabled
+</code></pre>
+<ul>
+<li><strong>[3]禁用swap分区</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    在物理内存使用完之后虚拟磁盘空间作为内存使用，开启会产生性能影响，在搭建k8s集群的时候如果开启的话还需要特别说明</span>
+<span class="token function">vi</span> /etc/fstab
+<span class="token comment" spellcheck="true">#    注释最后一行(/dev/mapper/cl_fedora-swap none                    swap    defaults        0 0)</span>
+
+<span class="token comment" spellcheck="true">#    执行如下命令，关闭swap</span>
+swapoff -a
+<span class="token comment" spellcheck="true">#    重启网卡</span>
+<span class="token function">service</span> network restart
+</code></pre>
+<h3 id="4-修改Linux内核参数、配置ipvs功能"><a href="#4-修改Linux内核参数、配置ipvs功能" class="headerlink" title="4.    修改Linux内核参数、配置ipvs功能"></a>4.    修改Linux内核参数、配置ipvs功能</h3><ul>
+<li><strong>[1] 修改linux内核参数</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    修改linux内核参数，添加网桥过滤和地址转发功能</span>
+<span class="token function">vi</span> /etc/sysctl.d/kubernetes.conf
+<span class="token comment" spellcheck="true"># 添加如下配置</span>
+net.bridge.bridge-nf-call-ip6tables <span class="token operator">=</span> 1
+net.bridge.bridge-nf-call-iptables <span class="token operator">=</span> 1
+net.ipv4.ip_forward <span class="token operator">=</span> 1
+
+<span class="token comment" spellcheck="true"># 重新加载配置</span>
+sysctl -p
+<span class="token comment" spellcheck="true">#    加载网桥过滤模块</span>
+modprobe br_netfilter
+<span class="token comment" spellcheck="true"># 查看网桥过滤模块是否加载成功</span>
+lsmod<span class="token operator">|</span><span class="token function">grep</span> br_netfilter
+</code></pre>
+<p>![image-20221204134144585](&#x2F;Users&#x2F;xzq&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20221204134144585.png)</p>
+<ul>
+<li><strong>[2] 配置ipvs功能</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    安装ipset、ipvsadm</span>
+yum -y <span class="token function">install</span> ipset ipvsadm
+<span class="token comment" spellcheck="true">#    添加需要加载的模块，写入到脚本文件中</span>
+<span class="token function">vi</span> /etc/sysconfig/modules/ipvs.modules
+<span class="token comment" spellcheck="true">#    内容如下</span>
+<span class="token comment" spellcheck="true">#!/bin/bash</span>
+modprobe -- ip_vs
+modprobe -- ip_vs_rr
+modprobe -- ip_vs_wrr
+modprobe -- ip_vs_sh
+modprobe -- nf_conntrack
+<span class="token comment" spellcheck="true">#    注意：在网上找到教程安装K8S需要配置ipvs功能，但是在进行配置时会报错modprobe: FATAL: Module nf_conntrack_ipv4 not found。这是因为使用了高内核，较如博主就是使用了5.2的内核，一般教程都是3.2的内核。在高版本内核已经把nf_conntrack_ipv4替换为nf_conntrack了。</span>
+
+<span class="token comment" spellcheck="true">#    为脚本文件添加执行权限</span>
+<span class="token function">chmod</span> +x /etc/sysconfig/modules/ipvs.modules
+<span class="token comment" spellcheck="true">#    执行脚本文件</span>
+/bin/bash /etc/sysconfig/modules/ipvs.modules
+<span class="token comment" spellcheck="true">#    查询对应模块是否加载成功</span>
+lsmod <span class="token operator">|</span><span class="token function">grep</span> -e ip_vs -e nf_conntrack
+</code></pre>
+<p>![image-20221204151812418](&#x2F;Users&#x2F;xzq&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20221204151812418.png)</p>
+<h3 id="5-安装k8s组件"><a href="#5-安装k8s组件" class="headerlink" title="5.    安装k8s组件"></a>5.    安装k8s组件</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#配置kubernetes的镜像源</span>
+<span class="token function">cat</span> <span class="token operator">></span> /etc/yum.repos.d/kubernetes.repo <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+[kubernetes]
+name=Kubernetes
+baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-aarch64
+enabled=1
+gpgcheck=0
+repo_gpgcheck=0
+gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
+EOF</span>
+
+<span class="token comment" spellcheck="true">#安装1.23.1指定版本的kubernetes相关组件</span>
+yum <span class="token function">install</span> -y kubelet-1.23.1-0 kubectl-1.23.1-0 kubeadm-1.23.1-0
+<span class="token comment" spellcheck="true">#安装最新版本的kubernetes相关组件</span>
+yum -y <span class="token function">install</span> kubeadm kubelet kubectl
+<span class="token comment" spellcheck="true">#配置kubelet的cgroup</span>
+<span class="token function">vi</span> /etc/sysconfig/kubelet
+<span class="token comment" spellcheck="true">#内容如下</span>
+KUBELET_CGROUP_ARGS<span class="token operator">=</span><span class="token string">"--cgroup-driver=systemd"</span>
+KUBE_PROXY_MODE<span class="token operator">=</span><span class="token string">"ipvs"</span>
+
+<span class="token comment" spellcheck="true">#设置为开机自启动并启动 </span>
+systemctl <span class="token function">enable</span> kubelet
+</code></pre>
+<h3 id="6-集群初始化、安装网络组件"><a href="#6-集群初始化、安装网络组件" class="headerlink" title="6.    集群初始化、安装网络组件"></a>6.    集群初始化、安装网络组件</h3><ul>
+<li><strong>[1] 集群初始化（仅在master上执行）</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    apiserver-advertise-address为master的ip地址</span>
+<span class="token comment" spellcheck="true">#    查看安装的k8s组件版本</span>
+kubectl version
+<span class="token comment" spellcheck="true">#    kubernetes-version为当前一步安装的k8s的版本,该步骤执行有点慢需要耐心等待一下</span>
+kubeadm init \
+--apiserver-advertise-address<span class="token operator">=</span>192.168.31.130 \
+--image-repository registry.aliyuncs.com/google_containers \
+--kubernetes-version v1.23.1 \
+--service-cidr<span class="token operator">=</span>10.1.0.0/16 \
+--pod-network-cidr<span class="token operator">=</span>10.244.0.0/16 \
+--ignore-preflight-errors<span class="token operator">=</span>all  \
+--v<span class="token operator">=</span>6
+<span class="token comment" spellcheck="true">#    最后出现Your Kubernetes control-plane has initialized successfully!内容则表示集群初始化成功。最后按照安装成功后的提示语执行一些命令即可。若执行失败，需要重新初始化kubeadm reset # 先重置</span>
+</code></pre>
+<p>![image-20221204162636498](&#x2F;Users&#x2F;xzq&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20221204162636498.png)</p>
+<ul>
+<li><strong>[2] 安装网络组件（仅在master上执行）</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash">kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+</code></pre>
+<ul>
+<li><strong>[3]将其他节点加入到集群中（在非master节点上执行）</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 这个命令在集群初始化成功后会提示 拷贝自己对应的命令执行即可</span>
+kubeadm <span class="token function">join</span> 192.168.31.130:6443 --token du6ab6.wbqkynebpm7268vt \
+    --discovery-token-ca-cert-hash sha256:157d825f33c5f4823ab90142236874517664781a293212dbcf351e0815cb2ddf
+
+<span class="token comment" spellcheck="true">#    测试（仅在master上执行）</span>
+kubectl create deployment nginx --image<span class="token operator">=</span>nginx
+kubectl expose deployment nginx --port<span class="token operator">=</span>80 --type<span class="token operator">=</span>NodePort
+kubectl get pod,svc 
+<span class="token comment" spellcheck="true">#    在 web 浏览器输入以下地址，会返回 nginx 欢迎界面</span>
+http://192.168.73.130:32409/ <span class="token punctuation">(</span>该端口为kubectl get pod,svc命令获取<span class="token punctuation">)</span>
+</code></pre>
+<p>![image-20221204163555454](&#x2F;Users&#x2F;xzq&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20221204163555454.png)</p>
+<h2 id="二、基于k8s安装kubersphere"><a href="#二、基于k8s安装kubersphere" class="headerlink" title="二、基于k8s安装kubersphere"></a>二、基于k8s安装kubersphere</h2><blockquote>
+<p>KubeSphere完全开源免费，是k8s的一个web管理界面，帮助企业快速构建一个强大和功能丰富的容器云平台。例如<strong>多云与多集群管理、Kubernetes 资源管理、DevOps、微服务治理、日志查询与收集、服务与网络、监控告警、存储管理、访问权限控制、GPU 支持、网络策略、镜像仓库管理以及安全管理</strong>等。</p>
+<p>KubeSphere官方文档：<a target="_blank" rel="noopener" href="https://kubesphere.com.cn/docs">https://kubesphere.com.cn/docs</a></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/16094046-a41e761291c9ba18.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="img"></p>
+</blockquote>
+<h3 id="1-Centos7搭建NFS服务端"><a href="#1-Centos7搭建NFS服务端" class="headerlink" title="1.    Centos7搭建NFS服务端"></a>1.    Centos7搭建NFS服务端</h3><blockquote>
+<p>注意：在k8s的所有节点上都需要安装nfs-utils、rpcbind</p>
 </blockquote>
 <ul>
-<li><strong>[1] develop分支-开发分支</strong></li>
+<li><strong>[1] 安装nfs-utils rpcbind</strong></li>
 </ul>
-<p>开发分支是开发人员最常用的分支，在开发分支上进行开发，当完成了开发，可以提交到master分支上，这样就可以让开发的代码可以被其他人看到。</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 安装必要软件</span>
+yum -y <span class="token function">install</span> nfs-utils rpcbind
+<span class="token comment" spellcheck="true"># 设置开机自启动</span>
+systemctl <span class="token function">enable</span> nfs
+systemctl <span class="token function">enable</span> rpcbind
+
+<span class="token comment" spellcheck="true"># 启动nfs</span>
+systemctl start rpcbind
+systemctl start nfs
+</code></pre>
 <ul>
-<li><strong>[2] feature分支-功能分支</strong></li>
+<li><strong>[2] 服务端配置nfs（仅在master上执行）</strong></li>
 </ul>
-<p>对于新功能开发，应从 develop 上切出一个 feature 分支进行开发，命名格式为 feature&#x2F;project。其中功能名使用小写单词结合中划线连缀方式，如 feature&#x2F;update-web-style。feature 分支进行编译通过并自测通过后，再合并到主干 develop 分支上。</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    创建nfsdata服务端挂载目录</span>
+<span class="token function">mkdir</span> -p /usr/local/k8s/nfsdata
+<span class="token comment" spellcheck="true"># 配置nfs</span>
+<span class="token function">vi</span> /etc/exports
+/usr/local/k8s/nfsdata 192.168.31.0/24<span class="token punctuation">(</span>rw,no_root_squash,no_all_squash,sync<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 重启nfs</span>
+systemctl restart nfs
+</code></pre>
+<h3 id="2-创建基于NFS的DefaultStorageclass"><a href="#2-创建基于NFS的DefaultStorageclass" class="headerlink" title="2.    创建基于NFS的DefaultStorageclass"></a>2.    创建基于NFS的DefaultStorageclass</h3><blockquote>
+<p>kubesphere明确说明基于k8s安装需要配置DefaultStorageclass</p>
+</blockquote>
 <ul>
-<li><strong>[3] master分支-主分支</strong></li>
+<li><strong>[1] 下载资源文件</strong></li>
 </ul>
-<p>当 develop 分支开发完成一个版本的时候，测试没有问题之后就可以将其提交之后合并到 master分支了，master 分支内容会自动发布到内网正式环境。需要注意的是，一般情况从开发分支合入到主干分支不会有代码冲突的，如果有的话那就是没有按照上述流程严格执行的结果。</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    创建nfs-client目录</span>
+<span class="token function">mkdir</span> nfs-client
+<span class="token function">cd</span> nfs-client
+<span class="token comment" spellcheck="true"># 如果实在下载不下来，就直接进入github进行拷贝</span>
+<span class="token keyword">for</span> <span class="token function">file</span> <span class="token keyword">in</span> class.yaml deployment.yaml rbac.yaml test-claim.yaml test-pod.yaml<span class="token punctuation">;</span> \
+<span class="token keyword">do</span> <span class="token function">wget</span> https://github.com/kubernetes-retired/external-storage/tree/master/nfs-client/deploy/<span class="token variable">$file</span><span class="token punctuation">;</span> \
+<span class="token keyword">done</span>
+</code></pre>
 <ul>
-<li><strong>[4] release分支-预发布分支</strong></li>
+<li><strong>[2] nfs-client目录下创建并修改deployment.yaml文件</strong></li>
 </ul>
-<p>将已经在 master 内网正式环境上测试没有问题的版本合入 release 分支，打包给客户部署或者更新线上环境，完成最后的更新操作。</p>
-<h3 id="3-Git常用命令"><a href="#3-Git常用命令" class="headerlink" title="3.Git常用命令"></a>3.Git常用命令</h3><ul>
-<li><strong>[1] Git常用命令</strong></li>
+<p>![image-20221204172858756](&#x2F;Users&#x2F;xzq&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20221204172858756.png)</p>
+<ul>
+<li><strong>[3] nfs-client目录下创建rbac.yaml文件</strong></li>
 </ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#创建分支</span>
-<span class="token function">git</span> branch <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
-<span class="token comment" spellcheck="true">#切换分支</span>
-<span class="token function">git</span> checkout <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
-<span class="token comment" spellcheck="true">#删除分支</span>
-<span class="token function">git</span> branch -d <span class="token operator">&lt;</span>分支名称<span class="token operator">></span>
-<span class="token comment" spellcheck="true"># 查看当前分支</span>
-<span class="token function">git</span> branch
-<span class="token comment" spellcheck="true"># 查看当前分支的最后一次提交</span>
-<span class="token function">git</span> log -1
-<span class="token comment" spellcheck="true"># 查看当前分支的最后一次提交的提交信息</span>
-<span class="token function">git</span> log -1 --pretty<span class="token operator">=</span>%B
+<pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner
+  <span class="token comment" spellcheck="true"># replace with namespace where provisioner is deployed</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> default
+<span class="token punctuation">---</span>
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRole
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner<span class="token punctuation">-</span>runner
+<span class="token key atrule">rules</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"persistentvolumes"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span> <span class="token string">"list"</span><span class="token punctuation">,</span> <span class="token string">"watch"</span><span class="token punctuation">,</span> <span class="token string">"create"</span><span class="token punctuation">,</span> <span class="token string">"delete"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"persistentvolumeclaims"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span> <span class="token string">"list"</span><span class="token punctuation">,</span> <span class="token string">"watch"</span><span class="token punctuation">,</span> <span class="token string">"update"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"storage.k8s.io"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"storageclasses"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span> <span class="token string">"list"</span><span class="token punctuation">,</span> <span class="token string">"watch"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"events"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"create"</span><span class="token punctuation">,</span> <span class="token string">"update"</span><span class="token punctuation">,</span> <span class="token string">"patch"</span><span class="token punctuation">]</span>
+<span class="token punctuation">---</span>
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRoleBinding
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> run<span class="token punctuation">-</span>nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner
+<span class="token key atrule">subjects</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner
+    <span class="token comment" spellcheck="true"># replace with namespace where provisioner is deployed</span>
+    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> default
+<span class="token key atrule">roleRef</span><span class="token punctuation">:</span>
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRole
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner<span class="token punctuation">-</span>runner
+  <span class="token key atrule">apiGroup</span><span class="token punctuation">:</span> rbac.authorization.k8s.io
+<span class="token punctuation">---</span>
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> leader<span class="token punctuation">-</span>locking<span class="token punctuation">-</span>nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner
+  <span class="token comment" spellcheck="true"># replace with namespace where provisioner is deployed</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> default
+<span class="token key atrule">rules</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token key atrule">resources</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"endpoints"</span><span class="token punctuation">]</span>
+    <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span> <span class="token string">"list"</span><span class="token punctuation">,</span> <span class="token string">"watch"</span><span class="token punctuation">,</span> <span class="token string">"create"</span><span class="token punctuation">,</span> <span class="token string">"update"</span><span class="token punctuation">,</span> <span class="token string">"patch"</span><span class="token punctuation">]</span>
+<span class="token punctuation">---</span>
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> RoleBinding
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> leader<span class="token punctuation">-</span>locking<span class="token punctuation">-</span>nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner
+  <span class="token comment" spellcheck="true"># replace with namespace where provisioner is deployed</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> default
+<span class="token key atrule">subjects</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner
+    <span class="token comment" spellcheck="true"># replace with namespace where provisioner is deployed</span>
+    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> default
+<span class="token key atrule">roleRef</span><span class="token punctuation">:</span>
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> Role
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> leader<span class="token punctuation">-</span>locking<span class="token punctuation">-</span>nfs<span class="token punctuation">-</span>client<span class="token punctuation">-</span>provisioner
+  <span class="token key atrule">apiGroup</span><span class="token punctuation">:</span> rbac.authorization.k8s.io
+</code></pre>
+<ul>
+<li><strong>[4] nfs-client目录下创建class.yaml文件修改设置DefaultStorageClass</strong></li>
+</ul>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> storage.k8s.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> StorageClass
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">annotations</span><span class="token punctuation">:</span>
+    <span class="token key atrule">storageclass.kubernetes.io/is-default-class</span><span class="token punctuation">:</span> <span class="token string">"true"</span>   <span class="token comment" spellcheck="true"># 此属性为设置为default StorageClass</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> managed<span class="token punctuation">-</span>nfs<span class="token punctuation">-</span>storage
+<span class="token key atrule">provisioner</span><span class="token punctuation">:</span> fuseim.pri/ifs <span class="token comment" spellcheck="true"># or choose another name, must match deployment's env PROVISIONER_NAME'</span>
+<span class="token key atrule">parameters</span><span class="token punctuation">:</span>
+  <span class="token key atrule">archiveOnDelete</span><span class="token punctuation">:</span> <span class="token string">"false"</span>
+</code></pre>
+<ul>
+<li><strong>[5] 部署deployment.yaml、rbac.yaml、class.yaml</strong></li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#    部署命令</span>
+kubectl apply -f class.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f rbac.yaml
+<span class="token comment" spellcheck="true">#    查看是否设置DefaultStorageClass成功</span>
+kubectl get sc
+<span class="token comment" spellcheck="true">#    显示如下内容表示设置成功</span>
+NAME            PROVISIONER      RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+managed-nfs-storage <span class="token punctuation">(</span>default<span class="token punctuation">)</span>   fuseim.pri/ifs   Delete    Immediate        <span class="token boolean">false</span>    5m41s
+</code></pre>
+<h3 id="3-执行安装Kubersphere"><a href="#3-执行安装Kubersphere" class="headerlink" title="3.执行安装Kubersphere"></a>3.执行安装Kubersphere</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 执行以下命令安装</span>
+kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/kubesphere-installer.yaml
+kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/cluster-configuration.yaml
+<span class="token comment" spellcheck="true">#    手动下载到本地再上传到虚拟机</span>
+https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/kubesphere-installer.yaml
+https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/cluster-configuration.yaml
+<span class="token comment" spellcheck="true">#    再执行文件</span>
+kubectl apply -f kubesphere-installer.yaml
+kubectl apply -f cluster-configuration.yaml
+
+<span class="token comment" spellcheck="true"># 执行以下命令检查安装日志 过程稍微有点长 最后出现如下图就说明安装成功</span>
+kubectl logs -n kubesphere-system <span class="token punctuation">$(</span>kubectl get pod -n kubesphere-system -l app<span class="token operator">=</span>ks-install -o jsonpath<span class="token operator">=</span><span class="token string">'&amp;#123;.items[0].metadata.name&amp;#125;'</span><span class="token punctuation">)</span> -f
+
+<span class="token comment" spellcheck="true"># 在浏览器中出入日志中提示的访问地址即可</span>
 </code></pre>
 
                 
@@ -681,7 +947,7 @@ ci: 改变项目构建流程或包依赖
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">zq.xie</a>
+                    <a href="/about" rel="external nofollow noreferrer">谢志强</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -704,7 +970,7 @@ ci: 改变项目构建流程或包依赖
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">zq.xie</a>
+                    <a href="/about" target="_blank">谢志强</a>
                     !
                 </span>
             </div>
@@ -728,7 +994,11 @@ ci: 改变项目构建流程或包依赖
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/k8s/">
+                                    <span class="chip bg-color">k8s</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -905,9 +1175,9 @@ ci: 改变项目构建流程或包依赖
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="博客文章模板1">
+                        <img src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="K8s集群搭建">
                         
-                        <span class="card-title">博客文章模板1</span>
+                        <span class="card-title">K8s集群搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -933,6 +1203,14 @@ ci: 改变项目构建流程或包依赖
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/k8s/">
+                        <span class="chip bg-color">k8s</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1166,7 +1444,7 @@ ci: 改变项目构建流程或包依赖
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">5.2k</span>&nbsp;字
+                class="white-color">6.7k</span>&nbsp;字
             
             
             
