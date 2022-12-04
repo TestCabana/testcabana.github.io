@@ -182,25 +182,6 @@
     
     
     <entry>
-      <title>Ability业务能力</title>
-      <link href="/posts/abbrlink.html"/>
-      <url>/posts/abbrlink.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability业务能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ability编程能力</title>
       <link href="/posts/abbrlink.html"/>
       <url>/posts/abbrlink.html</url>
@@ -211,6 +192,25 @@
       <categories>
           
           <category> Ability编程能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ability业务能力</title>
+      <link href="/posts/abbrlink.html"/>
+      <url>/posts/abbrlink.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability业务能力 </category>
           
       </categories>
       
@@ -247,44 +247,6 @@
             <tag> K8s </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Ability测试能力</title>
-      <link href="/posts/abbrlink.html"/>
-      <url>/posts/abbrlink.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability测试能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Read读万卷书</title>
-      <link href="/posts/abbrlink.html"/>
-      <url>/posts/abbrlink.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Read读万卷书 </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -346,6 +308,44 @@
     
     
     <entry>
+      <title>Ability测试能力</title>
+      <link href="/posts/abbrlink.html"/>
+      <url>/posts/abbrlink.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability测试能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Read读万卷书</title>
+      <link href="/posts/abbrlink.html"/>
+      <url>/posts/abbrlink.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Read读万卷书 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>季度总结</title>
       <link href="/posts/abbrlink.html"/>
       <url>/posts/abbrlink.html</url>
@@ -359,6 +359,47 @@
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微服务及中间件</title>
+      <link href="/posts/abbrlink.html"/>
+      <url>/posts/abbrlink.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 微服务及中间件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringCloud </tag>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> Nacos </tag>
+            
+            <tag> Driud </tag>
+            
+            <tag> Hadoop </tag>
+            
+            <tag> canal </tag>
+            
+            <tag> Kafka </tag>
+            
+            <tag> RocketMQ </tag>
+            
+            <tag> NSQ </tag>
+            
+        </tags>
       
     </entry>
     
@@ -477,47 +518,6 @@
             <tag> TestResult </tag>
             
             <tag> TestReport </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微服务及中间件</title>
-      <link href="/posts/abbrlink.html"/>
-      <url>/posts/abbrlink.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 微服务及中间件 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> SpringCloud </tag>
-            
-            <tag> SpringBoot </tag>
-            
-            <tag> Nacos </tag>
-            
-            <tag> Driud </tag>
-            
-            <tag> Hadoop </tag>
-            
-            <tag> canal </tag>
-            
-            <tag> Kafka </tag>
-            
-            <tag> RocketMQ </tag>
-            
-            <tag> NSQ </tag>
             
         </tags>
       

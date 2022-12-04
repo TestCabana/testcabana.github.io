@@ -189,21 +189,6 @@
   </entry>
   
   <entry>
-    <title>Ability业务能力</title>
-    <link href="https://testcabana.github.io/posts/abbrlink"/>
-    <id>https://testcabana.github.io/posts/abbrlink</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Ability业务能力" scheme="https://testcabana.github.io/categories/Ability%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Ability编程能力</title>
     <link href="https://testcabana.github.io/posts/abbrlink"/>
     <id>https://testcabana.github.io/posts/abbrlink</id>
@@ -214,6 +199,21 @@
     
     
     <category term="Ability编程能力" scheme="https://testcabana.github.io/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ability业务能力</title>
+    <link href="https://testcabana.github.io/posts/abbrlink"/>
+    <id>https://testcabana.github.io/posts/abbrlink</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability业务能力" scheme="https://testcabana.github.io/categories/Ability%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/"/>
     
     
   </entry>
@@ -240,36 +240,6 @@
     <category term="Docker" scheme="https://testcabana.github.io/tags/Docker/"/>
     
     <category term="K8s" scheme="https://testcabana.github.io/tags/K8s/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ability测试能力</title>
-    <link href="https://testcabana.github.io/posts/abbrlink"/>
-    <id>https://testcabana.github.io/posts/abbrlink</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Read读万卷书</title>
-    <link href="https://testcabana.github.io/posts/abbrlink"/>
-    <id>https://testcabana.github.io/posts/abbrlink</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
-    
     
   </entry>
   
@@ -321,6 +291,36 @@
   </entry>
   
   <entry>
+    <title>Ability测试能力</title>
+    <link href="https://testcabana.github.io/posts/abbrlink"/>
+    <id>https://testcabana.github.io/posts/abbrlink</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Ability测试能力" scheme="https://testcabana.github.io/categories/Ability%E6%B5%8B%E8%AF%95%E8%83%BD%E5%8A%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Read读万卷书</title>
+    <link href="https://testcabana.github.io/posts/abbrlink"/>
+    <id>https://testcabana.github.io/posts/abbrlink</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="Read读万卷书" scheme="https://testcabana.github.io/categories/Read%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>季度总结</title>
     <link href="https://testcabana.github.io/posts/abbrlink"/>
     <id>https://testcabana.github.io/posts/abbrlink</id>
@@ -332,6 +332,39 @@
     
     <category term="Report季度总结" scheme="https://testcabana.github.io/categories/Report%E5%AD%A3%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>微服务及中间件</title>
+    <link href="https://testcabana.github.io/posts/abbrlink"/>
+    <id>https://testcabana.github.io/posts/abbrlink</id>
+    <published>2022-04-16T15:47:29.000Z</published>
+    <updated>2022-04-16T15:47:29.000Z</updated>
+    
+    
+    
+    
+    <category term="微服务及中间件" scheme="https://testcabana.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8F%8A%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+    <category term="SpringCloud" scheme="https://testcabana.github.io/tags/SpringCloud/"/>
+    
+    <category term="SpringBoot" scheme="https://testcabana.github.io/tags/SpringBoot/"/>
+    
+    <category term="Nacos" scheme="https://testcabana.github.io/tags/Nacos/"/>
+    
+    <category term="Driud" scheme="https://testcabana.github.io/tags/Driud/"/>
+    
+    <category term="Hadoop" scheme="https://testcabana.github.io/tags/Hadoop/"/>
+    
+    <category term="canal" scheme="https://testcabana.github.io/tags/canal/"/>
+    
+    <category term="Kafka" scheme="https://testcabana.github.io/tags/Kafka/"/>
+    
+    <category term="RocketMQ" scheme="https://testcabana.github.io/tags/RocketMQ/"/>
+    
+    <category term="NSQ" scheme="https://testcabana.github.io/tags/NSQ/"/>
     
   </entry>
   
@@ -436,39 +469,6 @@
     <category term="TestResult" scheme="https://testcabana.github.io/tags/TestResult/"/>
     
     <category term="TestReport" scheme="https://testcabana.github.io/tags/TestReport/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微服务及中间件</title>
-    <link href="https://testcabana.github.io/posts/abbrlink"/>
-    <id>https://testcabana.github.io/posts/abbrlink</id>
-    <published>2022-04-16T15:47:29.000Z</published>
-    <updated>2022-04-16T15:47:29.000Z</updated>
-    
-    
-    
-    
-    <category term="微服务及中间件" scheme="https://testcabana.github.io/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8F%8A%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
-    
-    
-    <category term="SpringCloud" scheme="https://testcabana.github.io/tags/SpringCloud/"/>
-    
-    <category term="SpringBoot" scheme="https://testcabana.github.io/tags/SpringBoot/"/>
-    
-    <category term="Nacos" scheme="https://testcabana.github.io/tags/Nacos/"/>
-    
-    <category term="Driud" scheme="https://testcabana.github.io/tags/Driud/"/>
-    
-    <category term="Hadoop" scheme="https://testcabana.github.io/tags/Hadoop/"/>
-    
-    <category term="canal" scheme="https://testcabana.github.io/tags/canal/"/>
-    
-    <category term="Kafka" scheme="https://testcabana.github.io/tags/Kafka/"/>
-    
-    <category term="RocketMQ" scheme="https://testcabana.github.io/tags/RocketMQ/"/>
-    
-    <category term="NSQ" scheme="https://testcabana.github.io/tags/NSQ/"/>
     
   </entry>
   
