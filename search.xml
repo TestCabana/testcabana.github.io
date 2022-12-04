@@ -76,6 +76,8 @@
             
             <tag> Git </tag>
             
+            <tag> Jenkins </tag>
+            
             <tag> Jira </tag>
             
             <tag> 禅道 </tag>
@@ -136,8 +138,6 @@
             
             <tag> Grafana </tag>
             
-            <tag> Jenkins </tag>
-            
             <tag> Navicat </tag>
             
             <tag> phpMyAdmin </tag>
@@ -171,30 +171,11 @@
       
         <tags>
             
-            <tag> GitLab </tag>
-            
             <tag> Git </tag>
             
+            <tag> GitLab </tag>
+            
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Ability编程能力</title>
-      <link href="/posts/36352edc.html"/>
-      <url>/posts/36352edc.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability编程能力 </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -211,6 +192,25 @@
       <categories>
           
           <category> Ability业务能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ability编程能力</title>
+      <link href="/posts/36352edc.html"/>
+      <url>/posts/36352edc.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability编程能力 </category>
           
       </categories>
       
@@ -294,6 +294,39 @@
     
     
     <entry>
+      <title>CI CD容器构建</title>
+      <link href="/posts/8657ec7a.html"/>
+      <url>/posts/8657ec7a.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> CI CD容器构建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> Gitlab </tag>
+            
+            <tag> Jenkins </tag>
+            
+            <tag> Docker </tag>
+            
+            <tag> K8s </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Read读万卷书</title>
       <link href="/posts/5312e213.html"/>
       <url>/posts/5312e213.html</url>
@@ -304,6 +337,25 @@
       <categories>
           
           <category> Read读万卷书 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>季度总结</title>
+      <link href="/posts/b99beeab.html"/>
+      <url>/posts/b99beeab.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Report季度总结 </category>
           
       </categories>
       
@@ -346,39 +398,6 @@
             <tag> RocketMQ </tag>
             
             <tag> NSQ </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CI CD容器构建</title>
-      <link href="/posts/8657ec7a.html"/>
-      <url>/posts/8657ec7a.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> CI CD容器构建 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Git </tag>
-            
-            <tag> Jenkins </tag>
-            
-            <tag> Gitlab </tag>
-            
-            <tag> Docker </tag>
-            
-            <tag> K8s </tag>
             
         </tags>
       
@@ -501,25 +520,6 @@
             <tag> CDN </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>季度总结</title>
-      <link href="/posts/b99beeab.html"/>
-      <url>/posts/b99beeab.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Report季度总结 </category>
-          
-      </categories>
-      
       
     </entry>
     
