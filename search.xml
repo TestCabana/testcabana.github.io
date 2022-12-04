@@ -182,25 +182,6 @@
     
     
     <entry>
-      <title>Ability编程能力</title>
-      <link href="/posts/36352edc.html"/>
-      <url>/posts/36352edc.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability编程能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ability业务能力</title>
       <link href="/posts/1526445f.html"/>
       <url>/posts/1526445f.html</url>
@@ -211,6 +192,44 @@
       <categories>
           
           <category> Ability业务能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ability测试能力</title>
+      <link href="/posts/e6107735.html"/>
+      <url>/posts/e6107735.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability测试能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ability编程能力</title>
+      <link href="/posts/36352edc.html"/>
+      <url>/posts/36352edc.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability编程能力 </category>
           
       </categories>
       
@@ -302,44 +321,6 @@
             <tag> foreign </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Ability测试能力</title>
-      <link href="/posts/e6107735.html"/>
-      <url>/posts/e6107735.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability测试能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Read读万卷书</title>
-      <link href="/posts/5312e213.html"/>
-      <url>/posts/5312e213.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Read读万卷书 </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -520,6 +501,25 @@
             <tag> TestReport </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Read读万卷书</title>
+      <link href="/posts/5312e213.html"/>
+      <url>/posts/5312e213.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Read读万卷书 </category>
+          
+      </categories>
+      
       
     </entry>
     
