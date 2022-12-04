@@ -1,6 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/wenzi.js"></script>');
+        }
+        </script>
+    
 
 
 <head>
@@ -29,7 +37,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/css/my.css">
 
     <script src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/libs/jquery/jquery.min.js"></script>
-    
 
 <meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="TestCabana" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
@@ -571,7 +578,7 @@
                 type: 'pie',
                 radius: ['40%', '75%'],
                 color: ['#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de', '#3ba272', '#fc8452', '#9a60b4', '#ea7ccc', '#f6efa6', '#d88273'],
-                data: [{"name":"Ability业务能力","value":1},{"name":"CI CD容器构建","value":3},{"name":"Ability测试能力","value":1},{"name":"Ability编程能力","value":1},{"name":"Linux及数据库","value":1},{"name":"Read读万卷书","value":1},{"name":"Report季度总结","value":1},{"name":"Tools测试工具","value":2},{"name":"微服务及中间件","value":1},{"name":"软件测试理论","value":1},{"name":"计算机网络","value":1}],
+                data: [{"name":"Ability业务能力","value":1},{"name":"Ability测试能力","value":1},{"name":"CI CD容器构建","value":3},{"name":"Ability编程能力","value":1},{"name":"Read读万卷书","value":1},{"name":"Report季度总结","value":1},{"name":"Tools测试工具","value":2},{"name":"微服务及中间件","value":1},{"name":"计算机网络","value":1},{"name":"软件测试理论","value":1},{"name":"Linux及数据库","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -602,7 +609,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Git","Jenkins","iTerm2","Gitlab","Docker","K8s","LinuxShell","LinuxBash","MySQL","SQL"]
+                data: ["Git","Jenkins","iTerm2","Gitlab","Docker","K8s","GitLab","Jira","禅道","wiki"]
             }
         ],
         yAxis: [
@@ -815,112 +822,8 @@
             
             
             
-            <a href="/tags/LinuxShell/">
-                <span class="chip center-align waves-effect waves-light chip-default">LinuxShell</span>
-            </a>
-            
-            
-            
-            <a href="/tags/LinuxBash/">
-                <span class="chip center-align waves-effect waves-light chip-default">LinuxBash</span>
-            </a>
-            
-            
-            
-            <a href="/tags/MySQL/">
-                <span class="chip center-align waves-effect waves-light chip-default">MySQL</span>
-            </a>
-            
-            
-            
-            
-            
-            <a href="/tags/PostgreSQL/">
-                <span class="chip center-align waves-effect waves-light chip-default">PostgreSQL</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Oracle/">
-                <span class="chip center-align waves-effect waves-light chip-default">Oracle</span>
-            </a>
-            
-            
-            
-            <a href="/tags/MongoDB/">
-                <span class="chip center-align waves-effect waves-light chip-default">MongoDB</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Redis/">
-                <span class="chip center-align waves-effect waves-light chip-default">Redis</span>
-            </a>
-            
-            
-            
-            <a href="/tags/ElasticSearch/">
-                <span class="chip center-align waves-effect waves-light chip-default">ElasticSearch</span>
-            </a>
-            
-            
-            
-            <a href="/tags/database/">
-                <span class="chip center-align waves-effect waves-light chip-default">database</span>
-            </a>
-            
-            
-            
-            <a href="/tags/table/">
-                <span class="chip center-align waves-effect waves-light chip-default">table</span>
-            </a>
-            
-            
-            
-            <a href="/tags/column/">
-                <span class="chip center-align waves-effect waves-light chip-default">column</span>
-            </a>
-            
-            
-            
-            <a href="/tags/row/">
-                <span class="chip center-align waves-effect waves-light chip-default">row</span>
-            </a>
-            
-            
-            
-            <a href="/tags/index/">
-                <span class="chip center-align waves-effect waves-light chip-default">index</span>
-            </a>
-            
-            
-            
-            <a href="/tags/primary/">
-                <span class="chip center-align waves-effect waves-light chip-default">primary</span>
-            </a>
-            
-            
-            
-            <a href="/tags/foreign/">
-                <span class="chip center-align waves-effect waves-light chip-default">foreign</span>
-            </a>
-            
-            
-            
             <a href="/tags/GitLab/">
                 <span class="chip center-align waves-effect waves-light chip-default">GitLab</span>
-            </a>
-            
-            
-            
-            <a href="/tags/iTerm2/">
-                <span class="chip center-align waves-effect waves-light chip-default">iTerm2</span>
-            </a>
-            
-            
-            
-            <a href="/tags/oh-my-zsh/">
-                <span class="chip center-align waves-effect waves-light chip-default">oh-my-zsh</span>
             </a>
             
             
@@ -957,6 +860,12 @@
             
             <a href="/tags/Xshell/">
                 <span class="chip center-align waves-effect waves-light chip-default">Xshell</span>
+            </a>
+            
+            
+            
+            <a href="/tags/iTerm2/">
+                <span class="chip center-align waves-effect waves-light chip-default">iTerm2</span>
             </a>
             
             
@@ -1189,54 +1098,6 @@
             
             
             
-            <a href="/tags/k8s/">
-                <span class="chip center-align waves-effect waves-light chip-default">k8s</span>
-            </a>
-            
-            
-            
-            <a href="/tags/TestBasis/">
-                <span class="chip center-align waves-effect waves-light chip-default">TestBasis</span>
-            </a>
-            
-            
-            
-            <a href="/tags/TestMethod/">
-                <span class="chip center-align waves-effect waves-light chip-default">TestMethod</span>
-            </a>
-            
-            
-            
-            <a href="/tags/TestFlow/">
-                <span class="chip center-align waves-effect waves-light chip-default">TestFlow</span>
-            </a>
-            
-            
-            
-            <a href="/tags/TestPlan/">
-                <span class="chip center-align waves-effect waves-light chip-default">TestPlan</span>
-            </a>
-            
-            
-            
-            <a href="/tags/TestCase/">
-                <span class="chip center-align waves-effect waves-light chip-default">TestCase</span>
-            </a>
-            
-            
-            
-            <a href="/tags/TestResult/">
-                <span class="chip center-align waves-effect waves-light chip-default">TestResult</span>
-            </a>
-            
-            
-            
-            <a href="/tags/TestReport/">
-                <span class="chip center-align waves-effect waves-light chip-default">TestReport</span>
-            </a>
-            
-            
-            
             <a href="/tags/CPU/">
                 <span class="chip center-align waves-effect waves-light chip-default">CPU</span>
             </a>
@@ -1413,6 +1274,152 @@
             
             <a href="/tags/CDN/">
                 <span class="chip center-align waves-effect waves-light chip-default">CDN</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TestBasis/">
+                <span class="chip center-align waves-effect waves-light chip-default">TestBasis</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TestMethod/">
+                <span class="chip center-align waves-effect waves-light chip-default">TestMethod</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TestFlow/">
+                <span class="chip center-align waves-effect waves-light chip-default">TestFlow</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TestPlan/">
+                <span class="chip center-align waves-effect waves-light chip-default">TestPlan</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TestCase/">
+                <span class="chip center-align waves-effect waves-light chip-default">TestCase</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TestResult/">
+                <span class="chip center-align waves-effect waves-light chip-default">TestResult</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TestReport/">
+                <span class="chip center-align waves-effect waves-light chip-default">TestReport</span>
+            </a>
+            
+            
+            
+            <a href="/tags/LinuxShell/">
+                <span class="chip center-align waves-effect waves-light chip-default">LinuxShell</span>
+            </a>
+            
+            
+            
+            <a href="/tags/LinuxBash/">
+                <span class="chip center-align waves-effect waves-light chip-default">LinuxBash</span>
+            </a>
+            
+            
+            
+            <a href="/tags/MySQL/">
+                <span class="chip center-align waves-effect waves-light chip-default">MySQL</span>
+            </a>
+            
+            
+            
+            
+            
+            <a href="/tags/PostgreSQL/">
+                <span class="chip center-align waves-effect waves-light chip-default">PostgreSQL</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Oracle/">
+                <span class="chip center-align waves-effect waves-light chip-default">Oracle</span>
+            </a>
+            
+            
+            
+            <a href="/tags/MongoDB/">
+                <span class="chip center-align waves-effect waves-light chip-default">MongoDB</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Redis/">
+                <span class="chip center-align waves-effect waves-light chip-default">Redis</span>
+            </a>
+            
+            
+            
+            <a href="/tags/ElasticSearch/">
+                <span class="chip center-align waves-effect waves-light chip-default">ElasticSearch</span>
+            </a>
+            
+            
+            
+            <a href="/tags/database/">
+                <span class="chip center-align waves-effect waves-light chip-default">database</span>
+            </a>
+            
+            
+            
+            <a href="/tags/table/">
+                <span class="chip center-align waves-effect waves-light chip-default">table</span>
+            </a>
+            
+            
+            
+            <a href="/tags/column/">
+                <span class="chip center-align waves-effect waves-light chip-default">column</span>
+            </a>
+            
+            
+            
+            <a href="/tags/row/">
+                <span class="chip center-align waves-effect waves-light chip-default">row</span>
+            </a>
+            
+            
+            
+            <a href="/tags/index/">
+                <span class="chip center-align waves-effect waves-light chip-default">index</span>
+            </a>
+            
+            
+            
+            <a href="/tags/primary/">
+                <span class="chip center-align waves-effect waves-light chip-default">primary</span>
+            </a>
+            
+            
+            
+            <a href="/tags/foreign/">
+                <span class="chip center-align waves-effect waves-light chip-default">foreign</span>
+            </a>
+            
+            
+            
+            <a href="/tags/k8s/">
+                <span class="chip center-align waves-effect waves-light chip-default">k8s</span>
+            </a>
+            
+            
+            
+            <a href="/tags/oh-my-zsh/">
+                <span class="chip center-align waves-effect waves-light chip-default">oh-my-zsh</span>
             </a>
             
             
@@ -1748,6 +1755,10 @@ $(function () {
     
     <script src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
+<!-- 鼠标点击文字特效-->
+
+    <script src="/js/wenzi.js" type="text/javascript"></script>
+
 
 </body>
 

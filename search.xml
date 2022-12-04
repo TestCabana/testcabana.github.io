@@ -76,8 +76,6 @@
             
             <tag> Jenkins </tag>
             
-            <tag> iTerm2 </tag>
-            
             <tag> Jira </tag>
             
             <tag> 禅道 </tag>
@@ -89,6 +87,8 @@
             <tag> Xmind </tag>
             
             <tag> Xshell </tag>
+            
+            <tag> iTerm2 </tag>
             
             <tag> Fiddler </tag>
             
@@ -201,6 +201,25 @@
     
     
     <entry>
+      <title>Ability测试能力</title>
+      <link href="/posts/e6107735.html"/>
+      <url>/posts/e6107735.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Ability测试能力 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CI CD容器构建</title>
       <link href="/posts/8657ec7a.html"/>
       <url>/posts/8657ec7a.html</url>
@@ -234,25 +253,6 @@
     
     
     <entry>
-      <title>Ability测试能力</title>
-      <link href="/posts/e6107735.html"/>
-      <url>/posts/e6107735.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Ability测试能力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ability编程能力</title>
       <link href="/posts/36352edc.html"/>
       <url>/posts/36352edc.html</url>
@@ -266,61 +266,6 @@
           
       </categories>
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Linux及数据库</title>
-      <link href="/posts/f3160526.html"/>
-      <url>/posts/f3160526.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Linux及数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> LinuxShell </tag>
-            
-            <tag> LinuxBash </tag>
-            
-            <tag> MySQL </tag>
-            
-            <tag> SQL </tag>
-            
-            <tag> PostgreSQL </tag>
-            
-            <tag> Oracle </tag>
-            
-            <tag> MongoDB </tag>
-            
-            <tag> Redis </tag>
-            
-            <tag> ElasticSearch </tag>
-            
-            <tag> database </tag>
-            
-            <tag> table </tag>
-            
-            <tag> column </tag>
-            
-            <tag> row </tag>
-            
-            <tag> index </tag>
-            
-            <tag> primary </tag>
-            
-            <tag> foreign </tag>
-            
-        </tags>
       
     </entry>
     
@@ -406,43 +351,6 @@
     
     
     <entry>
-      <title>软件测试理论</title>
-      <link href="/posts/fdfa8c6c.html"/>
-      <url>/posts/fdfa8c6c.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件测试理论 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TestBasis </tag>
-            
-            <tag> TestMethod </tag>
-            
-            <tag> TestFlow </tag>
-            
-            <tag> TestPlan </tag>
-            
-            <tag> TestCase </tag>
-            
-            <tag> TestResult </tag>
-            
-            <tag> TestReport </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>计算机网络</title>
       <link href="/posts/e255a10a.html"/>
       <url>/posts/e255a10a.html</url>
@@ -518,6 +426,98 @@
             <tag> RPC </tag>
             
             <tag> CDN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>软件测试理论</title>
+      <link href="/posts/fdfa8c6c.html"/>
+      <url>/posts/fdfa8c6c.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试理论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TestBasis </tag>
+            
+            <tag> TestMethod </tag>
+            
+            <tag> TestFlow </tag>
+            
+            <tag> TestPlan </tag>
+            
+            <tag> TestCase </tag>
+            
+            <tag> TestResult </tag>
+            
+            <tag> TestReport </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux及数据库</title>
+      <link href="/posts/f3160526.html"/>
+      <url>/posts/f3160526.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux及数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LinuxShell </tag>
+            
+            <tag> LinuxBash </tag>
+            
+            <tag> MySQL </tag>
+            
+            <tag> SQL </tag>
+            
+            <tag> PostgreSQL </tag>
+            
+            <tag> Oracle </tag>
+            
+            <tag> MongoDB </tag>
+            
+            <tag> Redis </tag>
+            
+            <tag> ElasticSearch </tag>
+            
+            <tag> database </tag>
+            
+            <tag> table </tag>
+            
+            <tag> column </tag>
+            
+            <tag> row </tag>
+            
+            <tag> index </tag>
+            
+            <tag> primary </tag>
+            
+            <tag> foreign </tag>
             
         </tags>
       

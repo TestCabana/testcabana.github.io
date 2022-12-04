@@ -1,6 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/wenzi.js"></script>');
+        }
+        </script>
+    
 
 
 <head>
@@ -29,7 +37,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/css/my.css">
 
     <script src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/libs/jquery/jquery.min.js"></script>
-    
 
 <meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="TestCabana" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
@@ -708,6 +715,47 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/posts/1526445f">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="Ability业务能力">
+                        
+                        <span class="card-title">Ability业务能力</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Ability%E4%B8%9A%E5%8A%A1%E8%83%BD%E5%8A%9B/" class="post-category">
+                                    Ability业务能力
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/posts/8657ec7a">
                     <div class="card-image">
                         
@@ -724,9 +772,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -762,47 +810,6 @@
                         <span class="chip bg-color">K8s</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/36352edc">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="Ability编程能力">
-                        
-                        <span class="card-title">Ability编程能力</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-16
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Ability%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B/" class="post-category">
-                                    Ability编程能力
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
@@ -1245,6 +1252,10 @@ $(function () {
     
     <script src="https://cdn.jsdelivr.net/gh/TestCabana/testcabana.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
+<!-- 鼠标点击文字特效-->
+
+    <script src="/js/wenzi.js" type="text/javascript"></script>
+
 
 </body>
 
