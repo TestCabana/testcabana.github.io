@@ -48,55 +48,26 @@
             
             <tag> Jmeter </tag>
             
-            <tag> MeterSphere </tag>
-            
-            <tag> Swagger </tag>
-            
-            <tag> yapi </tag>
-            
-            <tag> LoadRunner </tag>
-            
-            <tag> StressTest </tag>
-            
-            <tag> WeTest </tag>
-            
-            <tag> AppScan </tag>
-            
-            <tag> Nmap </tag>
-            
-            <tag> sqlmap </tag>
-            
-            <tag> nessus </tag>
-            
-            <tag> Drozer </tag>
-            
-            <tag> Monkey </tag>
-            
-            <tag> GT </tag>
-            
-            <tag> QNET </tag>
-            
-            <tag> PerfDog </tag>
-            
-            <tag> Sonar </tag>
-            
-            <tag> prometheus </tag>
-            
-            <tag> Grafana </tag>
-            
-            <tag> Jenkins </tag>
-            
-            <tag> Navicat </tag>
-            
-            <tag> phpMyAdmin </tag>
-            
-            <tag> SublimeText </tag>
-            
-            <tag> VisualStudioCode </tag>
-            
-            <tag> PyCharm </tag>
-            
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Read读万卷书</title>
+      <link href="/posts/book/"/>
+      <url>/posts/book/</url>
+      
+        <content type="html"><![CDATA[<div class="row">    <embed src="/book/skill-one/Linux学习笔记.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> Read读万卷书 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -113,25 +84,6 @@
       <categories>
           
           <category> Report季度总结 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Read读万卷书</title>
-      <link href="/posts/book/"/>
-      <url>/posts/book/</url>
-      
-        <content type="html"><![CDATA[<div class="row">    <embed src="/book/skill/Linux学习笔记.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
-      
-      
-      <categories>
-          
-          <category> Read读万卷书 </category>
           
       </categories>
       
