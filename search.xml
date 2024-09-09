@@ -126,7 +126,7 @@
       <link href="/posts/book/"/>
       <url>/posts/book/</url>
       
-        <content type="html"><![CDATA[<div class="row">    <embed src="/book/Linux学习笔记.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+        <content type="html"><![CDATA[<div class="row">    <embed src="/book/skill/Linux学习笔记.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
       
       
       <categories>
